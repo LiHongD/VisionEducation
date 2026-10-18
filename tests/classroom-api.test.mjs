@@ -60,3 +60,23 @@ test('validates origin, lesson evidence and request size; guest identities canno
   assert.equal((await call('session',{token})).body.isTeacher,false);
   sqlite.close();
 });
+
+test('lesson 2 accepts complete microcourse evidence, rejects missing operations, and preserves the original 17-point path',async()=>{
+ const {sqlite,teacher,call}=fixture();
+ const c=(await call('classes',{method:'POST',ctx:teacher,data:{name:'高中微课'}})).body.classroom;
+ const token=(await call('join',{method:'POST',data:{code:c.join_code,name:'微课测试组'}})).body.token;
+ const answer='我用同侧肩肘腕的位置和肘角判断直臂举手，并用髋部的连续变化判断坐下站起。';
+ const points=[[.594,.312],[.624,.426],[.647,.542],[.555,.536],[.563,.714],[.57,.892]].map(([x,y])=>({x,y}));
+ const rules=['r1','r2'].flatMap(mode=>[0,1,2,3].map(sample=>({mode,sample,prediction:'forged'})));
+ const micro={version:1,points,rules,directions:['forward','reverse'],sequence:true,quiz:[0,1,2]};
+ const submit=evidence=>call('submit',{method:'POST',token,data:{lesson:2,answer,evidence}});
+ assert.equal((await submit({micro15:{...micro,points:points.slice(1)}})).status,400);
+ assert.equal((await submit({micro15:{...micro,points:points.map(p=>({...p,x:0}))}})).status,400);
+ assert.equal((await submit({micro15:{...micro,rules:rules.slice(1)}})).status,400);
+ assert.equal((await submit({micro15:{...micro,quiz:[2,1,0]}})).status,400);
+ const r=await submit({micro15:micro});assert.equal(r.status,200);
+ const received=(await call('submissions/'+r.body.submission.id,{ctx:teacher})).body.submission.evidence.micro15;
+ assert.equal(received.rules.length,8);assert.equal(received.rules[2].prediction,true);assert.equal(received.rules[6].prediction,false);assert.equal(received.rules[3].prediction,null);
+ assert.equal((await submit({joints:[5,7,9,11,13,15],snapshots:[{keypoints:Array.from({length:17},(_,id)=>({id,x:.5,y:.5}))}]})).status,200);
+ sqlite.close();
+});

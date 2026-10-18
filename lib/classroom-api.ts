@@ -28,7 +28,13 @@ function evidence(input:any,lesson:number){
   const result:any={};
   const arr=(key:string,max:number)=>{const v=input[key];if(!Array.isArray(v)||v.length>max)fail(400,'实践记录格式或数量不正确。');result[key]=v;return v;};
   if(lesson===1){const a=arr('viewed',3);if(![0,1,2].every(i=>a.includes(i)))fail(400,'请先观察全部三种招式。');}
-  if(lesson===2){const j=arr('joints',17),s=arr('snapshots',3);if(new Set(j.filter((n:number)=>Number.isInteger(n)&&n>=0&&n<17)).size<6||!s.length)fail(400,'请查看六个关节并保存快照。');for(const snap of s){if(!Array.isArray(snap.keypoints)||snap.keypoints.length!==17)fail(400,'快照需要17个关键点。');for(const p of snap.keypoints)if(!Number.isFinite(p.x)||!Number.isFinite(p.y)||p.x<0||p.x>1||p.y<0||p.y>1)fail(400,'关键点坐标应在0–1之间。');}}
+  if(lesson===2&&input.micro15){
+    const m=input.micro15,targets=[[.594,.312],[.624,.426],[.647,.542],[.555,.536],[.563,.714],[.57,.892]];
+    if(m.version!==1||!Array.isArray(m.points)||m.points.length!==6||m.points.some((p:any,i:number)=>!p||!Number.isFinite(p.x)||!Number.isFinite(p.y)||Math.hypot(p.x-targets[i][0],p.y-targets[i][1])>.065))fail(400,'请完成并修正六点描绘。');
+    if(!Array.isArray(m.rules)||m.rules.length!==8||!['r1','r2'].every(mode=>[0,1,2,3].every(sample=>m.rules.some((r:any)=>r&&r.mode===mode&&r.sample===sample))))fail(400,'请让两条规则分别验证四个样本。');
+    if(!Array.isArray(m.directions)||m.directions.length!==2||!['forward','reverse'].every(v=>m.directions.includes(v))||m.sequence!==true||!Array.isArray(m.quiz)||m.quiz.length!==3||![0,1,2].every((v,i)=>m.quiz[i]===v))fail(400,'请完成时序操作和迁移题。');
+    result.micro15={version:1,points:m.points.map((p:any,i:number)=>({id:[5,7,9,11,13,15][i],x:p.x,y:p.y})),rules:m.rules.map((r:any)=>({mode:r.mode,sample:r.sample,prediction:r.sample===3?null:r.sample===1||(r.sample===2&&r.mode==='r1'),truth:r.sample===3?null:r.sample===1})),directions:['forward','reverse'],sequence:true,quiz:[0,1,2]};
+  }else if(lesson===2){const j=arr('joints',17),s=arr('snapshots',3);if(new Set(j.filter((n:number)=>Number.isInteger(n)&&n>=0&&n<17)).size<6||!s.length)fail(400,'请查看六个关节并保存快照。');for(const snap of s){if(!Array.isArray(snap.keypoints)||snap.keypoints.length!==17)fail(400,'快照需要17个关键点。');for(const p of snap.keypoints)if(!Number.isFinite(p.x)||!Number.isFinite(p.y)||p.x<0||p.x>1||p.y<0||p.y>1)fail(400,'关键点坐标应在0–1之间。');}}
   if(lesson===3){if(arr('labels',4).length!==4)fail(400,'请完成四个样本标注。');arr('annotations',3);}
   if(lesson===4){const r=arr('runs',10);if(new Set(r.map((x:any)=>x.threshold)).size<2||r.some((x:any)=>!Number.isFinite(x.threshold)||x.threshold<.1||x.threshold>.9))fail(400,'请完成两组不同阈值的验证。');}
   if(lesson===5){result.sequenceOK=input.sequenceOK;const d=arr('directions',2);if(input.sequenceOK!==true||!['forward','reverse'].every(v=>d.includes(v)))fail(400,'请完成排序并观察正放、倒放。');}
