@@ -1,5 +1,5 @@
 import * as THREE from './vendor/three.module.min.js';
-import {createTeachingCharacter} from './pose-character.js?v=supplied-2';
+import {createTeachingCharacter} from './pose-character.js?v=rigid-2';
 import {REST_POSE,POSE_CHAINS,PRESETS,makePreset,solveTwoBone} from './pose-presets.js';
 
 // The supplied textured student, controlled locally by its Blender rig.
