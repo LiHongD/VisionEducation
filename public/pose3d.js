@@ -1,8 +1,8 @@
 import * as THREE from './vendor/three.module.min.js';
-import {createTeachingCharacter} from './pose-character.js';
+import {createTeachingCharacter} from './pose-character.js?v=supplied-2';
 import {REST_POSE,POSE_CHAINS,PRESETS,makePreset,solveTwoBone} from './pose-presets.js';
 
-// A Blender-exported reference-textured mesh, controlled locally by its rig.
+// The supplied textured student, controlled locally by its Blender rig.
 const V=(x=0,y=0,z=0)=>new THREE.Vector3(x,y,z);
 const initial=REST_POSE,chains=POSE_CHAINS;
 let remembered=initial.map(p=>p.slice()),rememberedPreset='stand',current;
@@ -21,11 +21,11 @@ export function mountPoseExplorer(host){
  const floor=new THREE.Mesh(new THREE.CircleGeometry(1.65,64),new THREE.MeshStandardMaterial({color:0xe5e2d5,roughness:1}));floor.rotation.x=-Math.PI/2;floor.receiveShadow=true;floor.position.y=.005;scene.add(floor);
  const grid=new THREE.GridHelper(3.4,20,0xc8cbbd,0xdce0d1);grid.position.y=.008;grid.material.transparent=true;grid.material.opacity=.3;scene.add(grid);
  const geometries=new Set(),materials=new Set();
- const loading=document.createElement('div');loading.className='pose3d-asset-loading';loading.innerHTML='<img src="/micro15-assets/reference-student-cutout.png" alt="正在载入参考图人物"><span>正在载入人物模型…</span>';host.append(loading);
+ const loading=document.createElement('div');loading.className='pose3d-asset-loading';loading.innerHTML='<img src="/micro15-assets/supplied-student-preview.png" alt="正在载入三维人物"><span>正在载入人物模型…</span>';host.append(loading);
  const character=createTeachingCharacter(scene,{
   onReady(){loading.remove();needsDraw=true;},
   onProgress(loaded,total){const span=loading.querySelector('span');if(span&&total)span.textContent='正在载入人物模型 '+Math.round(loaded/total*100)+'%';},
-  onError(){loading.classList.add('failed');loading.querySelector('span').textContent='模型载入失败，请刷新重试';status.textContent='立体模型暂未载入成功，当前显示原图。';}
+  onError(){loading.classList.add('failed');loading.querySelector('span').textContent='模型载入失败，请刷新重试';status.textContent='立体模型暂未载入成功，当前显示人物预览图。';}
  });
  let p=remembered.map(a=>V(...a)),yaw=0,elevation=0,distance=4.3,selected=4,drag=null,changed=0,alive=true,needsDraw=true,visible=true,frame=0,transition=null,activePreset=rememberedPreset,handStyle=rememberedPreset==='punch'?'punch':'open';
  const lengths=chains.map(c=>[V(...initial[c[0]]).distanceTo(V(...initial[c[1]])),V(...initial[c[1]]).distanceTo(V(...initial[c[2]]))]);
@@ -38,13 +38,14 @@ export function mountPoseExplorer(host){
  function markCustom(){transition=null;activePreset='';rememberedPreset='';handStyle='open';presetButtons.forEach(b=>b.setAttribute('aria-pressed','false'));wrapper.querySelector('[data-pose3d-current]').textContent='自由探索';wrapper.querySelector('[data-pose3d-hint]').textContent='观察相邻部分的变化，尝试摆出你自己的动作。';}
  function move(i,to){markCustom();to.x=THREE.MathUtils.clamp(to.x,-1.05,1.05);to.y=THREE.MathUtils.clamp(to.y,.1,2.2);to.z=THREE.MathUtils.clamp(to.z,-.8,.8);const ci=chains.findIndex(c=>c.includes(i)),chain=chains[ci];if(i===chain[2])ik(ci,to);else if(i===chain[1]){let old=p[i].clone(),root=p[chain[0]],direction=to.clone().sub(root).normalize();if(direction.length()<.1)return;p[i].copy(root).addScaledVector(direction,lengths[ci][0]);p[chain[2]].add(p[i].clone().sub(old));if(ci>=2&&p[chain[2]].y<.1)ik(ci,p[chain[2]].clone().setY(.1),to)}else if(i===0||i===1){const mid=p[6].clone().add(p[7]).multiplyScalar(.5),sign=i===0?-1:1,lean=THREE.MathUtils.clamp((to.x-sign*.25-mid.x)*.9,-.45,.45),turn=THREE.MathUtils.clamp(to.z*1.5,-.45,.45),q=new THREE.Quaternion().setFromEuler(new THREE.Euler(turn,0,-lean));for(let j=0;j<6;j++)p[j].copy(V(...initial[j]).sub(V(0,(initial[6][1]+initial[7][1])/2,0)).applyQuaternion(q).add(mid))}else{const delta=to.clone().sub(p[i]);delta.x=THREE.MathUtils.clamp(delta.x,-.025,.025);delta.y=THREE.MathUtils.clamp(delta.y,-.035,.035);delta.z=THREE.MathUtils.clamp(delta.z,-.025,.025);const newY=(p[6].y+p[7].y)/2+delta.y;if(newY<.55||newY>1.06)delta.y=0;const feet=[p[10].clone(),p[11].clone()];for(let j=0;j<8;j++)p[j].add(delta);ik(2,feet[0],p[8].clone().add(V(0,0,.2)));ik(3,feet[1],p[9].clone().add(V(0,0,.2)))}needsDraw=true}
  function cameraUpdate(){const height=distance*.5,aspect=host.clientWidth/host.clientHeight;camera.left=-height*aspect/2;camera.right=height*aspect/2;camera.top=height/2;camera.bottom=-height/2;camera.updateProjectionMatrix();camera.position.set(Math.sin(yaw)*distance,1+Math.sin(elevation)*distance,Math.cos(yaw)*Math.cos(elevation)*distance);camera.lookAt(target);camera.updateMatrixWorld()}
+ function fittedDistance(points){const aspect=host.clientWidth/host.clientHeight;if(!aspect)return 4.3;const width=2*Math.max(...points.map(v=>Math.hypot(v.x,v.z)+.17)),height=2*Math.max(...points.map(v=>Math.abs(v.y-target.y)+.17));return 2*Math.max(2.15,width/aspect,height)}
  const ray=new THREE.Raycaster(),plane=new THREE.Plane(),pointer=new THREE.Vector2();
  function pointOnPlane(e){let r=host.getBoundingClientRect();pointer.set((e.clientX-r.left)/r.width*2-1,-(e.clientY-r.top)/r.height*2+1);ray.setFromCamera(pointer,camera);return ray.ray.intersectPlane(plane,V())}
  function start(e,i){if(e.button!==0)return;markCustom();e.preventDefault();e.stopPropagation();select(i);cameraUpdate();plane.setFromNormalAndCoplanarPoint(camera.getWorldDirection(V()).negate(),p[i]);let hit=pointOnPlane(e);if(!hit)return;drag={i,id:e.pointerId,offset:p[i].clone().sub(hit)};host.setPointerCapture(e.pointerId);host.classList.add('dragging')}
  function down(e){if(e.button!==0||e.target.closest('button'))return;e.preventDefault();drag={orbit:true,id:e.pointerId,x:e.clientX,y:e.clientY};host.setPointerCapture(e.pointerId)}
  function pointerMove(e){if(!drag){return}if(drag.id!==e.pointerId)return;if(drag.orbit){yaw-=(e.clientX-drag.x)*.008;elevation=THREE.MathUtils.clamp(elevation+(e.clientY-drag.y)*.004,-.15,.4);drag.x=e.clientX;drag.y=e.clientY;needsDraw=true}else{const hit=pointOnPlane(e);if(hit)move(drag.i,hit.add(drag.offset))}}
  function end(e){if(!drag||e.pointerId!==drag.id)return;if(!drag.orbit)record();drag=null;host.classList.remove('dragging');if(host.hasPointerCapture(e.pointerId))host.releasePointerCapture(e.pointerId)}
- function wheel(e){e.preventDefault();distance=THREE.MathUtils.clamp(distance+e.deltaY*.003,3.1,6);needsDraw=true}
+ function wheel(e){e.preventDefault();distance=THREE.MathUtils.clamp(distance+e.deltaY*.003,3.1,10);needsDraw=true}
  host.addEventListener('pointerdown',down);host.addEventListener('pointermove',pointerMove);host.addEventListener('pointerup',end);host.addEventListener('pointercancel',end);host.addEventListener('lostpointercapture',end);host.addEventListener('wheel',wheel,{passive:false});
  picker.onchange=()=>{select(Number(picker.value));buttons[selected].focus({preventScroll:true})};
  wrapper.querySelectorAll('[data-pose3d-nudge]').forEach(b=>b.onclick=()=>{const d=JSON.parse(b.dataset.pose3dNudge),right=V(Math.cos(yaw),0,-Math.sin(yaw));move(selected,p[selected].clone().addScaledVector(right,d[0]).add(V(0,d[1],d[2])));record()});
@@ -58,7 +59,7 @@ export function mountPoseExplorer(host){
   const item=PRESETS.find(x=>x.id===id);if(!item)return;
   const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   transition={from:p.map(v=>v.clone()),to:makePreset(id),started:performance.now(),duration:reduce?0:850};
-  activePreset=id;handStyle=id==='punch'?'punch':'open';if(id==='raise'||id==='balance')distance=Math.max(distance,4.6);
+  activePreset=id;handStyle=id==='punch'?'punch':'open';distance=fittedDistance(transition.to);
   presetButtons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.preset===id)));
   wrapper.querySelector('[data-pose3d-current]').textContent=item.label;
   wrapper.querySelector('[data-pose3d-hint]').textContent=item.description;
@@ -66,7 +67,7 @@ export function mountPoseExplorer(host){
  }
  presetButtons.forEach(b=>b.onclick=()=>applyPreset(b.dataset.preset));
  wrapper.querySelector('[data-pose3d-reset]').onclick=()=>{yaw=0;elevation=0;distance=4.3;changed=0;applyPreset('stand')};
- function resize(){if(!host.isConnected)return;const w=host.clientWidth,h=host.clientHeight;renderer.setSize(w,h);camera.aspect=w/h;camera.updateProjectionMatrix();needsDraw=true}
+ function resize(){if(!host.isConnected)return;const w=host.clientWidth,h=host.clientHeight;renderer.setSize(w,h);distance=Math.max(distance,fittedDistance(p));camera.aspect=w/h;camera.updateProjectionMatrix();needsDraw=true}
  const ro=new ResizeObserver(resize);ro.observe(host);
  const io=new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;if(visible)needsDraw=true});io.observe(host);
  function draw(now=performance.now()){
