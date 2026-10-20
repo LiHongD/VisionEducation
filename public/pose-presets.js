@@ -1,5 +1,5 @@
 import * as THREE from './vendor/three.module.min.js';
-export const REST_POSE=[[-.25,1.48,0],[.25,1.48,0],[-.34,1.16,0],[.34,1.16,0],[-.42,.84,.015],[.42,.84,.015],[-.15,.94,0],[.15,.94,0],[-.16,.53,.025],[.16,.53,.025],[-.17,.115,0],[.17,.115,0]];
+export const REST_POSE=[[-0.1805556,1.4027778,-0.0],[0.1805556,1.4027778,-0.0],[-0.2673611,1.0902778,-0.0],[0.2673611,1.0902778,-0.0],[-0.34375,0.8402778,-0.0],[0.34375,0.8402778,-0.0],[-0.1006944,0.8888889,-0.0],[0.1006944,0.8888889,-0.0],[-0.1111111,0.5,-0.0],[0.1145833,0.5,-0.0],[-0.1493056,0.1111111,-0.0],[0.1493056,0.1111111,-0.0]];
 export const POSE_CHAINS=[[0,2,4],[1,3,5],[6,8,10],[7,9,11]];
 export const PRESETS=[
  {id:'stand',label:'自然站立',description:'先观察身体的自然位置，再选择一个动作。'},
@@ -21,12 +21,12 @@ export function solveTwoBone(p,ci,end,pole){
 export function makePreset(id){
  if(!PRESETS.some(x=>x.id===id))throw new Error('Unknown pose preset');
  const p=REST_POSE.map(V);
- function torso(y,tilt=0){const q=new THREE.Quaternion().setFromEuler(new THREE.Euler(tilt,0,0));for(let i=0;i<8;i++)p[i].copy(V(REST_POSE[i]).sub(new THREE.Vector3(0,.94,0)).applyQuaternion(q).add(new THREE.Vector3(0,y,0)))}
+ function torso(y,tilt=0){const q=new THREE.Quaternion().setFromEuler(new THREE.Euler(tilt,0,0));for(let i=0;i<8;i++)p[i].copy(V(REST_POSE[i]).sub(new THREE.Vector3(0,(REST_POSE[6][1]+REST_POSE[7][1])/2,0)).applyQuaternion(q).add(new THREE.Vector3(0,y,0)))}
  const set=(ci,end,pole)=>solveTwoBone(p,ci,V(end),pole?V(pole):undefined);
  if(id==='raise')set(1,[.42,2.10,.015],[.44,1.80,.01]);
  if(id==='reach'){set(0,[-.91,1.48,0],[-.58,1.48,.025]);set(1,[.91,1.48,0],[.58,1.48,.025])}
  if(id==='bend'){set(0,[-.33,1.72,.14],[-.59,1.44,.04]);set(1,[.33,1.72,.14],[.59,1.44,.04])}
- if(id==='horse'){torso(.69);set(2,[-.48,.115,.04],[-.53,.50,.28]);set(3,[.48,.115,.04],[.53,.50,.28]);set(0,[-.30,1.10,.50],[-.42,1.05,.20]);set(1,[.30,1.10,.50],[.42,1.05,.20])}
+ if(id==='horse'){torso(.69);set(2,[-.48,.115,.04],[-.53,.50,.28]);set(3,[.48,.115,.04],[.53,.50,.28]);set(0,[-.23,.88,.13],[-.31,1.08,-.07]);set(1,[.23,.88,.13],[.31,1.08,-.07])}
  if(id==='punch'){torso(.77,.06);set(2,[-.23,.115,.44],[-.24,.53,.59]);set(3,[.26,.115,-.43],[.29,.45,-.22]);set(1,[.25,1.31,.65],[.29,1.30,.35]);set(0,[-.30,.99,.08],[-.43,1.20,.02])}
  if(id==='balance'){torso(.94);set(2,[-.17,.115,0],[-.18,.53,.06]);set(3,[.19,.63,.32],[.19,.91,.43]);set(1,[.44,1.98,.10],[.58,1.68,.04]);set(0,[-.53,1.10,.34],[-.55,1.29,.11])}
  return p;
