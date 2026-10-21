@@ -1,126 +1,85 @@
-# vinext-starter
+# VisionEducation · 行知实验室
 
-A clean full-stack starter running on [vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and Drizzle support.
+面向行为识别教学的互动网站，让学生经历观察动作、摆布人物、人工描点、模型识别、读取坐标与解释动作证据的过程。
 
-## Prerequisites
+[在线课堂](https://action-lab-classroom.upbeatape2048.chatgpt.site/classroom) · [描骨辨势 / Python 实验](https://action-lab-classroom.upbeatape2048.chatgpt.site/classroom#lesson-2)
 
-- Node.js `>=22.13.0`
-- Portable: Windows, macOS, or Linux; no Bash required
-- Managed Linux: managed Linux runtime with Bash, `flock`, `curl`, `sha256sum`, and GNU `timeout`
-- Git is required only for publishing
+## 教学功能
 
-## Sites Lifecycle
+- 分课时互动课堂、动作观察、人工描点与证据判断。
+- 3D 人体摆姿：拖动关键点、预设动作、查看角度与恢复姿态。
+- Python 姿态识别实验：全班使用统一图片，编辑 Python 并运行官方 YOLO26n-pose 模型，显示 17 个人体关键点、骨架、坐标与置信度。
+- 三组 Python 示例：识别图片、读取关键点、编写动作判断规则；支持停止执行、恢复代码、保存草稿、下载代码与实际运行记录。
+- 教师建班、学生通过班级码加入、提交学习记录、教师点评及课堂展示。真实课堂数据保存在部署环境的 D1 数据库中，不在此仓库内。
 
-The Sites initializer copies the shared starter and selects managed-linux only when `SITES_MANAGED_LINUX_CONTAINER=1`; otherwise it selects portable. It saves the selection only in ignored `.sites-runtime/execution-profile.json`. Both profiles copy/configure first, then use the plugin's separate `install-dependencies.mjs` step to measure installation independently. Edit source under `app/` and follow the Sites skill for installation, preview, builds, and publishing.
+## 本地运行
 
-Run `node <plugin-root>/scripts/configure-execution-profile.mjs` only when the profile is unknown for the current checkout and environment. Profile changes do not alter tracked source or require reinstalling otherwise-valid dependencies; restart an existing preview to use the new selection. Do not commit or upload `.sites-runtime/`.
-
-This starter does not use `wrangler.jsonc`.
-
-`install:ci` runs `npm ci` once against the shared lockfile, disables parent-workspace discovery, and includes required dev/optional dependencies despite production/omit settings. Sharp defaults to prebuilt binaries unless explicitly configured otherwise. Do not overlap installers.
-
-- **Portable:** Preserve host HOME, npm cache, registry, proxy, temporary paths, retry/concurrency settings, and lifecycle-script policy. Use `--prefer-offline --no-audit --no-fund`.
-- **Managed Linux:** Use the existing project-local HOME/cache/tmp setup and Linux install lock, tarball preflight, and timeout. Restore the image-seeded npm cache only when its lockfile hash matches; retain network fallback. Builds keep their existing timeout. These helpers are not invoked by the portable profile.
-
-`scripts/sites-env.mjs` preserves the caller's HOME, npm cache, proxy, XDG, and temporary-directory configuration while defaulting Wrangler and Miniflare state to the checkout. If npm reports an unwritable cache, select a writable path with `npm_config_cache` for that install. The `dev` and `start` scripts also keep Wrangler logs inside the checkout. Generated `.sites-runtime/` and `.wrangler/` directories are disposable and ignored by Git.
-
-On portable, `npm run dev` uses `vinext dev` with HMR, starting at port 5173. Vinext records the running server in ignored `.vinext/` state, rejects an ordinary duplicate launch, and recovers stale state after a stopped process; exactly simultaneous starts can race. Pass `--port <port>` or `--hostname <host>` after `npm run dev --` when needed; keep portable previews on loopback.
-
-For browser QA on managed Linux, use `sites-preview start`. The project's dev script runs Vite and accepts the supervisor's `--host 0.0.0.0 --port 4173 --strictPort` arguments. The internal browser uses `http://terminal.local:4173/`; it is not a user-facing URL. The supervisor owns the preview lifecycle. The ignored local profile survives the supervisor's cleared process environment.
-
-The portable profile simulates ChatGPT sign-in only for loopback development requests. Visit `/signin-with-chatgpt?return_to=/` to sign in as `local_seedy` (`seedy@sites.test`, display name `Seedy`) and `/signout-with-chatgpt?return_to=/` to sign out. The development cookie preserves that identity across server restarts. Mock auth is disabled in the managed-linux profile and is not included in production builds; hosted authentication remains dispatch-owned.
-
-The Worker uses `vinext/server/fetch-handler`, including Vinext's config-aware image handling. After building, `npm start` runs that Worker locally through Wrangler on `127.0.0.1`, sharing `.wrangler/state` with dev preview and local D1 migrations; it does not deploy the site or simulate sign-in. Use the URL printed by the server. Pass `npm start -- --port <port>` to select a different built-preview port.
-
-Local previews use Miniflare's placeholder `Request.cf` metadata without a network lookup. Set `CLOUDFLARE_CF_FETCH_ENABLED=true` to opt into fetching preview metadata; this setting does not change hosted request metadata.
-
-Local tool usage metrics are disabled by default. Set `WRANGLER_SEND_METRICS=true` to opt in.
-
-## Included Shape
-
-- edit site code under `app/`
-- `app/chatgpt-auth.ts` provides optional dispatch-owned ChatGPT sign-in helpers
-- `.openai/hosting.json` declares optional Sites D1 and R2 bindings
-- `vite.config.ts` simulates declared bindings for local development
-- `db/index.ts` reads the D1 binding from the Cloudflare Worker environment
-- `db/schema.ts` starts intentionally empty
-- `@cloudflare/workers-types` provides Worker types; `cloudflare-env.d.ts` declares optional `DB`/`BUCKET` bindings—update these declarations if binding names change
-- `examples/d1/` contains an optional D1 example surface
-- `drizzle.config.ts` supports local migration generation when needed
-
-## Workspace Auth Headers
-
-Signed-in visitors receive both `oai-authenticated-user-id` and `oai-authenticated-user-email`. Private Sites require every visitor to sign in; public Sites may also have anonymous visitors, for whom neither header is present.
-
-The user ID is stable for the same user on the same Site and different across Sites. Use it as the durable user key; use email and name for display or contact purposes.
-
-SIWC-authenticated workspace sites may also receive `oai-authenticated-user-full-name` when the user's SIWC profile has a non-empty `name` claim. The full-name value is percent-encoded UTF-8 and is accompanied by `oai-authenticated-user-full-name-encoding: percent-encoded-utf-8`.
-
-Treat the full name as optional and fall back to email when it is absent:
-
-```tsx
-import { headers } from "next/headers";
-
-export default async function Home() {
-  const requestHeaders = await headers();
-  const userId = requestHeaders.get("oai-authenticated-user-id");
-  const email = requestHeaders.get("oai-authenticated-user-email");
-  const encodedFullName = requestHeaders.get("oai-authenticated-user-full-name");
-  const fullName =
-    encodedFullName &&
-    requestHeaders.get("oai-authenticated-user-full-name-encoding") ===
-      "percent-encoded-utf-8"
-      ? decodeURIComponent(encodedFullName)
-      : null;
-
-  const displayName = fullName ?? email;
-  // ...
-}
-```
-
-## Optional Dispatch-Owned ChatGPT Sign-In
-
-Import the ready-to-use helpers from `app/chatgpt-auth.ts` when the site needs optional or required ChatGPT sign-in:
-
-- Use `getChatGPTUser()` for optional signed-in UI.
-- Use the returned `userId` as the stable user key for user-owned records; do not use email as a durable identifier.
-- Use `requireChatGPTUser(returnTo)` for server-rendered pages that should send anonymous visitors through Sign in with ChatGPT.
-- In a Server Component, start sign-in with `<a href={chatGPTSignInPath(returnTo)} target="_top">`. The auth helper module is server-only; do not import it into a Client Component.
-- Do not use `fetch`, XHR, a client-side router, or a framework link that can prefetch the sign-in route. SIWC must start as a top-level navigation.
-- Never request the AuthAPI authorization endpoint directly. The dispatch-owned `/signin-with-chatgpt` route must start the SIWC flow.
-- Use `chatGPTSignOutPath(returnTo)` for browser sign-out links or actions.
-- Pass a same-origin relative `returnTo` path for the destination after sign-in or sign-out. The helper validates and safely encodes it.
-- Mark protected pages with `export const dynamic = "force-dynamic"` because they depend on per-request identity headers.
-
-Dispatch owns `/signin-with-chatgpt`, `/signout-with-chatgpt`, `/callback`, the OAuth cookies, and identity header injection. Do not implement app routes for those reserved paths. Routes that do not import and call the helper remain anonymous-compatible.
-
-SIWC establishes identity only; it does not prove workspace membership. Use the Sites hosting platform's access policy controls for workspace-wide restrictions, or enforce explicit server-side membership or allowlist checks.
-
-Use SIWC for account pages, user-specific dashboards, saved records, and write actions tied to the current ChatGPT user. Leave public content anonymous.
-
-## Local D1 migrations
-
-For a D1-backed local preview, generate SQL with `npm run db:generate`. Build once through the Sites skill's build entrypoint (or `npm run build` for standalone use) to generate `dist/server/wrangler.json`, rebuilding if bindings change. From the project root, apply each pending migration in order:
+需要 Node.js **22.13 或更高版本**。包含 SQLite 测试的完整测试集建议使用 Node.js 24 或更高版本。首次安装需要网络。
 
 ```sh
-node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js d1 execute DB --local --config dist/server/wrangler.json --persist-to .wrangler/state --file drizzle/0000_example.sql
+npm run install:ci
+npm run dev
 ```
 
-Replace the filename with the pending migration and `DB` with your D1 binding name if different. Use `.wrangler/state`, not `.wrangler/state/v3`; Wrangler adds the versioned directories. Do not replay migrations already applied locally. This updates only the preview database; publishing applies production migrations separately.
+浏览器访问 `http://127.0.0.1:5173/classroom`，进入「描骨辨势」并向下滚动至「让代码，替你找到关节点。」。
 
-## Diagnostic Commands
+```sh
+npm test
+npm run build
+npm start
+```
 
-- `npm run install:ci`: perform the one locked dependency install
-- `npm run dev`: start the Vite/Vinext development server
-- `npm run build`: build the deployable Sites artifact
-- `npm run start`: preview the built Worker locally with D1/R2 support
-- `npm run db:generate`: generate Drizzle migrations after schema changes
+`npm start` 使用本地 Wrangler 预览构建产物；端口以终端输出为准。项目基于 Vinext、React、Cloudflare Workers 与 D1。静态课堂入口为 `public/classroom.html`，首页自动跳转到课堂。
 
-When using the Sites plugin, follow its skill instructions for installation, builds, and publishing. These npm commands remain available for standalone use.
+教师功能需要配置 `.dev.vars`（不要提交此文件）：
 
-The portable build runs Vinext directly without a host `timeout` command. The managed-linux build uses `scripts/build-verified.sh` and its existing `SITES_BUILD_TIMEOUT` setting.
+```dotenv
+TEACHER_EMAILS=your-teacher-email@example.com
+ALLOW_GUEST_STUDENTS=true
+```
 
-## Learn More
+数据库表结构见 `drizzle/0000_tiresome_nova.sql`，本地使用项目声明的 `DB` 绑定初始化：
 
-- [vinext Documentation](https://github.com/cloudflare/vinext)
-- [Drizzle D1 Guide](https://orm.drizzle.team/docs/get-started/d1-new)
+```sh
+npm run build
+npx wrangler d1 execute DB --local --config=dist/server/wrangler.json --persist-to=.wrangler/state --file=drizzle/0000_tiresome_nova.sql
+```
+
+本地开发支持 `/signin-with-chatgpt?return_to=/classroom` 的模拟身份，模拟邮箱是 `seedy@sites.test`。需要本地测试教师界面时，将该邮箱加入本地 `TEACHER_EMAILS`。生产环境使用托管身份服务与真实教师邮箱白名单。复制部署时应在新环境中单独配置身份、D1 与环境变量；现有 `.openai/hosting.json` 标识原有 Sites 项目。
+
+## Python 实验如何运行
+
+本实验运行真正的 CPython 3.12（Pyodide 0.27.7）与 NumPy 2.0.2，学生代码在独立 Web Worker 中执行。ONNX Runtime Web 1.22.0 使用 CPU/WASM 执行官方 `yolo26n-pose.onnx`，没有预存识别坐标代替模型输出。统一图片与推理留在浏览器内；首次使用需要下载约 40 MB 运行资源，后续可使用浏览器缓存。
+
+课堂提供的是 `classroom_yolo` 适配接口，不是完整 PyTorch / Ultralytics 环境：
+
+```python
+from classroom_yolo import YOLO
+
+model = YOLO("yolo26n-pose.onnx")
+results = await model.predict("classroom-person.png", conf=0.25)
+result = results[0]
+print(result.keypoints.xy)    # NumPy 数组：人数 × 17 × 2
+print(result.keypoints.conf)  # 人数 × 17
+result.show(conf=0.50)
+```
+
+`predict(conf=...)` 筛选人体，`show(conf=...)` 筛选绘制的关键点。`xy` 是原图像素坐标；`xyn` 是归一化坐标；置信度不是深度。代码执行上限为 25 秒，可以随时点停止。环境只在首次运行加载，退出本课会终止 Worker。
+
+界面可下载使用 `from ultralytics import YOLO` 的本地 Python 示例。在本地安装 `ultralytics` 并使用 `yolo26n-pose.pt` 时，推理接口为同步调用，和浏览器中的异步适配接口有区别。
+
+## 文件与验证
+
+- `public/pose-code-lab.js` / `.css`：编辑器、控制台、预测结果及教学任务。
+- `public/pose-lab-worker.js`、`public/classroom_yolo.py`：Python 执行和真实模型桥接。
+- `public/pose-lab-inference.js`：图像预处理、坐标还原与输出解析。
+- `public/pose-lab-assets/`：固定课堂图片、官方模型和校验清单。
+- `public/vendor/`：本地托管的运行时与许可证。
+- `scripts/prepare-pose-lab-assets.ps1`：从固定官方来源准备资源。
+- `tests/`：推理解析、课堂 API、3D 姿态预设与变形回归测试。
+
+浏览器验收涵盖实际推理、修改置信度后的零检测、Python 语法报错、终止无限循环和再次运行。模型与运行资源的版本、来源和 SHA-256 见 [第三方声明](THIRD_PARTY_NOTICES.md) 及 `public/pose-lab-assets/manifest.json`。
+
+## 许可
+
+项目按 [GNU AGPL-3.0](LICENSE) 提供，与所分发的 Ultralytics 模型许可保持一致。第三方运行时保留各自许可证，详见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。用户提供的角色模型与教学图片保留原权利人的权利。

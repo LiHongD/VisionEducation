@@ -1,0 +1,129 @@
+{
+  "model": {
+    "name": "yolo26n-pose.onnx",
+    "url": "https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26n-pose.onnx",
+    "exporter": "Ultralytics 8.4.38",
+    "input": [
+      1,
+      3,
+      640,
+      640
+    ],
+    "output": [
+      1,
+      300,
+      57
+    ],
+    "opset": 20,
+    "license": "AGPL-3.0"
+  },
+  "runtime": {
+    "pyodide": "0.27.7",
+    "python": "3.12.7",
+    "numpy": "2.0.2",
+    "onnxruntime-web": "1.22.0",
+    "codemirror": "5.65.20"
+  },
+  "files": [
+    {
+      "path": "public/vendor/pyodide/LICENSE",
+      "bytes": 16725,
+      "sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5"
+    },
+    {
+      "path": "public/vendor/pyodide/LICENSE-CPython",
+      "bytes": 13936,
+      "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+    },
+    {
+      "path": "public/vendor/pyodide/LICENSE-NumPy",
+      "bytes": 1543,
+      "sha256": "01fb016849aa427edb1bbbbd55f91c26ca6cadb32a5b20e7f000655dd05b0760"
+    },
+    {
+      "path": "public/vendor/pyodide/numpy-2.0.2-cp312-cp312-pyodide_2024_0_wasm32.whl",
+      "bytes": 3061133,
+      "sha256": "ebb61241d962b98b21597d7ce43b67668a6d5bab3acec4fbe958657320d7cd08"
+    },
+    {
+      "path": "public/vendor/pyodide/pyodide-lock.json",
+      "bytes": 112205,
+      "sha256": "9c45b916001a750f4102fc287494f3eab215909c7535c626a20db80fd6333e2c"
+    },
+    {
+      "path": "public/vendor/pyodide/pyodide.asm.js",
+      "bytes": 1255688,
+      "sha256": "6b4c90de5b7172873f04f21884d0e9d2274e305fe32116558fe3e4fbe3618d51"
+    },
+    {
+      "path": "public/vendor/pyodide/pyodide.asm.wasm",
+      "bytes": 10105545,
+      "sha256": "a50dd1843f805a0b7c45b61037ee0d7b26dfe85efe0e18ef95a34ad24e401f5f"
+    },
+    {
+      "path": "public/vendor/pyodide/pyodide.js",
+      "bytes": 14913,
+      "sha256": "b4cb23a53aba19c221659b9fb40a2f18281d685691dc06647fb0afd0681baf98"
+    },
+    {
+      "path": "public/vendor/pyodide/python_stdlib.zip",
+      "bytes": 2360737,
+      "sha256": "16611534726e5d8ac2bd8f926410b2dcb8d6f49aa24913463533b457a2115c16"
+    },
+    {
+      "path": "public/vendor/ort/LICENSE",
+      "bytes": 1073,
+      "sha256": "2f07c72751aed99790b8a4869cf2311df85a860b22ded05fa22803587a48922c"
+    },
+    {
+      "path": "public/vendor/ort/ort-wasm-simd-threaded.mjs",
+      "bytes": 20856,
+      "sha256": "30dd851d9c00622940500f71ddd2ff8820c5cb65270816080175b958705385a8"
+    },
+    {
+      "path": "public/vendor/ort/ort-wasm-simd-threaded.wasm",
+      "bytes": 11210254,
+      "sha256": "71aef04959c5c1b6de461b6538e2058e306610034a85aad2742d0c7fd4533fe4"
+    },
+    {
+      "path": "public/vendor/ort/ort.wasm.min.js",
+      "bytes": 48327,
+      "sha256": "65e09376df69107e881b5c34d2d37aed333a366b6d941073ec518168e269b87d"
+    },
+    {
+      "path": "public/vendor/ort/ThirdPartyNotices.txt",
+      "bytes": 326866,
+      "sha256": "e9e90971a8e75a9a8ac0c6412e29c1202d079998389915aa485f46c816c3b4cc"
+    },
+    {
+      "path": "public/vendor/codemirror/codemirror.css",
+      "bytes": 8720,
+      "sha256": "eb494ea972d2661ef86f7f6ac656dd6786d721e49c9c1b46e1eb967e4b6f9bf3"
+    },
+    {
+      "path": "public/vendor/codemirror/codemirror.js",
+      "bytes": 402009,
+      "sha256": "8e8b5e3cc4be7530a9b6b624bce95ff966cd667283005a103739fe37d3bdd97c"
+    },
+    {
+      "path": "public/vendor/codemirror/LICENSE",
+      "bytes": 1113,
+      "sha256": "168a4becc968f5001e2ee2e0291b6e4daabafc1894a11ade1e11d56e96096e07"
+    },
+    {
+      "path": "public/vendor/codemirror/python.js",
+      "bytes": 14984,
+      "sha256": "19a59ca387addb04e95002c9adbe2b8c231427ce49369ac537107e3088a6947c"
+    },
+    {
+      "path": "public/pose-lab-assets/classroom-person.png",
+      "bytes": 206096,
+      "sha256": "92194898449258ec4d46f9f5d828bd5e6828fae13da86b2182285d37c0524a08"
+    },
+    {
+      "path": "public/pose-lab-assets/yolo26n-pose.onnx",
+      "bytes": 12125856,
+      "sha256": "93fc5e1d6b7690f33b4e1d60d6e9aec1cea14bdbc361bfae11778969be662078"
+    }
+  ]
+}
