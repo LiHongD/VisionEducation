@@ -10,6 +10,7 @@
 - 3D 人体摆姿：拖动关键点、预设动作、查看角度与恢复姿态。
 - Python 姿态识别实验：全班使用统一图片，编辑 Python 并运行官方 YOLO26n-pose 模型，显示 17 个人体关键点、骨架、坐标与置信度。
 - 三组 Python 示例：识别图片、读取关键点、编写动作判断规则；支持停止执行、恢复代码、保存草稿、下载代码与实际运行记录。
+- “量势成规”开头提供完整角度规则实验台：拖拽 COCO 关键点实时调整角度，为多个动作设置且/或条件，上传图片进行真实关键点检测、查看原图坐标并输出匹配动作；支持规则导入导出、撤销、重置及按本机学生身份保存。
 - 教师建班、学生通过班级码加入、提交学习记录、教师点评及课堂展示。真实课堂数据保存在部署环境的 D1 数据库中，不在此仓库内。
 
 ## 本地运行
@@ -71,6 +72,8 @@ result.show(conf=0.50)
 ## 文件与验证
 
 - `public/pose-code-lab.js` / `.css`：编辑器、控制台、预测结果及教学任务。
+- `public/angle-rules-embed.js` / `.css`：将规则实验台放在第四课实验区最前方；原有提膝阈值对照实验继续保留。
+- `tools/angle-studio/`、`scripts/build-angle-studio.mjs`：规则实验台源码与构建；开发、构建命令会生成 `public/angle-studio/index.html`。模型与 WASM 复用现有资源，按需加载，图片不上传。
 - `public/pose-lab-worker.js`、`public/classroom_yolo.py`：Python 执行和真实模型桥接。
 - `public/pose-lab-inference.js`：图像预处理、坐标还原与输出解析。
 - `public/pose-lab-assets/`：固定课堂图片、官方模型和校验清单。

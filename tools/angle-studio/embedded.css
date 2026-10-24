@@ -1,0 +1,13 @@
+body{background:#f8faf6}
+.app-shell{max-width:none;padding:18px}
+.app-header{justify-content:center;padding:0 0 15px;border:0}
+.brand,.header-note,footer{display:none}
+.page-intro{margin:4px 0 16px;align-items:center}
+.page-intro h2{font-size:19px}
+.rule-workspace{grid-template-columns:165px minmax(0,1fr);gap:13px}
+.rule-inner{grid-template-columns:minmax(0,1.3fr) minmax(245px,.85fr)}
+.pose-editor{padding:12px}
+.diagram-caption{flex-wrap:wrap}
+.diagram-tools{margin-left:auto}
+@media(max-width:1000px){.rule-inner{grid-template-columns:1fr}.pose-editor{border-right:0;border-bottom:1px solid var(--line)}.rule-diagram svg{max-height:530px}.conditions-pane .condition-help{margin:12px 0}.conditions-pane>.primary{max-width:none}}
+@media(max-width:650px){.app-shell{padding:12px}.rule-workspace{grid-template-columns:1fr}.action-list{display:flex;overflow:auto}.action-choice{min-width:135px;width:auto}.sidebar-bottom{display:flex;align-items:center;justify-content:space-between}.page-intro{display:block}.page-intro>.actions{margin-top:10px}.rule-action-bar{display:flex;flex-wrap:wrap}.rule-action-bar>.actions{margin-top:0}}
