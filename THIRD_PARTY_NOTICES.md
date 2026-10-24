@@ -1,5 +1,14 @@
 # Third-party components
 
+## Combat Sports classroom subset and MobileNetV2
+
+- Dataset: Evan Quinn, *Combat Sports Dataset*, 2025-05-06, DOI 10.5281/zenodo.15349809, https://zenodo.org/records/15349809. Original archive `CombatSports Dataset - Greyscale 10%.zip`, md5 `34ea747443ed4dbd572e188f8b34178d`.
+- Author declares **Public Domain** in Zenodo and archive `data.yaml` / `README.dataset.txt`. The project retains attribution, selects `cross`, `high-guard`, `kick`, crops annotated action regions and resizes/pads to 224×224. Includes combat-sport scenes; not standardized Chinese-wushu postures.
+- 180 train / 45 validation images with real precomputed features are student-facing; 60 fixed test features are server-only. Source groups, bounding boxes and processed SHA-256 are recorded in `docs/classifier-dataset-provenance.json`.
+- Backbone: ONNX Model Zoo MobileNetV2 `mobilenetv2-12.onnx`, https://github.com/onnx/models/tree/main/validated/vision/classification/mobilenet — Apache-2.0, full license in `public/model-lab-assets/ONNX-Model-Zoo-LICENSE`.
+- Modification: remove final ImageNet classifier, expose global pooled tensor `472` (1280 features), apply fixed signed projection to 256 dimensions and L2 normalization. Derived ONNX SHA-256: `39db0fa09cfc7df03f49e3d52c35e4a83b9a1064b3a7091356c2d1f66d99f525`.
+- Inference reuses ONNX Runtime Web 1.22.0; training and server evaluation are project code. Uploaded JSON models do not execute third-party code.
+
 ## YOLO26n-pose
 
 - Official model: https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26n-pose.onnx

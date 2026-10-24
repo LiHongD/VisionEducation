@@ -1,0 +1,3992 @@
+[
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/Screenshot-2023-07-20-165743_png_jpg.rf.3ca3b7a1dfd2d02a614a811296d2e008.jpg",
+    "group": "image:screenshot-2023-07-20-165743_png_jpg",
+    "box": [
+      0.8104250876715623,
+      0.18984375,
+      0.19281228115388913,
+      0.3625
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "7e1f07e231cf74b5",
+    "sha256": "7e1f07e231cf74b5a68e6ff8a2959be57b903214b1033e3ba1b0794eebe3ad76"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/19_mp4-0214_jpg.rf.26201ffc09912bdd36f03239fdaa4995.jpg",
+    "group": "video:19",
+    "box": [
+      0.740625,
+      0.26484375,
+      0.17265625,
+      0.2140625
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "3103b00ac974b644",
+    "sha256": "3103b00ac974b6442888d907dd940f56fa3eae09337cbbdeac9f9f749e76f124"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/7_mp4-0046_jpg.rf.dd1cc924e560a4a4abb3ac2c3a40c044.jpg",
+    "group": "video:7",
+    "box": [
+      0.92109375,
+      0.325,
+      0.15703125,
+      0.25234375
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "de3263ba8744ec3f",
+    "sha256": "de3263ba8744ec3f3dd7efd7beac71a39dd2c7c68c1bfa5b0b2dfb68022a007f"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/66_mp4-0024_jpg.rf.1ef496ee2086704081c920570ce6c2d1.jpg",
+    "group": "video:66",
+    "box": [
+      0.4241422524323367,
+      0.3984375,
+      0.19154439204448098,
+      0.1421875
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "f9c9b94b306c1a66",
+    "sha256": "f9c9b94b306c1a66000701f8f1691941f80040a6a54961e0b321b3b497e708a7"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/65_mp4-0121_jpg.rf.032d5baddc2b75f9b825a7b472f2f325.jpg",
+    "group": "video:65",
+    "box": [
+      0.328125,
+      0.40546875,
+      0.21796875,
+      0.159375
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "58563b1fdc9a6f3b",
+    "sha256": "58563b1fdc9a6f3b946cbf35acd716d47ff7fcdd006bb34ab2d013da4002c0b1"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/8_mp4-0002_jpg.rf.3ef861b1180627db32c962eeb196beba.jpg",
+    "group": "video:8",
+    "box": [
+      0.5734375,
+      0.3875,
+      0.259375,
+      0.2484375
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "836c7fbc69e5367a",
+    "sha256": "836c7fbc69e5367a1d6b7d5c7818ee450a96b9ccabc7fa11eb20a1cd3548c77e"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/19_mp4-0099_jpg.rf.3b3eb5385df9d10a89eb31d20cc07724.jpg",
+    "group": "video:19",
+    "box": [
+      0.32421875,
+      0.29765625,
+      0.14375,
+      0.340625
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "e6b1cfe9eebeb5cb",
+    "sha256": "e6b1cfe9eebeb5cb152f465f82682253c1dff58af731ee3b31e904fa5df21b73"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/65_mp4-0088_jpg.rf.2e8776cd964e9995fa2be8679f7da3ed.jpg",
+    "group": "video:65",
+    "box": [
+      0.1734375,
+      0.3421875,
+      0.26875,
+      0.1609375
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "60c0b117a5dc0f8b",
+    "sha256": "60c0b117a5dc0f8b7b7238603074126527a803961ef14b2dd5829dcb9ba4b3af"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/23_mp4-0087_jpg.rf.70e8b05d18701e4802bc38a9f42ece64.jpg",
+    "group": "video:23",
+    "box": [
+      0.5634964360809124,
+      0.4300525495168279,
+      0.14965664987836308,
+      0.48068871266133206
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "1c4abec2bb4c83f8",
+    "sha256": "1c4abec2bb4c83f86801f3e813e854efbb76b0c94332bad97bb6a7b5d0300787"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/21_mp4-0034_jpg.rf.19628e626d96f530994b0bc257ee2904.jpg",
+    "group": "video:21",
+    "box": [
+      0.5881114748361966,
+      0.22086231874599632,
+      0.17805463636243815,
+      0.17703630935708983
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "d6e1198b8b6549d1",
+    "sha256": "d6e1198b8b6549d1161b38e5756c07efdf835a390ad68825cfc9b1f2054f399a"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/1_mp4-0145_jpg.rf.0e041aa8e5f15756da2b9028f41a4c48.jpg",
+    "group": "video:1",
+    "box": [
+      0.27064438079329883,
+      0.24459588514791736,
+      0.13350870991548636,
+      0.3006466566549776
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "7312e9d66e5fe3e8",
+    "sha256": "7312e9d66e5fe3e81c4eac3be463442ed68b1510a437c2c2107e00bd00e427fd"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/66_mp4-0113_jpg.rf.397ac4951386f92e58a2ea74a4ddf72a.jpg",
+    "group": "video:66",
+    "box": [
+      0.24765625,
+      0.353125,
+      0.246875,
+      0.17421875
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "6d20400a9ce3d83c",
+    "sha256": "6d20400a9ce3d83c430ffe80919be93e58bc2021541a50885bcbf71c66951bf6"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/frame_600-24-_jpg.rf.30f6db1395d1a1fef0d08b3fa79ea92b.jpg",
+    "group": "video:unidentified-frame-series",
+    "box": [
+      0.6545388644450455,
+      0.4465895720878141,
+      0.21306047645775444,
+      0.48206925469445316
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "52e4ec96ffb1e8ed",
+    "sha256": "52e4ec96ffb1e8ed4b7fe77fbe50afdfa211059c694c7e6fc544675f4a9308cd"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/test/images/65_mp4-0105_jpg.rf.dcf37e0910e1f61a19a1bea8bef45b29.jpg",
+    "group": "video:65",
+    "box": [
+      0.21953125,
+      0.35546875,
+      0.23359375,
+      0.196875
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "c1c9cf0bc80cf546",
+    "sha256": "c1c9cf0bc80cf5463a11562ec1a98b16bd2ca48d2a8ea8507a7a45a54fea2126"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/8_mp4-0055_jpg.rf.7b15b9e0b34e14e695b22a9a97364bef.jpg",
+    "group": "video:8",
+    "box": [
+      0.76484375,
+      0.35,
+      0.27890625,
+      0.25390625
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "7e07f053774a9e98",
+    "sha256": "7e07f053774a9e980d12521dee6a1abc3f91b9c2de1face12f18a99dc49b767a"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/3_mp4-0004_jpg.rf.22675c1b94ba0ecb7d818e766f413f8d.jpg",
+    "group": "video:3",
+    "box": [
+      0.73256486262732,
+      0.2984071580999045,
+      0.3127749093729982,
+      0.29578740404199805
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "0ba3cb40ab36bead",
+    "sha256": "0ba3cb40ab36bead686b0bd368d2dcb4c5a481890a1b05ebdf7ae205eee784a1"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/20_mp4-0003_jpg.rf.0d557a5756d811a2538738daad212ebb.jpg",
+    "group": "video:20",
+    "box": [
+      0.4572183136389586,
+      0.2713171852721392,
+      0.18053048670097258,
+      0.37387494668999893
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "4817acdae1e401a0",
+    "sha256": "4817acdae1e401a0b210b810acc2c71192d419015b6dd6368a49a430701fad5a"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/19_mp4-0171_jpg.rf.053c58d98ac14ee8333ffa92a60c1bb6.jpg",
+    "group": "video:19",
+    "box": [
+      0.30404367616818134,
+      0.286988733290911,
+      0.15590563684308467,
+      0.3657533640197263
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "2ef4c3973e5b2d74",
+    "sha256": "2ef4c3973e5b2d74c7a6fdeef84af1bb5744b5531fb16e25beff6b542a8d82c3"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/1_mp4-0119_jpg.rf.58a0f507d38ead6fb93bac8108adafc2.jpg",
+    "group": "video:1",
+    "box": [
+      0.31550401339434214,
+      0.2745379543294809,
+      0.1314104390337981,
+      0.2210397287263694
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "5d6ae025dbdebabf",
+    "sha256": "5d6ae025dbdebabf71fff1ff6bada4f532cb581a6c40df138547241908d81af0"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/66_mp4-0050_jpg.rf.1afc8d94c0382a6495e9b9665aef95fc.jpg",
+    "group": "video:66",
+    "box": [
+      0.1939822305215347,
+      0.3011590207826512,
+      0.26911601298564347,
+      0.2015453610435351
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "db53242be9f000bb",
+    "sha256": "db53242be9f000bbdb018f2da261a520bf4035e56f3da5c8258548128c7105a4"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/23_mp4-0013_jpg.rf.322bf72718f2dfa8c1889a6e34d8da58.jpg",
+    "group": "video:23",
+    "box": [
+      0.37139176994854123,
+      0.5533398919478205,
+      0.1401951210096531,
+      0.3187329133513629
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "a34e6059c42b70c0",
+    "sha256": "a34e6059c42b70c00d7af9ed4be90fbac943b2d4f92227b60dabe4d69ba42487"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/65_mp4-0084_jpg.rf.441c70667f37ae39264aa780fffd6797.jpg",
+    "group": "video:65",
+    "box": [
+      0.190625,
+      0.32096812269254427,
+      0.2375,
+      0.18557606269890758
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "9d4217871442cdaf",
+    "sha256": "9d4217871442cdaf0fdc75a7b9a5e43d2b514f7710173a95a4d6f3fcdc33f8da"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/24_mp4-0097_jpg.rf.565578fe5d6638b61b00d264fdc5ad3b.jpg",
+    "group": "video:24",
+    "box": [
+      0.5524351744716433,
+      0.156418010741542,
+      0.1373737767345796,
+      0.24845677601845367
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "cd4658e7288c1101",
+    "sha256": "cd4658e7288c1101325c7dcf79fefe9d31f87055632e45ba95be2a44809bddbf"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/65_mp4-0090_jpg.rf.327cb39856efaf9000ee9f2ca9d292a5.jpg",
+    "group": "video:65",
+    "box": [
+      0.31280436850882587,
+      0.33877056674775796,
+      0.18079780681713337,
+      0.15416130093507646
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "fba1a9acbffa8736",
+    "sha256": "fba1a9acbffa87360206f10d62cfb7f40485178c288c41f563c3499386d11632"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/19_mp4-0161_jpg.rf.37465e024f805ec7a9e371341aa2943f.jpg",
+    "group": "video:19",
+    "box": [
+      0.3580248266536456,
+      0.2972140913828613,
+      0.20280683662472257,
+      0.4584863040260897
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "1783f36b56e94502",
+    "sha256": "1783f36b56e94502f56fcb19a281dc72c7e8988547b90cc23be05af87a727c02"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/65_mp4-0101_jpg.rf.26033f46e01f65b43aa7d14f7f3572cd.jpg",
+    "group": "video:65",
+    "box": [
+      0.0898652950493058,
+      0.31040571399384237,
+      0.1797305900986116,
+      0.26981357201231526
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "648567ab6ea4a670",
+    "sha256": "648567ab6ea4a670593b72d356c1e980e20855d323cd332db858c32314d8a3f4"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/test/images/frame_1082_jpg.rf.29e89d85ea2f6dcd25ec1b721f82e479.jpg",
+    "group": "video:unidentified-frame-series",
+    "box": [
+      0.196875,
+      0.290625,
+      0.18515625,
+      0.58046875
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "313dca35ab269211",
+    "sha256": "313dca35ab2692112e594cd2354e6aaa9092272eca615049e5e821100c560123"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/3_mp4-0007_jpg.rf.f93c22fc50f030012da91200866cee0c.jpg",
+    "group": "video:3",
+    "box": [
+      0.70234375,
+      0.27578125,
+      0.24453125,
+      0.27578125
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "bf6cbbebbc9db964",
+    "sha256": "bf6cbbebbc9db964486ba567557046ec0e22a3595d5a7c1507c349a1563e31e0"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/66_mp4-0061_jpg.rf.309ec296970a510a2a71826cae9b3657.jpg",
+    "group": "video:66",
+    "box": [
+      0.35625,
+      0.33203125,
+      0.2265625,
+      0.1625
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "10c975d957e8dd58",
+    "sha256": "10c975d957e8dd581be18234b86f2514ad8cb76ae9832bf81aba24411893f6dd"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/5_mp4-0014_jpg.rf.999b47aa6dc0d5414a2e5f5a682f29f6.jpg",
+    "group": "video:5",
+    "box": [
+      0.5455357346782977,
+      0.18216107832419348,
+      0.14700330678880888,
+      0.29316143912238163
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "989d1852d4aafa06",
+    "sha256": "989d1852d4aafa067e284d54ebbdaa8579fdd3f9ddd23260ff9e377e1a2a7dc3"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/65_mp4-0100_jpg.rf.80183f3ada880aa5e9848e3230749406.jpg",
+    "group": "video:65",
+    "box": [
+      0.4934830866088663,
+      0.4199814045990031,
+      0.2500010946849082,
+      0.13726583203372567
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "6ac89bc1ec276eb9",
+    "sha256": "6ac89bc1ec276eb93d9e352ec4c66d821bffae7bd1c7d868bbbc9c08533aee8a"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/21_mp4-0026_jpg.rf.a18a43e167bc4e3ae3ed92e6ecbb878a.jpg",
+    "group": "video:21",
+    "box": [
+      0.77890625,
+      0.209375,
+      0.159375,
+      0.22265625
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "da7a4011a755ec9c",
+    "sha256": "da7a4011a755ec9c93b104db4ec6b800709da583dd57933ef0040a0e513bc887"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/23_mp4-0050_jpg.rf.0e4c2dbad400256017a390f3692969aa.jpg",
+    "group": "video:23",
+    "box": [
+      0.32065727349846296,
+      0.23541182181592352,
+      0.1974901359270002,
+      0.4213760720123153
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "198eadefd63c72f6",
+    "sha256": "198eadefd63c72f64c6001ef13f8e7c268c79e5539b256bdc17cf69f897c737e"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/1_mp4-0045_jpg.rf.4bb64f5003bbef765314f6d47f349c42.jpg",
+    "group": "video:1",
+    "box": [
+      0.22804318756361353,
+      0.24758193222252278,
+      0.17966274046617112,
+      0.31544554220663673
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "bcc3da3de6ec720d",
+    "sha256": "bcc3da3de6ec720dff9bcc0099f4e1170a13ade061c3caea8c8c80b432e00f03"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/19_mp4-0083_jpg.rf.27197cb575f5738267a2c6f554c41639.jpg",
+    "group": "video:19",
+    "box": [
+      0.38101462621946364,
+      0.2775404606142752,
+      0.18006496996493268,
+      0.38170562802354435
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "f7499db54d14b1dc",
+    "sha256": "f7499db54d14b1dc15a6db5e0c4d5d92356c63a06a83e8e1899a1c8008f54263"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/test/images/65_mp4-0141_jpg.rf.84018b4bdc767c5d12706b2d03608d25.jpg",
+    "group": "video:65",
+    "box": [
+      0.1234375,
+      0.3390625,
+      0.2390625,
+      0.19140625
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "b5a992f78f1773c0",
+    "sha256": "b5a992f78f1773c0630210b153af48cbc83a0c8f3c9e9fe8ccaeae2d8d5e7612"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/5_mp4-0041_jpg.rf.7cf12fc937ca432c935f195f10512748.jpg",
+    "group": "video:5",
+    "box": [
+      0.49375,
+      0.2265625,
+      0.1328125,
+      0.34375
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "369a8ee5b09d931b",
+    "sha256": "369a8ee5b09d931b59e5512608fba6b40de8dcd95747b0c18949e9cbd524ce5b"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/6_mp4-0010_jpg.rf.4c976dc787839158c2eb44e70a56968d.jpg",
+    "group": "video:6",
+    "box": [
+      0.9008842015702104,
+      0.46303491129124036,
+      0.1982315968595792,
+      0.47306583703943
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "cc30fdbde153f4a9",
+    "sha256": "cc30fdbde153f4a9e588de3e32c2aec2c9206eeac889a2ebf8c9cdfa09870c62"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/3_mp4-0010_jpg.rf.07062c6bd01e891304b2297c8525d7f2.jpg",
+    "group": "video:3",
+    "box": [
+      0.6625773076550349,
+      0.23828125,
+      0.27867573955076425,
+      0.2921875
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "652ae69b8a9f6ebd",
+    "sha256": "652ae69b8a9f6ebd5cf7a368dec7e5d681fc485bb551466204a383bd2a8beff7"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/70_mp4-0019_jpg.rf.3829a4623e188d6d6225b26c04ff47b0.jpg",
+    "group": "video:70",
+    "box": [
+      0.2625,
+      0.30546875,
+      0.171875,
+      0.2828125
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "6800f4bedf1ebcbb",
+    "sha256": "6800f4bedf1ebcbb5102d9f601db474fa34d28e6b96596d8cb33808fa8cf6c39"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/19_mp4-0108_jpg.rf.4672ea5a55295f278935c7a01a008f5d.jpg",
+    "group": "video:19",
+    "box": [
+      0.29117878449929424,
+      0.3676302059595927,
+      0.21517635551659176,
+      0.4242931173615442
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "a73b9254d42512bc",
+    "sha256": "a73b9254d42512bc3bd9543e2b7d5d250ab23fa2071db4ade297af5e3877a20b"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/21_mp4-0024_jpg.rf.52188bf476f111131831385b1e252ad8.jpg",
+    "group": "video:21",
+    "box": [
+      0.6623834049946579,
+      0.2124782014242231,
+      0.2182490361123346,
+      0.21182948002863497
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "f06d892b66826c92",
+    "sha256": "f06d892b66826c92079a8fa08155064b30a8ef4c56a6718606f57c17a881fc23"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/24_mp4-0102_jpg.rf.5c2c1b0087010ec857005af3b78cfe1f.jpg",
+    "group": "video:24",
+    "box": [
+      0.484375,
+      0.503125,
+      0.1453125,
+      0.28125
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "8f72d7fb98ccde96",
+    "sha256": "8f72d7fb98ccde964e33c5df381e280554a676365672a9b6a598cf77071519e4"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/66_mp4-0103_jpg.rf.6ad0d2b35376059c8fc12996831e4be9.jpg",
+    "group": "video:66",
+    "box": [
+      0.309375,
+      0.2758498392878327,
+      0.175,
+      0.18430463636243816
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "a2cb0a4e76eaae87",
+    "sha256": "a2cb0a4e76eaae87aaff4f629db4cb49b3f9602c8a9d219e275a3d7a8f4c51f7"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/1_mp4-0041_jpg.rf.bcd43d81b95a7b2d59166a9bca7c3b89.jpg",
+    "group": "video:1",
+    "box": [
+      0.41015625,
+      0.41015625,
+      0.1671875,
+      0.415625
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "9b3dae9244f00737",
+    "sha256": "9b3dae9244f00737418042f8709ed14a07a3a568b34ad00756ec32bbd8c6133a"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/19_mp4-0116_jpg.rf.1133010057a5447d5cd9a707e8386c98.jpg",
+    "group": "video:19",
+    "box": [
+      0.44765625,
+      0.3440097979392301,
+      0.1734375,
+      0.4192056280235444
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "678392c8add229e7",
+    "sha256": "678392c8add229e76aefeb36672b0e25f9dd9a01c7e101babdadb379636655df"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/3_mp4-0005_jpg.rf.23fa4bcae0511edc7e48ef30a9c22a5e.jpg",
+    "group": "video:3",
+    "box": [
+      0.7349278956185733,
+      0.28327298302797776,
+      0.2927403956185735,
+      0.28915444535249046
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "77b736f92a66dc27",
+    "sha256": "77b736f92a66dc27c36053f02a5367aef0ba89e2b59c8f2ec73ec9172e017791"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/66_mp4-0018_jpg.rf.a43204b299b4991666243a0dbe643f44.jpg",
+    "group": "video:66",
+    "box": [
+      0.37109375,
+      0.39453125,
+      0.2140625,
+      0.19375
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "a9758f2ac9f23404",
+    "sha256": "a9758f2ac9f23404386ad55461b17cf699218b87dd6fba1a597f64e518eaae25"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/41_jpg.rf.3e69f55d8d6facfc4d3782630005b76f.jpg",
+    "group": "image:41_jpg",
+    "box": [
+      0.13360065129695622,
+      0.2655823153418453,
+      0.15330900270527098,
+      0.2869932597392326
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "b5d82d460f55f97a",
+    "sha256": "b5d82d460f55f97a12bce5006b4f19ff864237941d01a678efdf81086af50834"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/6_mp4-0002_jpg.rf.15d020ea1faf986dcfd55c4a9819dd73.jpg",
+    "group": "video:6",
+    "box": [
+      0.23119955806320808,
+      0.3549950117678275,
+      0.16684313684308466,
+      0.36678985389503393
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "bfeb0aa36f24ed4a",
+    "sha256": "bfeb0aa36f24ed4a5bffa2d666c34a2e1a244a646793baf54aaeb7182cf2a2d6"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/23_mp4-0037_jpg.rf.5886719b8cfdedb36247b6f59a8ad56a.jpg",
+    "group": "video:23",
+    "box": [
+      0.6152834271460765,
+      0.18316441959986945,
+      0.134272429330278,
+      0.33198631908544907
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "4ccf69646daacc42",
+    "sha256": "4ccf69646daacc42035de231244ee23ca6d0667e0830bf44211ba29459a866eb"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/test/images/66_mp4-0020_jpg.rf.d201d77d37b1e9a7edb80b9061499e5b.jpg",
+    "group": "video:66",
+    "box": [
+      0.3984375,
+      0.38515625,
+      0.19765625,
+      0.19921875
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "8833f6df45ecc00f",
+    "sha256": "8833f6df45ecc00f9d31be5f861ce8c08454a495ff87d34ebb1b5c65127b7e4b"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/19_mp4-0118_jpg.rf.ae28e3b961d118dc4c7fb28b1048f68a.jpg",
+    "group": "video:19",
+    "box": [
+      0.6275682799570473,
+      0.3274247597359373,
+      0.1556533000477252,
+      0.3542080332781829
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "eba9b8aad149d3e3",
+    "sha256": "eba9b8aad149d3e3751591ec922ac45cb219c0fcd9fadf4a0b8cca9061bcb480"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/17_mp4-0057_jpg.rf.33eb7c80262058c7eb419b1b2362e94f.jpg",
+    "group": "video:17",
+    "box": [
+      0.7421875,
+      0.46171875,
+      0.22265625,
+      0.18359375
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "70c3fb0f2972ee49",
+    "sha256": "70c3fb0f2972ee4933d979f54b97f456c4d25a5a5e03dc15d856576b58526b39"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/5_mp4-0008_jpg.rf.190ebaeca3aff029caeaaf9a5da3aa00.jpg",
+    "group": "video:5",
+    "box": [
+      0.4866197978118184,
+      0.24309406615591947,
+      0.16916010792027708,
+      0.34198076866768634
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "9e81b16e848d2426",
+    "sha256": "9e81b16e848d242629e7200b5cba045af786462599eacc4b60266d9135f15a7e"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/20220813010230_C07_9175_jpeg_jpg.rf.14cc9a65e85aeef4621bd8b420253810.jpg",
+    "group": "photo-session:20220813",
+    "box": [
+      0.76875,
+      0.2578125,
+      0.18515625,
+      0.2296875
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "d4f6650c91a91119",
+    "sha256": "d4f6650c91a91119e2581f640442d018e58fd7acb5427629d10983d8cb94523e"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/8_mp4-0020_jpg.rf.7410d07f4b711d0556ef887084317058.jpg",
+    "group": "video:8",
+    "box": [
+      0.7166697082004004,
+      0.3387644589256768,
+      0.2530740016215578,
+      0.2670703670936592
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "0afb0d6054106506",
+    "sha256": "0afb0d605410650668a9d0c482c02ef259522f0c7f42844d5abf87ec91d946e8"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/3_mp4-0008_jpg.rf.9636f653966e2f7b83362be060d344a3.jpg",
+    "group": "video:3",
+    "box": [
+      0.6150749136596179,
+      0.25859375,
+      0.27725870991548635,
+      0.2984375
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "5b93769cacc1b84e",
+    "sha256": "5b93769cacc1b84e5f07ee633c5d33aa7b13ea2995910f10ae3e55e4c9e3549c"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/20_mp4-0114_jpg.rf.cf7c796dd71462b9f380c52ea367a1aa.jpg",
+    "group": "video:20",
+    "box": [
+      0.425,
+      0.53203125,
+      0.14453125,
+      0.328125
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "2d457ef253290e2d",
+    "sha256": "2d457ef253290e2dc46502dbac76d2fe71fccaa0467bea1a3c62687bcd7ec0ef"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/Amir-Khan-Dae-Sung-Park-ONE-Collision-Course-1920X1280-27_jpg.rf.20b8a99631bc03dd8c869cab7a75d6c8.jpg",
+    "group": "image:amir-khan-dae-sung-park-one-collision-course-1920x1280-27_jpg",
+    "box": [
+      0.846919149446004,
+      0.21328125,
+      0.18993364436493215,
+      0.2984375
+    ],
+    "label": 1,
+    "split": "train",
+    "id": "d5fde8941683b68b",
+    "sha256": "d5fde8941683b68b0e6c45e951144c4d959d1ae2e8f066e010b1e412bc1abc6f"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/19_mp4-0214_jpg.rf.26201ffc09912bdd36f03239fdaa4995.jpg",
+    "group": "video:19",
+    "box": [
+      0.38671875,
+      0.4140625,
+      0.315625,
+      0.22734375
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "164f275f175b9116",
+    "sha256": "164f275f175b91166dcef7d761529fe765caddcabc13f0303030ab2939032913"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/93_png_jpg.rf.366a256127e7cf4349c1ad42532182f6.jpg",
+    "group": "image:93_png_jpg",
+    "box": [
+      0.728125,
+      0.4203125,
+      0.1796875,
+      0.1765625
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "d7d28505a8b2f208",
+    "sha256": "d7d28505a8b2f2080b0fa70246158459e7c48dc5a3375c43a51b386ceabdecee"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/17_mp4-0013_jpg.rf.59bdd3de4beab31c6367499eac50580b.jpg",
+    "group": "video:17",
+    "box": [
+      0.57734375,
+      0.3435161123200813,
+      0.340625,
+      0.1363566982793567
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "1ad7cf5fa20ebe50",
+    "sha256": "1ad7cf5fa20ebe50273fead2e16d73aee3aa098d55b572c5fb8e3850b299c4b3"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/21_mp4-0097_jpg.rf.2b79b5a5e0fa611d53ad0ff7c7688c55.jpg",
+    "group": "video:21",
+    "box": [
+      0.51953125,
+      0.28984375,
+      0.19296875,
+      0.18125
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "ddb24275f197f6bc",
+    "sha256": "ddb24275f197f6bcec9d8a40ba5edbd170fa66ab252115a4e44623af2abcb311"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/20_mp4-0015_jpg.rf.5b61d0c3e9012e503bda9f6f876fa4c7.jpg",
+    "group": "video:20",
+    "box": [
+      0.7093716176427549,
+      0.3717178594914109,
+      0.1473249440483631,
+      0.17738972267624523
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "08d551005cdd500e",
+    "sha256": "08d551005cdd500ef550f8055a56683e3936c420587acd51aeca4a95e915f13c"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/23_mp4-0044_jpg.rf.8a03214f5992c567ff489058091783d2.jpg",
+    "group": "video:23",
+    "box": [
+      0.6078125,
+      0.29609375,
+      0.28359375,
+      0.190625
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "38d962f31d86b72d",
+    "sha256": "38d962f31d86b72dd9bbd652ba3d448e6b69c8db60496b03c86a27a333a4811e"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/8_mp4-0023_jpg.rf.4698179a96e48a577dc8f461128360d9.jpg",
+    "group": "video:8",
+    "box": [
+      0.58359375,
+      0.46769850088376275,
+      0.4640625,
+      0.1808248366466465
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "bf51960cb7bd2e1d",
+    "sha256": "bf51960cb7bd2e1d1c8dd4e40716e084695adbf8903ad08ca0be1639829726b6"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/23_mp4-0094_jpg.rf.cd499cba9317e6fa1c95ffc0212d3a9e.jpg",
+    "group": "video:23",
+    "box": [
+      0.40105043669004486,
+      0.25548394818116077,
+      0.34055463636243816,
+      0.17696351756119738
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "ad70fa7dffc9a79c",
+    "sha256": "ad70fa7dffc9a79c9b718f744509e31789a179a749dff289a6d201a4aada64b6"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/19_mp4-0037_jpg.rf.135a19acbb2e0a5984299aaadc2aca94.jpg",
+    "group": "video:19",
+    "box": [
+      0.5065816427434511,
+      0.565625,
+      0.15527039735836254,
+      0.184375
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "2e7389eb4ad538ed",
+    "sha256": "2e7389eb4ad538ed7922a2e2d811055ce3ecd19048fda2dd41c520be14ce69b7"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/65_mp4-0110_jpg.rf.0ee03254277aa434bd46aba57392c731.jpg",
+    "group": "video:65",
+    "box": [
+      0.35557627166641403,
+      0.3822933077707676,
+      0.3586851744716433,
+      0.15208169222923243
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "1c15660f8002d2db",
+    "sha256": "1c15660f8002d2dbc2331299ac036c91c3f249112db0f58223dd009a007c3199"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/24_mp4-0126_jpg.rf.462dda0f81f77e6412160ab785594a1b.jpg",
+    "group": "video:24",
+    "box": [
+      0.33359375,
+      0.34765625,
+      0.146875,
+      0.1578125
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "884cd558d762feca",
+    "sha256": "884cd558d762feca38346250ce09df9b452ac76792d21e842f0322266744f243"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/24_mp4-0125_jpg.rf.a355c3dbdb16d57d29208e55ba538547.jpg",
+    "group": "video:24",
+    "box": [
+      0.3400558043815013,
+      0.23789192720211783,
+      0.15472623051823947,
+      0.18213176483072288
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "3aac1c915c76ebd6",
+    "sha256": "3aac1c915c76ebd63be93c8e29d2d4194743628f525f805c12f36250e64d46f4"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/8_mp4-0044_jpg.rf.30ba02d735036a559e7db4ae5e84c571.jpg",
+    "group": "video:8",
+    "box": [
+      0.47578125,
+      0.4522762839354121,
+      0.4578125,
+      0.15532713072881527
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "81063fa1b9e7a6e3",
+    "sha256": "81063fa1b9e7a6e3f7a4a4e20ed05fc893513453de3d2843d6ec311015ea64b6"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/23_mp4-0075_jpg.rf.3bc33aca09e178003cf96ba72ab7633f.jpg",
+    "group": "video:23",
+    "box": [
+      0.28809920697599384,
+      0.6609375,
+      0.4358706850618965,
+      0.44375
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "aabbbadf1214dc86",
+    "sha256": "aabbbadf1214dc86375b473d60c52523e932893fabc3d0a5ccea5ee37f57dc5b"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/21_mp4-0079_jpg.rf.9d9b4119fd41f0c4dd32cb6bf6f2cd98.jpg",
+    "group": "video:21",
+    "box": [
+      0.63671875,
+      0.5296875,
+      0.14765625,
+      0.30546875
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "2babdb787e594e99",
+    "sha256": "2babdb787e594e995f3673e1c8f6c39d2e62668f29be5f8cf8e600bff98374e4"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/24_mp4-0205_jpg.rf.c3c567511f47bac7181bfada6bbf180b.jpg",
+    "group": "video:24",
+    "box": [
+      0.401410047419035,
+      0.5178922524323367,
+      0.2639544574527388,
+      0.25458195454365706
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "447610ec618523bb",
+    "sha256": "447610ec618523bb1346710b300f7dc38eda5572c96083240cf7a3f6ff98f6af"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/19_mp4-0172_jpg.rf.1f26293c29ae509b3650aef0edd0c822.jpg",
+    "group": "video:19",
+    "box": [
+      0.606928679330278,
+      0.3207905978125446,
+      0.15897887575930572,
+      0.18707508035608367
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "aa350eaeef35ce7f",
+    "sha256": "aa350eaeef35ce7fbbbdadebbd7e2efb874e7077a1181f793f71385261012467"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/65_mp4-0034_jpg.rf.3b1630e6adcf4e950d9175d4f6f8fa61.jpg",
+    "group": "video:65",
+    "box": [
+      0.553125,
+      0.434375,
+      0.18203125,
+      0.13125
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "695828ecfa1aef17",
+    "sha256": "695828ecfa1aef178e12ac73689779d6278bc1a656e341d0d0e24f058de6d6a0"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/21_mp4-0001_jpg.rf.25243e3af15df372933368ce03c1d325.jpg",
+    "group": "video:21",
+    "box": [
+      0.64765625,
+      0.440625,
+      0.22109375,
+      0.1671875
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "4087c3d36c640607",
+    "sha256": "4087c3d36c640607a14c854b766937d2495b51b79ab50b3de3ef58454dfd6e03"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/8_mp4-0024_jpg.rf.04fae21bae025b7ce22fb4f618aef4e2.jpg",
+    "group": "video:8",
+    "box": [
+      0.6837016794003796,
+      0.46405601404515606,
+      0.48004651583511765,
+      0.17620096916020386
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "6ddb7abfb360dce4",
+    "sha256": "6ddb7abfb360dce4dcb6926668a1495fddbd486f19db5684bf49bba55bc87285"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/19_mp4-0159_jpg.rf.3e95d5ad55e68fcb4e3c24220608b307.jpg",
+    "group": "video:19",
+    "box": [
+      0.53739806527482,
+      0.6601151754057695,
+      0.22151242739850954,
+      0.20881356802990786
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "491e5540287f1de2",
+    "sha256": "491e5540287f1de2fcf529ec914d27ba518f3a784a6b6f3da353e1ef85eaf26c"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/frame_640_jpg.rf.81e4f1d3ac7efd95b7297235878b0c16.jpg",
+    "group": "video:unidentified-frame-series",
+    "box": [
+      0.39765625,
+      0.521875,
+      0.3015625,
+      0.38125
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "1d59253852a9e8bd",
+    "sha256": "1d59253852a9e8bd872415ba659f8768b9e7c71147da5e83828bc791a759e1ef"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/test/images/frame_1082_jpg.rf.29e89d85ea2f6dcd25ec1b721f82e479.jpg",
+    "group": "video:unidentified-frame-series",
+    "box": [
+      0.4859375,
+      0.4,
+      0.58125,
+      0.409375
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "35305b26f0f6a239",
+    "sha256": "35305b26f0f6a239b66fa1aa512c36a089c35d8b61e97c8d9426a169c7605c6f"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/frame_1034_jpg.rf.13a03358fa02d305cdd6ddf47fd39c79.jpg",
+    "group": "video:unidentified-frame-series",
+    "box": [
+      0.5933202914671066,
+      0.46328125,
+      0.665826029661446,
+      0.303125
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "680c42ae5e79dd44",
+    "sha256": "680c42ae5e79dd4493b98555f1a7a8691a798ac932550ad19fbc6e9da7e18f61"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/21_mp4-0036_jpg.rf.8d3b29f98534e72944208638905cdbcd.jpg",
+    "group": "video:21",
+    "box": [
+      0.6890625,
+      0.42421875,
+      0.21484375,
+      0.2015625
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "e443a406e1b1ae19",
+    "sha256": "e443a406e1b1ae195c6fbab56cf2b4557a92cc19874b9c73126c38adafeec4ba"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/19_mp4-0173_jpg.rf.60c52a511a01010b780607333a239b68.jpg",
+    "group": "video:19",
+    "box": [
+      0.615625,
+      0.4323558985226306,
+      0.1984375,
+      0.2339669756031114
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "07ff8c358cbe164a",
+    "sha256": "07ff8c358cbe164a53d577efe187f09173685780e9f740de3f41d4da4b039208"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/5_mp4-0081_jpg.rf.045cb1558a3e505033f9d13dfe3abf57.jpg",
+    "group": "video:5",
+    "box": [
+      0.5140228714990299,
+      0.3957444732654577,
+      0.23623514427970277,
+      0.19017265603118041
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "efb9cd3c8f770679",
+    "sha256": "efb9cd3c8f7706792b11710f12688c169f73e6f6381bf2c5d1627cc5b0e655a7"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/test/images/17_mp4-0034_jpg.rf.88e5e474a5b5f5209553fe1167cff467.jpg",
+    "group": "video:17",
+    "box": [
+      0.68671875,
+      0.42421875,
+      0.1671875,
+      0.13984375
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "6c70aa828fa1d337",
+    "sha256": "6c70aa828fa1d337e32e89bbeefbb9c82661498f90af89c8482d1ef951bb4ee1"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/66_mp4-0097_jpg.rf.767c857fe77eed3115d7f095700ae450.jpg",
+    "group": "video:66",
+    "box": [
+      0.45789686787083284,
+      0.30782476786020274,
+      0.41999009618646854,
+      0.13225476136079042
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "5ad3125ef3cd2d62",
+    "sha256": "5ad3125ef3cd2d6216649789abd681445c0466c9bf408c32f11f164628a0a468"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/21_mp4-0042_jpg.rf.4cd0055571bc44ede6182a01d3844888.jpg",
+    "group": "video:21",
+    "box": [
+      0.5482211689755383,
+      0.4046809606294418,
+      0.13497805674305993,
+      0.1304159772718286
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "49a212a63940122b",
+    "sha256": "49a212a63940122bdbd670827be586150beff7a1a42ac07f3c7ec2ce880bfea6"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/65_mp4-0096_jpg.rf.00770379e995122711bcd00811c6a065.jpg",
+    "group": "video:65",
+    "box": [
+      0.6301019261334428,
+      0.4301850080932277,
+      0.35695120373287814,
+      0.1317510115110732
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "cba44b99cfd197aa",
+    "sha256": "cba44b99cfd197aa76c06d4d784e7e8710e05ca9b12cfb41c827e685995b39ab"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/frame_1023_jpg.rf.738203215990322ee844b0294cef1a40.jpg",
+    "group": "video:unidentified-frame-series",
+    "box": [
+      0.6234375,
+      0.10546875,
+      0.55,
+      0.2109375
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "2a47cbe881a0d721",
+    "sha256": "2a47cbe881a0d72127585a72ab31a03d77f4c5aea5d5ba12451a44e282026331"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/66_mp4-0063_jpg.rf.a15285677c78629e951807f418dfb33b.jpg",
+    "group": "video:66",
+    "box": [
+      0.61171875,
+      0.33984375,
+      0.3265625,
+      0.15546875
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "c36a316b6e64d11c",
+    "sha256": "c36a316b6e64d11c9b9b0b7850b9a87f14fe341ce14a9de739c160b51d562d53"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/8_mp4-0006_jpg.rf.70b26d6d0aa715c2d00c20ce3744f2fd.jpg",
+    "group": "video:8",
+    "box": [
+      0.5900439419617555,
+      0.37971791679795197,
+      0.533813712661332,
+      0.1561480032431156
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "5866d86a22a5d4c5",
+    "sha256": "5866d86a22a5d4c5f96f104c619c06fc85d3937bb74a6feca2f6a08e74935301"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/24_mp4-0068_jpg.rf.1b7df375bfc2a5b2998a295b1c1021d5.jpg",
+    "group": "video:24",
+    "box": [
+      0.37109375,
+      0.3921875,
+      0.1734375,
+      0.28125
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "88e29ee6334aa23b",
+    "sha256": "88e29ee6334aa23bccea17b11500923eb636b93e395de22398a5be5dec91317a"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/22_jpg.rf.5903733fd73abbd1e3e00719866856c6.jpg",
+    "group": "image:22_jpg",
+    "box": [
+      0.4765625,
+      0.21980657062014633,
+      0.25625,
+      0.3404103603878557
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "316545a9fbead591",
+    "sha256": "316545a9fbead59182c03866e2c87a72cbb8d71da723c0c51eafd2776d709119"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/23_mp4-0070_jpg.rf.78f8bde441a9e35e56ebea0c83752c93.jpg",
+    "group": "video:23",
+    "box": [
+      0.6484375,
+      0.571875,
+      0.24609375,
+      0.1625
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "3baf8a3e2504151d",
+    "sha256": "3baf8a3e2504151d878137c8bd6cf7a790ff502b0b846e04eff21a8952771aaa"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/punch-40_jpg.rf.3f2e5ee714006b7a658a7524779bc8c1.jpg",
+    "group": "image:punch-40_jpg",
+    "box": [
+      0.5107118088490235,
+      0.23372347668326596,
+      0.4604694902574721,
+      0.33389529449216876
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "9b129335bd67def2",
+    "sha256": "9b129335bd67def20a87693739d84d229197af77d5f976084f17290bbb3aba05"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/17_mp4-0010_jpg.rf.845f3b65d06165f4a0e91438fdead553.jpg",
+    "group": "video:17",
+    "box": [
+      0.47578125,
+      0.3984375,
+      0.21796875,
+      0.134375
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "4af9d1b68d7519f3",
+    "sha256": "4af9d1b68d7519f3a73d07485241cb75d81d4e7455938c006759b3907c9c108b"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/hi-res-ed087fac6dc463c3ae443d7a3a372b7c_crop_north_jpg.rf.492fae647714630b8ec65bde8d634796.jpg",
+    "group": "image:hi-res-ed087fac6dc463c3ae443d7a3a372b7c_crop_north_jpg",
+    "box": [
+      0.40324019213103657,
+      0.42032457289607805,
+      0.681406619627742,
+      0.568007715840554
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "2b9e654ba5db32bd",
+    "sha256": "2b9e654ba5db32bd25930394d44a14c913a3dfe383f640ebcd7233a32db7c6fc"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/66_mp4-0075_jpg.rf.0f9cb47ddb285eee72efaff87bd22a9a.jpg",
+    "group": "video:66",
+    "box": [
+      0.5665270044653121,
+      0.33046875,
+      0.32940047853284754,
+      0.1890625
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "503aa998837d64e7",
+    "sha256": "503aa998837d64e702d9bf7e02df333329ae929ae7e6250674c830c84167c06e"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/19_mp4-0211_jpg.rf.db9e74b5fe67a6b1cf3f8df553e1b1f6.jpg",
+    "group": "video:19",
+    "box": [
+      0.42421875,
+      0.24140625,
+      0.1671875,
+      0.1828125
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "0a5cfc420aa5d7c8",
+    "sha256": "0a5cfc420aa5d7c86a988a08a1001b01687dc37a11bece518684c4a5719c3ac3"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/23_mp4-0069_jpg.rf.0c65931bb94f9b780152abb76e75bfa8.jpg",
+    "group": "video:23",
+    "box": [
+      0.5124230666127377,
+      0.36626517807126946,
+      0.171681570958725,
+      0.1753647213558171
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "077435162d40bc85",
+    "sha256": "077435162d40bc851dfdbe3fbae4e624c5b36e58560416d2be3da5af45155c61"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/65_mp4-0094_jpg.rf.2d7202f2b2a8d16762e325b9c3fcf737.jpg",
+    "group": "video:65",
+    "box": [
+      0.453125,
+      0.413866336728179,
+      0.2234375,
+      0.1385374306969986
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "d41d3748e5694c2e",
+    "sha256": "d41d3748e5694c2e57a3971499de8328f95151919357d27e76fd4c30816e066f"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/21_mp4-0024_jpg.rf.52188bf476f111131831385b1e252ad8.jpg",
+    "group": "video:21",
+    "box": [
+      0.41650293140352773,
+      0.33779418539145184,
+      0.2461359339354164,
+      0.16061242536599848
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "85c5a4227bf73b39",
+    "sha256": "85c5a4227bf73b39d5e67f29b2cf782904392979c0f8b8fceb9143717a3e76a3"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/66_mp4-0103_jpg.rf.6ad0d2b35376059c8fc12996831e4be9.jpg",
+    "group": "video:66",
+    "box": [
+      0.5828125,
+      0.3234207199715232,
+      0.290625,
+      0.17226037824476323
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "770659ae82e86dee",
+    "sha256": "770659ae82e86deed5c4344c00d1dfe96e3c9014ebccf1dae14d9802140a4ffc"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/23_mp4-0085_jpg.rf.23b7981e800817c075fccc84bd3f4e43.jpg",
+    "group": "video:23",
+    "box": [
+      0.50859375,
+      0.41875,
+      0.23203125,
+      0.134375
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "19dac186f2b11269",
+    "sha256": "19dac186f2b112698bc5a440fa841a5e257decb9d92501efca54be4bfd97bfbd"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/punch-8_jpg.rf.40952bf2d632edcb0bce22ff819c6108.jpg",
+    "group": "image:punch-8_jpg",
+    "box": [
+      0.5765625,
+      0.14765625,
+      0.20625,
+      0.1828125
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "e12e716a1c91b117",
+    "sha256": "e12e716a1c91b11799118250fe8b8d52835e439460602ce828f436db9957be70"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/23_mp4-0062_jpg.rf.6d2fdaa3b8915bb0a9834d49c52fad90.jpg",
+    "group": "video:23",
+    "box": [
+      0.35078125,
+      0.365625,
+      0.24609375,
+      0.24609375
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "7925384f5230a48c",
+    "sha256": "7925384f5230a48cc9c2d857e2d4dca7f09022037cb98da3a8e3ffa91a432b2e"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/8_mp4-0030_jpg.rf.27da4d2c796fd23c991d6197fdf8672b.jpg",
+    "group": "video:8",
+    "box": [
+      0.55390625,
+      0.4875,
+      0.32734375,
+      0.13203125
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "b01b0deeba1c71e2",
+    "sha256": "b01b0deeba1c71e2055c87726580b999535ba8a8263ad871e0e15e88206f121e"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/65_mp4-0107_jpg.rf.13f1f50f04b8328e452de0299f83c7a0.jpg",
+    "group": "video:65",
+    "box": [
+      0.5921875,
+      0.39296875,
+      0.146875,
+      0.165625
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "41340ae6a1b80d13",
+    "sha256": "41340ae6a1b80d13d5d626d89ad94a127e8c87c0438b4b7849a11a6fbba56461"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/3_mp4-0011_jpg.rf.c0eff6f4eac4a34af061b801cfbd32eb.jpg",
+    "group": "video:3",
+    "box": [
+      0.4527083940763711,
+      0.2423382099379574,
+      0.26977848620028233,
+      0.151546508036271
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "bf2e7093eb4091e0",
+    "sha256": "bf2e7093eb4091e0ce5bb3c4e6961a42037ffa291689935e4b949ae93780c52c"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/65_mp4-0118_jpg.rf.5c34407abe189b3d6c189c75dee98725.jpg",
+    "group": "video:65",
+    "box": [
+      0.5546708819243821,
+      0.4096411960189451,
+      0.3805147226762452,
+      0.14881496996493268
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "38590e18bf164cd7",
+    "sha256": "38590e18bf164cd75719f72a2a1bcfadc03c81c05b9490d42050633d123c644c"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/19_mp4-0164_jpg.rf.0fca23bf6b5225141d407dc0b4a4dae1.jpg",
+    "group": "video:19",
+    "box": [
+      0.4890625,
+      0.42890625,
+      0.14765625,
+      0.209375
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "d40efc8086fa9487",
+    "sha256": "d40efc8086fa9487758849e9ed2c10ceba867859432c64b77a39cf3ed0676695"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/frame_416_jpg.rf.2c3eb558604da5aa19095d52d39567df.jpg",
+    "group": "video:unidentified-frame-series",
+    "box": [
+      0.5140625,
+      0.36953125,
+      0.334375,
+      0.3015625
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "c6b439421e423219",
+    "sha256": "c6b439421e423219ce563a34653abbee1d9018de6fd61c592eed5350bb85a964"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/20_mp4-0073_jpg.rf.6527cf0bbb8ea11cd70153929f5fa5a5.jpg",
+    "group": "video:20",
+    "box": [
+      0.5697189668493405,
+      0.31670153007636015,
+      0.1343438580918752,
+      0.26867836935072653
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "ab7fc5bed101b2ac",
+    "sha256": "ab7fc5bed101b2acd766b43bf0b9d17539b9c960894d09b0d04d9309ca1fb3ea"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/frame_1121_jpg.rf.706cd39efe75fc5351cd8f8123665362.jpg",
+    "group": "video:unidentified-frame-series",
+    "box": [
+      0.6917633912369973,
+      0.47594748086766875,
+      0.5672297792176979,
+      0.4532543485505032
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "8ce7f45a32c387fd",
+    "sha256": "8ce7f45a32c387fde6dbacd646e49041c21163b8d70277306c42327adab014ff"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/15_jpg.rf.617aacb7fdd04f9a789f111e29c3b36b.jpg",
+    "group": "image:15_jpg",
+    "box": [
+      0.6625,
+      0.2890625,
+      0.14921875,
+      0.16328125
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "823334f5154199df",
+    "sha256": "823334f5154199df37d24a66212c4e70bcbfc3ea228181987954ccdc6d27dd4c"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/24_mp4-0103_jpg.rf.60ff08f8f75ebb40324cb971522d3f38.jpg",
+    "group": "video:24",
+    "box": [
+      0.3521379554501741,
+      0.6269427324388026,
+      0.15414721181534743,
+      0.24617608411256384
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "adbf75b63ac39512",
+    "sha256": "adbf75b63ac395128e3f1f32a2ba95f852257523c6f895d3d034e386bf924485"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/23_mp4-0008_jpg.rf.ba86d39b1ee9f565a5e28856dbd04cc7.jpg",
+    "group": "video:23",
+    "box": [
+      0.5298251318401386,
+      0.39060243992682153,
+      0.13492573955076423,
+      0.29367836935072644
+    ],
+    "label": 0,
+    "split": "train",
+    "id": "f347e1bf52399e65",
+    "sha256": "f347e1bf52399e654df0e852fb82c2143618a5f7c79e554694974733bf3de03f"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/27_mp4-0017_jpg.rf.eee2337701f2dc7cc865b360aeeab631.jpg",
+    "group": "video:27",
+    "box": [
+      0.5150857232113157,
+      0.5365986043053664,
+      0.29140991316955045,
+      0.13939333116686256
+    ],
+    "label": 0,
+    "split": "validation",
+    "id": "a2ea200c8f13a69a",
+    "sha256": "a2ea200c8f13a69afc2f314af89e7eecb2e7800e948fa33f885f8fe567a7b2e4"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/27_mp4-0034_jpg.rf.17cd58ccac0c2ee52e1a461f336e1531.jpg",
+    "group": "video:27",
+    "box": [
+      0.44375,
+      0.5875,
+      0.21953125,
+      0.15
+    ],
+    "label": 0,
+    "split": "validation",
+    "id": "7342a1222a145600",
+    "sha256": "7342a1222a1456007bee86566bbc57e0a027756c563d42b824e1e41c48ec1754"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/18_mp4-0070_jpg.rf.3edbd63f10b10edad10de18ad70f12ea.jpg",
+    "group": "video:18",
+    "box": [
+      0.6655419195466322,
+      0.39921875,
+      0.16791877108590292,
+      0.2328125
+    ],
+    "label": 0,
+    "split": "validation",
+    "id": "69ad24bd732cb5aa",
+    "sha256": "69ad24bd732cb5aa62efd270829f911d39f6e388916cd666aef61c953dc00992"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/16_jpg.rf.0cd84ff16fb905a7d4dff47a5818135b.jpg",
+    "group": "image:16_jpg",
+    "box": [
+      0.5450942783077863,
+      0.24608903807286028,
+      0.3027530108845912,
+      0.26123059070654364
+    ],
+    "label": 0,
+    "split": "validation",
+    "id": "14d13e4683437389",
+    "sha256": "14d13e46834373892523fa20b6f783f167536c68842ece977ddebe883fd0550f"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/21_jpg.rf.3f815c46f517e8cf305f04b4af2d0bf9.jpg",
+    "group": "image:21_jpg",
+    "box": [
+      0.5434385340922572,
+      0.20323846674090565,
+      0.16629893019392786,
+      0.13003404002227176
+    ],
+    "label": 0,
+    "split": "validation",
+    "id": "31ceb9577a576551",
+    "sha256": "31ceb9577a576551887066075a478e2b7eec24308b5f9572d0f2085e32d0a77a"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/27_mp4-0169_jpg.rf.0c8fc5f8001dc7598551fd8906341678.jpg",
+    "group": "video:27",
+    "box": [
+      0.40262695829996564,
+      0.5537549927195885,
+      0.35141964247680557,
+      0.13217943738063412
+    ],
+    "label": 0,
+    "split": "validation",
+    "id": "790b249fe3aa0a1d",
+    "sha256": "790b249fe3aa0a1da53b97165c6a0625a669840fb0476e7eb82a14e6f8dff389"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/18_mp4-0081_jpg.rf.3f83d44883ef770bc8b7d05f2f7fb3c2.jpg",
+    "group": "video:18",
+    "box": [
+      0.7062611045764935,
+      0.5630303285725953,
+      0.2704294412981252,
+      0.4108487827020893
+    ],
+    "label": 0,
+    "split": "validation",
+    "id": "78fef371175743ee",
+    "sha256": "78fef371175743ee16b8311ecc38d28f9c8bc9c40c356652a279b52096c3808e"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/18_mp4-0132_jpg.rf.0762fa35dba87c0e2a9cce1295bcda2b.jpg",
+    "group": "video:18",
+    "box": [
+      0.66796875,
+      0.3578125,
+      0.13203125,
+      0.184375
+    ],
+    "label": 0,
+    "split": "validation",
+    "id": "c5ec20a29d9e55f7",
+    "sha256": "c5ec20a29d9e55f77be29541df1189ebc672b5b577f986cf1c9554b321eb1057"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/18_mp4-0050_jpg.rf.5babca0b352e6b4fa7195152e97fdce8.jpg",
+    "group": "video:18",
+    "box": [
+      0.665625,
+      0.48125,
+      0.2203125,
+      0.1796875
+    ],
+    "label": 0,
+    "split": "validation",
+    "id": "bed0369cd248acb8",
+    "sha256": "bed0369cd248acb825751ebc5394fa359a46c171f9bfe1f87486477e030b0935"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/18_mp4-0170_jpg.rf.8bb22c9565af19825cceeb76050bb8a3.jpg",
+    "group": "video:18",
+    "box": [
+      0.37690407285392347,
+      0.18228250461491147,
+      0.15189242116215293,
+      0.1501647266868173
+    ],
+    "label": 0,
+    "split": "validation",
+    "id": "f25df9a9ef9dc0f8",
+    "sha256": "f25df9a9ef9dc0f8642285f8c171c11b1ad69544ae30e2ad51aeb9664369ac18"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/4_mp4-0016_jpg.rf.4a9613a28b00b0e22f15f95055d6407e.jpg",
+    "group": "video:4",
+    "box": [
+      0.4348683404583591,
+      0.76875,
+      0.42241587226160837,
+      0.1796875
+    ],
+    "label": 0,
+    "split": "validation",
+    "id": "fcd8291d058a7778",
+    "sha256": "fcd8291d058a77787a3d12062f78a4ca7fdd721cedcaf8233ee3bd46e7f56469"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/9_mp4-0041_jpg.rf.0ef18326a605208c477d1e2037228e59.jpg",
+    "group": "video:9",
+    "box": [
+      0.4126680008140742,
+      0.3508737162333375,
+      0.14866714529089187,
+      0.19303290339440443
+    ],
+    "label": 0,
+    "split": "validation",
+    "id": "55222ef1e3036afc",
+    "sha256": "55222ef1e3036afc6a8805941b8f01d1d32943159133050911515e085818299d"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/4_mp4-0033_jpg.rf.49e2a5d74284dc30983c931a7273976d.jpg",
+    "group": "video:4",
+    "box": [
+      0.39578259426790446,
+      0.5836566107981882,
+      0.5761999273985096,
+      0.21628666233372512
+    ],
+    "label": 0,
+    "split": "validation",
+    "id": "3f37210a7c78b482",
+    "sha256": "3f37210a7c78b4827c2bdee157d175d4d58529d45e55ca4689be8359cc883103"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/4_mp4-0011_jpg.rf.2aa260920f3684715696ee104d03bb06.jpg",
+    "group": "video:4",
+    "box": [
+      0.621522322569583,
+      0.384375,
+      0.31025043502986127,
+      0.171875
+    ],
+    "label": 0,
+    "split": "validation",
+    "id": "327a781ad585a8ac",
+    "sha256": "327a781ad585a8ac24210bd6d9dc5cd04a2e5cb3874af2027f96ec55610270b6"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/27_mp4-0160_jpg.rf.0dfc0e4983a04dc31f5b54564c7580ad.jpg",
+    "group": "video:27",
+    "box": [
+      0.3816201019205203,
+      0.581381044645564,
+      0.3030185100679862,
+      0.13492401947846525
+    ],
+    "label": 0,
+    "split": "validation",
+    "id": "08de802440229f43",
+    "sha256": "08de802440229f43dca1c93e3a541736b8cbc43712a3e2f924b15b62ced3655a"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/download_jpeg_jpg.rf.04868ac98ab632e59d1d600d927ac0db.jpg",
+    "group": "image:download_jpeg_jpg",
+    "box": [
+      0.603125,
+      0.4046875,
+      0.38515625,
+      0.63125
+    ],
+    "label": 2,
+    "split": "test",
+    "id": "7983393401e3c4af",
+    "sha256": "7983393401e3c4af4d75a9c3adc2c7ac287cd372028fedb4cd4383a8591938a4"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/12_mp4-0011_jpg.rf.9f926ca869b506e928e261e654f474d7.jpg",
+    "group": "video:12",
+    "box": [
+      0.6705070212444586,
+      0.6507422841594459,
+      0.334068106699544,
+      0.24411465612487895
+    ],
+    "label": 2,
+    "split": "test",
+    "id": "78e5b0f813a7bb62",
+    "sha256": "78e5b0f813a7bb624db5ee00e69f8a92be8f06c88897324d9e494f9eb8cd7f6b"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/20230715011254_BB3883_jpeg_jpg.rf.06cff9b9e52d36caba566ad7f71c95dc.jpg",
+    "group": "photo-session:20230715",
+    "box": [
+      0.4125,
+      0.6523998547970191,
+      0.4015625,
+      0.2710862222834617
+    ],
+    "label": 2,
+    "split": "test",
+    "id": "db55ecf909b78d84",
+    "sha256": "db55ecf909b78d840f2c12163fc01e87c3d93a36e431f4935dd1ed0a13005252"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/test/images/20230715011254_BB3839_jpeg_jpg.rf.475b04316b03522008b990be5881b817.jpg",
+    "group": "photo-session:20230715",
+    "box": [
+      0.5359375,
+      0.49375,
+      0.41875,
+      0.328125
+    ],
+    "label": 2,
+    "split": "test",
+    "id": "4321c8923e24cae1",
+    "sha256": "4321c8923e24cae1c0ee4477f09a1a8a3f49f4a15fd1cfa647136de2d5b5e3e0"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/test/images/Dejdamrong-knee-mma_jpeg_jpg.rf.3d21eecf0237e3cbaf895982a5cf952c.jpg",
+    "group": "image:dejdamrong-knee-mma_jpeg_jpg",
+    "box": [
+      0.4078125,
+      0.58203125,
+      0.315625,
+      0.4890625
+    ],
+    "label": 2,
+    "split": "test",
+    "id": "33a57c0d8a623fb4",
+    "sha256": "33a57c0d8a623fb43d7407ed08d2ca23fea5ceff1910ccbbba3369bf49300907"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/12_mp4-0018_jpg.rf.2715508cb676636613dd4e4816eb9a00.jpg",
+    "group": "video:12",
+    "box": [
+      0.4827969236860764,
+      0.6659638049420972,
+      0.27215784289316236,
+      0.31876013212077403
+    ],
+    "label": 2,
+    "split": "test",
+    "id": "85f32993d82b1681",
+    "sha256": "85f32993d82b16815f3d9cf37e07d91f351d91d13d89fb7fdbc11994ab1182fe"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/UFC-women-kicks_16_jpg.rf.784c8b530196e11b1d598dd317d0fcd5.jpg",
+    "group": "image:ufc-women-kicks_16_jpg",
+    "box": [
+      0.45361379586691086,
+      0.453125,
+      0.6019110589301082,
+      0.865625
+    ],
+    "label": 2,
+    "split": "test",
+    "id": "fbfb469ab1041e35",
+    "sha256": "fbfb469ab1041e35ac7ca7b5ea92327036e6f64d7d8f6c753b70e7b9eb01b475"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/12_mp4-0007_jpg.rf.43b7b6d1a318d76c0e39ce34faa18745.jpg",
+    "group": "video:12",
+    "box": [
+      0.46700829722264325,
+      0.6352342346037756,
+      0.376354463502863,
+      0.2371760200509067
+    ],
+    "label": 2,
+    "split": "test",
+    "id": "6afe9f45b697a106",
+    "sha256": "6afe9f45b697a10646e7e6f88477a18839439f7c3697c200738e06a5b71067a8"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/20220827042318_DC1967_jpeg_jpg.rf.1680d9bb515b5d0968077de620b57b06.jpg",
+    "group": "photo-session:20220827",
+    "box": [
+      0.4725926597629865,
+      0.46987370110802706,
+      0.7516469929692366,
+      0.6121031494855795
+    ],
+    "label": 2,
+    "split": "test",
+    "id": "95db40d40048c89b",
+    "sha256": "95db40d40048c89bb84d1348e59bf168f014e35a63837232cddc2098fe675e3d"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/Conor-McGreggor-Kicks_17_jpg.rf.7db13035cf3c452f99a3a8bf50d4abcb.jpg",
+    "group": "image:conor-mcgreggor-kicks_17_jpg",
+    "box": [
+      0.4890625,
+      0.41484375,
+      0.490625,
+      0.35703125
+    ],
+    "label": 2,
+    "split": "test",
+    "id": "887f0628dc9e8163",
+    "sha256": "887f0628dc9e8163fe79da6cf37f9bc48c04fa5ec103664caaed842d139b494f"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/12_mp4-0004_jpg.rf.0f4a6d32eff1b2aac36e674042553feb.jpg",
+    "group": "video:12",
+    "box": [
+      0.6265625,
+      0.6619782147517234,
+      0.3265625,
+      0.23973739871099795
+    ],
+    "label": 2,
+    "split": "test",
+    "id": "b13c11a6c82db946",
+    "sha256": "b13c11a6c82db946dc758e1c910a10f99fe42b2a0483f6d92f5c7520099fac70"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/test/images/4idris_jpeg_jpg.rf.e7b1df7a0eb1cd443cedb1c2a52f61ae.jpg",
+    "group": "image:4idris_jpeg_jpg",
+    "box": [
+      0.56328125,
+      0.46875,
+      0.8734375,
+      0.584375
+    ],
+    "label": 2,
+    "split": "test",
+    "id": "dccf0eb6a2eee930",
+    "sha256": "dccf0eb6a2eee930dd8a081c6f71a1222f36121f4eb5a54b631aa5aa845304ed"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/12_mp4-0022_jpg.rf.331092b48a6038836a815503df483636.jpg",
+    "group": "video:12",
+    "box": [
+      0.546875,
+      0.46796875,
+      0.40234375,
+      0.140625
+    ],
+    "label": 2,
+    "split": "test",
+    "id": "17a967ed56e4435e",
+    "sha256": "17a967ed56e4435eb064b8d19408afda32cf909b1f46acbcf504208430b5f6dc"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/3idris_jpeg_jpg.rf.2d2810be36ad3ba068e9513824fabe73.jpg",
+    "group": "image:3idris_jpeg_jpg",
+    "box": [
+      0.5546875,
+      0.48828125,
+      0.721875,
+      0.6640625
+    ],
+    "label": 2,
+    "split": "test",
+    "id": "20054657df945c3b",
+    "sha256": "20054657df945c3bf0b4bdcb4e754055b913923f8ba9f8283d828351f9a8757b"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/Conor-McGreggor-Kicks_20_jpg.rf.02dd05412f91569023e7e98f44315569.jpg",
+    "group": "image:conor-mcgreggor-kicks_20_jpg",
+    "box": [
+      0.42109375,
+      0.5529126306095027,
+      0.3453125,
+      0.22120557471354338
+    ],
+    "label": 2,
+    "split": "test",
+    "id": "3d331327384e2582",
+    "sha256": "3d331327384e2582793d69da2feea20c5368442ed329088ff227139f0fe103a4"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/12_mp4-0021_jpg.rf.4e59eba15be576631137aa7542cafda7.jpg",
+    "group": "video:12",
+    "box": [
+      0.684740780549608,
+      0.5822065712267483,
+      0.5659385517284949,
+      0.17513843890958275
+    ],
+    "label": 2,
+    "split": "test",
+    "id": "bfdc415cdf7e2ed3",
+    "sha256": "bfdc415cdf7e2ed3eedcddd39abfc995f16034521950f41e9473b9769ce36fa8"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/36_jpg.rf.0584f0b0c3a7f3cdd7be3f70f05980db.jpg",
+    "group": "image:36_jpg",
+    "box": [
+      0.534375,
+      0.4046875,
+      0.3015625,
+      0.22265625
+    ],
+    "label": 2,
+    "split": "test",
+    "id": "804570e8763ac1cd",
+    "sha256": "804570e8763ac1cd7ec896354c865d344c963d739348a6d3098f1383b8d6c614"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/5e69161bef0cd_jpg.rf.53116c194cd1787fca973ffdbad86041.jpg",
+    "group": "image:5e69161bef0cd_jpg",
+    "box": [
+      0.50390625,
+      0.67890625,
+      0.6984375,
+      0.6375
+    ],
+    "label": 2,
+    "split": "test",
+    "id": "a2b577ef3f592c1e",
+    "sha256": "a2b577ef3f592c1e7c77f7460c7a6caf88f441d2a461b15f7a70c7e63d31cf77"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/Screen-Shot-2023-07-20-at-7-30-32-PM_jpg.rf.8d6dd95f37b74f5ac69cb0af0f641d56.jpg",
+    "group": "image:screen-shot-2023-07-20-at-7-30-32-pm_jpg",
+    "box": [
+      0.48996740209258666,
+      0.6876401913987696,
+      0.260123718730088,
+      0.47015105736790747
+    ],
+    "label": 2,
+    "split": "test",
+    "id": "f9b652d40559a37e",
+    "sha256": "f9b652d40559a37ee001a87f04aeba6a2b150e3ce631d227ef483daa3e473042"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/2_jpg.rf.2b92f5e0c56d2912117ab39a2adf3f3d.jpg",
+    "group": "image:2_jpg",
+    "box": [
+      0.7471372418790299,
+      0.6011611043060398,
+      0.16876145697928918,
+      0.18065107806243946
+    ],
+    "label": 2,
+    "split": "test",
+    "id": "50bbd6067bc4eac8",
+    "sha256": "50bbd6067bc4eac81c830819782102b4b3528898fa84917000e0fee146f45903"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/26_mp4-0031_jpg.rf.ca1806bdcf791f5a7ac9890ef05aded2.jpg",
+    "group": "video:26",
+    "box": [
+      0.5638202317638886,
+      0.3191452774108601,
+      0.520642421162153,
+      0.1544555214035422
+    ],
+    "label": 0,
+    "split": "test",
+    "id": "283683a90a70c6b6",
+    "sha256": "283683a90a70c6b6f983c2a43e228a0e0a15da46029cf3ddc3e972f4293040aa"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/26_mp4-0064_jpg.rf.496a5ea8b26d55cfd50f766bbd441a51.jpg",
+    "group": "video:26",
+    "box": [
+      0.4438374001729506,
+      0.2861663216195318,
+      0.5744828912941561,
+      0.1830236617822197
+    ],
+    "label": 0,
+    "split": "test",
+    "id": "105b5989188db262",
+    "sha256": "105b5989188db262a65c362c948c5e6174c9e16c192ec6d4b5b4103b6b483d74"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/26_mp4-0034_jpg.rf.6928b158a1ac90617e02009446d83bfd.jpg",
+    "group": "video:26",
+    "box": [
+      0.596875,
+      0.4171875,
+      0.2375,
+      0.15390625
+    ],
+    "label": 0,
+    "split": "test",
+    "id": "e29151231cfd0f42",
+    "sha256": "e29151231cfd0f421fee801ff5f92a4b2f77f4f9d1d1b311bfaf4523c0b49d4b"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/29_mp4-0036_jpg.rf.6f953f3fe147f697a7f1c8c7286308a3.jpg",
+    "group": "video:29",
+    "box": [
+      0.5011316214194506,
+      0.634375,
+      0.46420904535327184,
+      0.146875
+    ],
+    "label": 0,
+    "split": "test",
+    "id": "78d4f77f8efe9699",
+    "sha256": "78d4f77f8efe96991696b4eacf5e825c23d6fb507b1a93b7ec303cd68e84fc78"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/uppercut_6_jpg.rf.6d90e8007ec959ef303e420be91ea621.jpg",
+    "group": "image:uppercut_6_jpg",
+    "box": [
+      0.5796875,
+      0.3359375,
+      0.3125,
+      0.478125
+    ],
+    "label": 0,
+    "split": "test",
+    "id": "c6c40fcc9d6c9c3d",
+    "sha256": "c6c40fcc9d6c9c3d791ddc0ea3c30f01eadaad02caecab23ed5088039b964534"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/20230715011254_BB3883_jpeg_jpg.rf.06cff9b9e52d36caba566ad7f71c95dc.jpg",
+    "group": "photo-session:20230715",
+    "box": [
+      0.478125,
+      0.455906649878363,
+      0.209375,
+      0.27934310811666874
+    ],
+    "label": 0,
+    "split": "test",
+    "id": "38a248f9d8ff000e",
+    "sha256": "38a248f9d8ff000ef54d1f09394161cee40a89e95f139d601f94bc6307eb74e0"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/test/images/28_mp4-0014_jpg.rf.9107cea2659b95d3e1198431cfc58ed3.jpg",
+    "group": "video:28",
+    "box": [
+      0.5234375,
+      0.340625,
+      0.3703125,
+      0.134375
+    ],
+    "label": 0,
+    "split": "test",
+    "id": "dd0e2c928c88d879",
+    "sha256": "dd0e2c928c88d879e6707bb413f9003a4d18362591146ebaa03c9c2c42552782"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/26_mp4-0032_jpg.rf.36a501cea7169f479b181a55f514afe1.jpg",
+    "group": "video:26",
+    "box": [
+      0.48984375,
+      0.3703125,
+      0.4515625,
+      0.13515625
+    ],
+    "label": 0,
+    "split": "test",
+    "id": "fce69af50a49260f",
+    "sha256": "fce69af50a49260f18b79dab881f057e6be65de5d0d8dccbf467e71326228b6b"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/test/images/29_mp4-0060_jpg.rf.3eefa54440af9ef887274a650624bb45.jpg",
+    "group": "video:29",
+    "box": [
+      0.4984375,
+      0.6328125,
+      0.36171875,
+      0.1515625
+    ],
+    "label": 0,
+    "split": "test",
+    "id": "bad3868542299457",
+    "sha256": "bad3868542299457ac2096e4e98674c3218ba9f6efa9c033ebb4bc4ecc0f2942"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/28_mp4-0185_jpg.rf.75b23456796b33ec429a0fb8727ae64e.jpg",
+    "group": "video:28",
+    "box": [
+      0.5814071220564928,
+      0.33918837418427816,
+      0.42794577488562524,
+      0.13398090259449252
+    ],
+    "label": 0,
+    "split": "test",
+    "id": "7c13d96a61761e9f",
+    "sha256": "7c13d96a61761e9f92421245d9a7f4adb018dccb5cb8d9fc707c21460647aa79"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/29_mp4-0102_jpg.rf.cf39b5a1edfd80787dafe99d2b75292f.jpg",
+    "group": "video:29",
+    "box": [
+      0.4697235393220144,
+      0.5506305400620426,
+      0.40952308320625014,
+      0.1453521467218156
+    ],
+    "label": 0,
+    "split": "test",
+    "id": "5a85faae6cc35928",
+    "sha256": "5a85faae6cc359285d595d9504eb6b03cfecf89306c2a77a73bdaa59a2a3191d"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/28_mp4-0151_jpg.rf.126ac5af3724698f9976cf829b92aa72.jpg",
+    "group": "video:28",
+    "box": [
+      0.5831425007160886,
+      0.35732631592141273,
+      0.254634050684272,
+      0.1326328760343621
+    ],
+    "label": 0,
+    "split": "test",
+    "id": "39efc3054e0a1bc8",
+    "sha256": "39efc3054e0a1bc8e9ee735111e0174bd610d08d52f6325e7f33b61bea4596ed"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/12_mp4-0008_jpg.rf.15ab4fd050d7806c7426ec4a064b9ce5.jpg",
+    "group": "video:12",
+    "box": [
+      0.6861434081595188,
+      0.42032137174864614,
+      0.424806570958725,
+      0.18074680843869118
+    ],
+    "label": 0,
+    "split": "test",
+    "id": "6c1e189d197154f6",
+    "sha256": "6c1e189d197154f685e709ad2602f65ac53d539ff279d0a0156b2a1285bbddae"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/26_mp4-0010_jpg.rf.7f3a5317459da9fc1913203d5d687dc7.jpg",
+    "group": "video:26",
+    "box": [
+      0.490625,
+      0.3625,
+      0.35859375,
+      0.14609375
+    ],
+    "label": 0,
+    "split": "test",
+    "id": "c6fc9d1a26923eac",
+    "sha256": "c6fc9d1a26923eac0f79f51b4f82fcaed8d7ce0632b731c961e97d02af520710"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/28_mp4-0138_jpg.rf.185543177ad4bc4346df87960435f61e.jpg",
+    "group": "video:28",
+    "box": [
+      0.596875,
+      0.2984375,
+      0.4015625,
+      0.14296875
+    ],
+    "label": 0,
+    "split": "test",
+    "id": "87f81477f4b0c54a",
+    "sha256": "87f81477f4b0c54ad6503d4551235391e427b7279ba4abf16316cba6f5118bdf"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/MMA83_jpg.rf.f0377773e1d0e904f131a0696729ff25.jpg",
+    "group": "image:mma83_jpg",
+    "box": [
+      0.50234375,
+      0.36171875,
+      0.4859375,
+      0.2484375
+    ],
+    "label": 0,
+    "split": "test",
+    "id": "0a77c3871877addc",
+    "sha256": "0a77c3871877addca052e8c6bca01d2cc514c84b02df32081094d11662d8e006"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/26_mp4-0017_jpg.rf.12778e99cb679d5b4e22c68509903dd9.jpg",
+    "group": "video:26",
+    "box": [
+      0.54765625,
+      0.4328125,
+      0.409375,
+      0.1859375
+    ],
+    "label": 0,
+    "split": "test",
+    "id": "cb172ac35ee257c0",
+    "sha256": "cb172ac35ee257c0f3793754a964b51bfe80fdc41e187d1119485ce81dfd6f75"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/28_mp4-0133_jpg.rf.e3046d81902cce3a72ca52ba463316c7.jpg",
+    "group": "video:28",
+    "box": [
+      0.5597935709953318,
+      0.3078125,
+      0.33672241316955065,
+      0.134375
+    ],
+    "label": 0,
+    "split": "test",
+    "id": "38a33e7d477d7e82",
+    "sha256": "38a33e7d477d7e82dc7279ac3699acb2aa8eacd4e2394e38c3e49faa004bc059"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/29_mp4-0043_jpg.rf.29fd7cbba0f99cb0c546f34141120c6d.jpg",
+    "group": "video:29",
+    "box": [
+      0.20383176134927808,
+      0.562560681008002,
+      0.2869042695960413,
+      0.1455615105500115
+    ],
+    "label": 0,
+    "split": "test",
+    "id": "f10a25cfbda87bfb",
+    "sha256": "f10a25cfbda87bfb94b634fa344d376272e05e1112336d92f77b4324b40d4995"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/28_mp4-0099_jpg.rf.0ee2cee2d6cf28f838cfa19e245f5849.jpg",
+    "group": "video:28",
+    "box": [
+      0.60234375,
+      0.34140625,
+      0.321875,
+      0.15234375
+    ],
+    "label": 0,
+    "split": "test",
+    "id": "a59a271773fa7544",
+    "sha256": "a59a271773fa7544ae17c7b8c2ae4b2d9aeadb4b638b1c4a340eb6e857df51e9"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/Screenshot-2023-07-20-165743_png_jpg.rf.3ca3b7a1dfd2d02a614a811296d2e008.jpg",
+    "group": "image:screenshot-2023-07-20-165743_png_jpg",
+    "box": [
+      0.5918451678405896,
+      0.78671875,
+      0.5353257830537501,
+      0.309375
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "fee619da94a1d15f",
+    "sha256": "fee619da94a1d15f9e2f61e3467c305c7894a8f631e377a1a0925611525cfaa5"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/20_jpg.rf.26458025d2f0bceb7a05d93aadf9176a.jpg",
+    "group": "image:20_jpg",
+    "box": [
+      0.462474630890208,
+      0.3730532432625048,
+      0.33994054787138916,
+      0.30818624648395854
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "8e219d9cc640f9e3",
+    "sha256": "8e219d9cc640f9e3099f8a8c76f086c1cca0447be7eff711d351bac1d1046770"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/kick-29_jpg.rf.2ed67960d379859a006920f3e4b1254e.jpg",
+    "group": "image:kick-29_jpg",
+    "box": [
+      0.5491958567393148,
+      0.5446338047852431,
+      0.6422304307765405,
+      0.8204207832748877
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "3884a4f1b93b46cf",
+    "sha256": "3884a4f1b93b46cf408dee5afbe6b9c5ba3908866a7548189136a67c76b1cb53"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/081_Kevin_Lee_x_Gregor_Gillespie-0_jpg.rf.77b0b9bd09fa8311d786203615028769.jpg",
+    "group": "image:081_kevin_lee_x_gregor_gillespie-0_jpg",
+    "box": [
+      0.5989850050681655,
+      0.63125,
+      0.7542906494855796,
+      0.7375
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "1947a5af81fa9a7a",
+    "sha256": "1947a5af81fa9a7a24cefe545a622d4ebbd34310a31a9afd9c59d1266dc49237"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/frame_1_1407_jpg.rf.55a4e6134112b116cd47f25fe7a08477.jpg",
+    "group": "video:unidentified-frame-series",
+    "box": [
+      0.3792581681249301,
+      0.5822032049539895,
+      0.2594165932742364,
+      0.27473081330995514
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "c880e3e6de0c7421",
+    "sha256": "c880e3e6de0c74216413c2b4f7630d66b0d6e6a09f6737007b6ccd87a902826b"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/23_mp4-0094_jpg.rf.cd499cba9317e6fa1c95ffc0212d3a9e.jpg",
+    "group": "video:23",
+    "box": [
+      0.309077981742646,
+      0.8232516685197149,
+      0.24369109334172717,
+      0.35349666296057014
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "3c4507b929871e72",
+    "sha256": "3c4507b929871e72cd69c2a9ac6fd9d120acd88b1561d7b3e67b5469559e91bf"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/UFC-women-kicks_17_jpg.rf.5e9c9feaf65a9cf95d8ef2e8712fc7e9.jpg",
+    "group": "image:ufc-women-kicks_17_jpg",
+    "box": [
+      0.3775031551854848,
+      0.5114069306174568,
+      0.4313127461060623,
+      0.9734407840547247
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "0202c0b6ef993eed",
+    "sha256": "0202c0b6ef993eed9e417f0b042f32487280d93059d37d770264dca3b9ebc236"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/Conor-McGreggor-Kicks_9_jpg.rf.693dc6fe26391937f9511c49762845d9.jpg",
+    "group": "image:conor-mcgreggor-kicks_9_jpg",
+    "box": [
+      0.6290896198241337,
+      0.42708428524827663,
+      0.5344487646343312,
+      0.28744983473899666
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "2fc5c4a8da86e21a",
+    "sha256": "2fc5c4a8da86e21a5a5e1024e84c9bc34864dfdc68666355c8949b2b975c1fe1"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/20_mp4-0054_jpg.rf.522ef40b1fe19791c42b1aa3a17a5868.jpg",
+    "group": "video:20",
+    "box": [
+      0.54609375,
+      0.85,
+      0.18671875,
+      0.3
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "14b1cc676b1290a4",
+    "sha256": "14b1cc676b1290a49a63f05a6028d1ba3d32f12c99ece9716911b53381846e16"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/23_mp4-0013_jpg.rf.322bf72718f2dfa8c1889a6e34d8da58.jpg",
+    "group": "video:23",
+    "box": [
+      0.5305258081331938,
+      0.7967342612587761,
+      0.31385213297750025,
+      0.3972953600413616
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "58dcb823da99e0f3",
+    "sha256": "58dcb823da99e0f3d94e4a21301bc380b5209181176ca0e80cde1e3362615b7c"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/frame_1_1267_jpg.rf.4c32d5f658d34219803d8e7822643169.jpg",
+    "group": "video:unidentified-frame-series",
+    "box": [
+      0.49140625,
+      0.521875,
+      0.3703125,
+      0.75
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "dc276e5c1fc5be23",
+    "sha256": "dc276e5c1fc5be23a6be6fc883d0c3f7355b86072144e9e898dc936a773916f5"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/Conor-McGreggor-Kicks_15_jpg.rf.43bcd126ca0f003576e9439c095295a7.jpg",
+    "group": "image:conor-mcgreggor-kicks_15_jpg",
+    "box": [
+      0.4166746258091313,
+      0.3782101000556793,
+      0.38061834902377,
+      0.3262385200509067
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "f64227dcfb612996",
+    "sha256": "f64227dcfb6129961c615afc8117cbd93cece8fd2a8171ad4916ed24ea4e099c"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/20230415011151_C1N00488_jpeg_jpg.rf.0deb7779910120bea1195226f82be488.jpg",
+    "group": "photo-session:20230415",
+    "box": [
+      0.5203125,
+      0.56171875,
+      0.390625,
+      0.8203125
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "ccae49a9eed277ea",
+    "sha256": "ccae49a9eed277ea56426976fb829c413c61469e96e988fe573344c67c4cb7db"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/70_mp4-0145_jpg.rf.113f501f257615324bf2a9d2be7a0cdf.jpg",
+    "group": "video:70",
+    "box": [
+      0.728125,
+      0.6046875,
+      0.3171875,
+      0.2921875
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "d8e061acf46575fa",
+    "sha256": "d8e061acf46575fa8d2030e4783680df5b523f0ce9a02504d2e760138f64d76e"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/21_mp4-0018_jpg.rf.2e3152fa56bfc91d20d27edeebbee0e4.jpg",
+    "group": "video:21",
+    "box": [
+      0.5625,
+      0.5390625,
+      0.175,
+      0.30234375
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "3968313334a90d57",
+    "sha256": "3968313334a90d57fa5ff46aab363f50997e271feda4f3155eb144e19dbc922c"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/frame_1_362_jpg.rf.18c26ddb67235df92f7ee2818cb83562.jpg",
+    "group": "video:unidentified-frame-series",
+    "box": [
+      0.30390625,
+      0.5640625,
+      0.6078125,
+      0.6375
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "e5c8fb547444432e",
+    "sha256": "e5c8fb547444432e25df8066ac199cf8c5aa67b05b1d4f59d6536cfa298e1f08"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/frame_96_jpg.rf.1fa927b4b1bd3ab9087559e0e0ced7ec.jpg",
+    "group": "video:unidentified-frame-series",
+    "box": [
+      0.5024457467568844,
+      0.53125,
+      0.2851923952875966,
+      0.6734375
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "dfaeafe3684b89a0",
+    "sha256": "dfaeafe3684b89a07f6c5a953f3c617edfa1cc6a38e51929863ddd52b5c61e64"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/23_mp4-0050_jpg.rf.0e4c2dbad400256017a390f3692969aa.jpg",
+    "group": "video:23",
+    "box": [
+      0.4884673439090338,
+      0.6120930173648057,
+      0.35115579454985524,
+      0.3035441982793568
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "7aaa176787c78556",
+    "sha256": "7aaa176787c78556d36a14f39d9184d15bd2c404ac00f83a5c2ce561ff77bec1"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/frame_1_968_jpg.rf.2ba9d0650bfe2d045a323a9d731fe184.jpg",
+    "group": "video:unidentified-frame-series",
+    "box": [
+      0.4459899788933863,
+      0.39176604527373005,
+      0.29231950811437957,
+      0.36895218403881647
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "8ffb224eed140e88",
+    "sha256": "8ffb224eed140e885e0877b2c32c1fba198137c0248ec4bc86cafe5c8f15e9d6"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/frame_1_778_jpg.rf.6e91fce4073bc81be04c5fbf0aadfc47.jpg",
+    "group": "video:unidentified-frame-series",
+    "box": [
+      0.757514915610326,
+      0.5847775802037388,
+      0.3419795291629528,
+      0.37067715612487895
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "45a5f15c28af6d95",
+    "sha256": "45a5f15c28af6d95a412405abce420cd04ba0f84c39ef064154b00d73a88b51d"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/70_mp4-0019_jpg.rf.3829a4623e188d6d6225b26c04ff47b0.jpg",
+    "group": "video:70",
+    "box": [
+      0.3859375,
+      0.771875,
+      0.2515625,
+      0.26484375
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "43ad5b4636e3c622",
+    "sha256": "43ad5b4636e3c622637fe7321dfb8945cd709f195e3800224597f4cbb9f8bed2"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/22_jpg.rf.a99c72123b9395024c684d685d6f9654.jpg",
+    "group": "image:22_jpg",
+    "box": [
+      0.5425745853904516,
+      0.2820382568356911,
+      0.2607648069894449,
+      0.46395445745273883
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "9e8350e6f18d12bd",
+    "sha256": "9e8350e6f18d12bd5a9413475761595f56b3da4450b113287f7e13e70498d838"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/TELEMMGLPICT000137551754_trans_NvBQzQNjv4BqplGOf-dgG3z4gg9owgQTXB3zF48bcOw5jNpxDOYJRn4_jpeg_jpg.rf.3f65f352c0aea1031d051d05bf843017.jpg",
+    "group": "image:telemmglpict000137551754_trans_nvbqzqnjv4bqplgof-dgg3z4gg9owgqtxb3zf48bcow5jnpxdoyjrn4_jpeg_jpg",
+    "box": [
+      0.5943623587284972,
+      0.45889581537301594,
+      0.46995106269890774,
+      0.24021801736480555
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "6d7c65cac683e416",
+    "sha256": "6d7c65cac683e41667595ab75b727f409866dd63edc81be6dcaa60d0a807a894"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/usatsi_13012711_168384702_lowres_jpg.rf.0888795809656fc75b894c8f0d82bd78.jpg",
+    "group": "image:usatsi_13012711_168384702_lowres_jpg",
+    "box": [
+      0.4465225595192835,
+      0.47398083802138863,
+      0.7918088302037388,
+      0.7452065409761273
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "e8575cf8f9ae6816",
+    "sha256": "e8575cf8f9ae6816651d678f073ae252ca4c6931966ceccb60f6cdad947d5e8f"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/41_jpg.rf.3e69f55d8d6facfc4d3782630005b76f.jpg",
+    "group": "image:41_jpg",
+    "box": [
+      0.38869613661682045,
+      0.3603282049539895,
+      0.6485487773710892,
+      0.28938897158649046
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "fa3f58c5a08a297e",
+    "sha256": "fa3f58c5a08a297e489c26c6bea5430f145294022840a3fc5c7a3d9c1b0d3eba"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/23_mp4-0041_jpg.rf.3b945953d68d923fe6c42a8281288cbd.jpg",
+    "group": "video:23",
+    "box": [
+      0.74765625,
+      0.87421875,
+      0.1953125,
+      0.2515625
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "e33e363815ed76dd",
+    "sha256": "e33e363815ed76ddc271275192aec1a2d5140f454c1d5f4c2e391866513efd34"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/frame_1_500_jpg.rf.ba3e2ea0afdfb7008efd393ee9917602.jpg",
+    "group": "video:unidentified-frame-series",
+    "box": [
+      0.5109375,
+      0.7046875,
+      0.45625,
+      0.51875
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "b06e1cd4ea06dd5f",
+    "sha256": "b06e1cd4ea06dd5f12e76f8be4e77f3335c010423b70a0c81d3cfe75659efaf5"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/1eb31b8e889cfc41f1b46f65ca273fda_jpeg_jpg.rf.f488f2fd61c64923c1a33ef88fd05bef.jpg",
+    "group": "image:1eb31b8e889cfc41f1b46f65ca273fda_jpeg_jpg",
+    "box": [
+      0.6109375,
+      0.859375,
+      0.3125,
+      0.28125
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "93509c20d5ae872b",
+    "sha256": "93509c20d5ae872b991a3e18e35639a1bacdc0be7a1dcd84cf15341a43976db2"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/20220813010230_C07_9175_jpeg_jpg.rf.14cc9a65e85aeef4621bd8b420253810.jpg",
+    "group": "photo-session:20220813",
+    "box": [
+      0.51640625,
+      0.74921875,
+      0.5296875,
+      0.4921875
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "29f1fb04068721c9",
+    "sha256": "29f1fb04068721c9b4b42559eaba2dcb7875c83b9b635a98af6019a0a7194b78"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/Amir-Khan-Dae-Sung-Park-ONE-Collision-Course-1920X1280-27_jpg.rf.20b8a99631bc03dd8c869cab7a75d6c8.jpg",
+    "group": "image:amir-khan-dae-sung-park-one-collision-course-1920x1280-27_jpg",
+    "box": [
+      0.514082602732074,
+      0.42890625,
+      0.6725930316702353,
+      0.346875
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "6fe3997423e624c2",
+    "sha256": "6fe3997423e624c2a3990c13bea6e429ead24215aee04aa79e9ac54f3f0df362"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/belfort_bisping-0-0_jpg.rf.0fee5722af925584737127bed1966e08.jpg",
+    "group": "image:belfort_bisping-0-0_jpg",
+    "box": [
+      0.5341866704579905,
+      0.503125,
+      0.6704436972334659,
+      0.9921875
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "ec24cc980b5b21f0",
+    "sha256": "ec24cc980b5b21f0493b908583beb896528de4b1543478b5814d0f70c44591af"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/UFC-women-kicks_26_jpg.rf.22a9e41a9b67df4816428179500fa6de.jpg",
+    "group": "image:ufc-women-kicks_26_jpg",
+    "box": [
+      0.5802965746737725,
+      0.50028597525464,
+      0.8394068506524551,
+      0.8144690574474494
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "038ca734971f71ff",
+    "sha256": "038ca734971f71ff7ca9fbfb24e713e55e0a1e5aa2db31040c7f61b8bb250423"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/Screen-Shot-2023-07-20-at-12-48-15-PM_jpg.rf.2f10077820c0ea762dcec2fd8fd1667d.jpg",
+    "group": "image:screen-shot-2023-07-20-at-12-48-15-pm_jpg",
+    "box": [
+      0.5318194704616315,
+      0.61328125,
+      0.47581445763437563,
+      0.7734375
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "6f986cfa1600fbe5",
+    "sha256": "6f986cfa1600fbe50bc0ee16ad779936c1f36ecb94084167eae5f0dbcc64d79d"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/Screenshot-2023-07-20-173549_png_jpg.rf.2e671477455b1ee9dfda482b9237b892.jpg",
+    "group": "image:screenshot-2023-07-20-173549_png_jpg",
+    "box": [
+      0.45625,
+      0.653125,
+      0.5703125,
+      0.68125
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "05245bc4460f7a4a",
+    "sha256": "05245bc4460f7a4a8de1d6c8e84d3dfabb906d4079b66c24187afbaa38d1c3d1"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/Conor-McGreggor-Kicks_29_jpg.rf.41dc65e2f16c5387b4f22236ca065219.jpg",
+    "group": "image:conor-mcgreggor-kicks_29_jpg",
+    "box": [
+      0.63203125,
+      0.66015625,
+      0.4796875,
+      0.40859375
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "41d1e4a45cebe8aa",
+    "sha256": "41d1e4a45cebe8aa429aa3889e01126ecc1a24863fb7ba6351b4f4181166f7e1"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/23_mp4-0052_jpg.rf.099a5b34c8a5ade75efc6c518bcddbe9.jpg",
+    "group": "video:23",
+    "box": [
+      0.45703125,
+      0.84921875,
+      0.26796875,
+      0.30078125
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "61ddf13f4a1d062d",
+    "sha256": "61ddf13f4a1d062dad2af7aab96facaafc639d80e992b493f321e5b863ac7d78"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/Screenshot-2023-07-17-184950_png_jpg.rf.28989c3644ea103eb1db93f68489fc82.jpg",
+    "group": "image:screenshot-2023-07-17-184950_png_jpg",
+    "box": [
+      0.59609375,
+      0.73671875,
+      0.8078125,
+      0.37265625
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "ca3ee5332d84e914",
+    "sha256": "ca3ee5332d84e914bff0912ee53998e1be519c9b322e7eec566103f3a7cad3a0"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/MMA12_jpg.rf.159df7b1745fa14a1d82002fbd67c5c4.jpg",
+    "group": "image:mma12_jpg",
+    "box": [
+      0.4754981477951392,
+      0.39605212806331525,
+      0.2483791354460422,
+      0.7386283373647259
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "c0ac3499c552ae1b",
+    "sha256": "c0ac3499c552ae1bb7fb9b7c5b2521e94fdf7498f0d5cc26a9a66a00475062a7"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/70_mp4-0018_jpg.rf.68553f322bcf1c048d81ca23f405f3c9.jpg",
+    "group": "video:70",
+    "box": [
+      0.4171875,
+      0.8109375,
+      0.23359375,
+      0.24453125
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "ecc7986a9c3ecda6",
+    "sha256": "ecc7986a9c3ecda65cd9f21f1b0ebfeff6a3d61f72990182cf4444875b0948b9"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/23_mp4-0040_jpg.rf.2480ade3e2c9009858e54238d29c6107.jpg",
+    "group": "video:23",
+    "box": [
+      0.4796875,
+      0.7734375,
+      0.2875,
+      0.453125
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "70f86f1b2b157af9",
+    "sha256": "70f86f1b2b157af90f7f3189db2b152f4af45a7ff40c7dd650416c7c8c28949d"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/52_png_jpg.rf.8b4ee555d02d180f47fdc1f93f50800c.jpg",
+    "group": "image:52_png_jpg",
+    "box": [
+      0.5327333388089242,
+      0.5977632507855669,
+      0.24575674961875044,
+      0.42324764422102223
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "4fd444f54ddcf139",
+    "sha256": "4fd444f54ddcf139142f76483f0c0c5461900854f024dfe4324295a8469f6a73"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/UFC-fighters-kicks_19_jpg.rf.09ecc5a9832606d31766e95c0306781e.jpg",
+    "group": "image:ufc-fighters-kicks_19_jpg",
+    "box": [
+      0.578125,
+      0.5921875,
+      0.371875,
+      0.41171875
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "b6b4bd386d941a75",
+    "sha256": "b6b4bd386d941a752c154fa69ed53d6b26bc25aeae84a722ad33402980fbbebc"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/60_png_jpg.rf.0b9347a6e9df0e6b59c41efdf4d4b68b.jpg",
+    "group": "image:60_png_jpg",
+    "box": [
+      0.5046875,
+      0.5816274292648214,
+      0.171875,
+      0.3535624466899989
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "585c7454b997391d",
+    "sha256": "585c7454b997391d43b3d80e5cecd8d6617304d31d4e4478cf48903e7225d9e4"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/UFC-women-kicks_23_jpg.rf.2f3e0c4b66d29052cad58d36bc82feb4.jpg",
+    "group": "image:ufc-women-kicks_23_jpg",
+    "box": [
+      0.5706916906771082,
+      0.599568359922049,
+      0.7969679871141846,
+      0.562361117441086
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "e8ba0f9257741cae",
+    "sha256": "e8ba0f9257741cae22f8184d33066d98218897c68e90998d40a1aab027f373d2"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/70_mp4-0041_jpg.rf.20704989fc17c285c12b14eb9a8a95a0.jpg",
+    "group": "video:70",
+    "box": [
+      0.5361432945498259,
+      0.62890625,
+      0.3612713404244447,
+      0.35
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "362f3c144f700f96",
+    "sha256": "362f3c144f700f969b4714f3ef8f5cb5281f92ac807de7f8119815492e36b0dd"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/frame_379_jpg.rf.8c41d3670180e097c8784177ad566b8c.jpg",
+    "group": "video:unidentified-frame-series",
+    "box": [
+      0.3795313427279074,
+      0.6890625,
+      0.3232788535276806,
+      0.621875
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "c01f4b3361a1541d",
+    "sha256": "c01f4b3361a1541d26c8257b4d3549c9d6e69ce0b4a5239cbebce12a07e93b3d"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/23_mp4-0049_jpg.rf.1a659259a1b8f57d229716e69b6cd780.jpg",
+    "group": "video:23",
+    "box": [
+      0.622807428871639,
+      0.8234375,
+      0.24196433302444262,
+      0.3515625
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "d2fabc59bfb3ae88",
+    "sha256": "d2fabc59bfb3ae88735d03072f4ec9009e4f404ba9641d976fc7ad770a61fe61"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/20200809120957_A44I5443_jpeg_jpg.rf.21c659b4632a694d143839a08f0df339.jpg",
+    "group": "photo-session:20200809",
+    "box": [
+      0.49111018968260467,
+      0.65859375,
+      0.4005195976426393,
+      0.559375
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "a6f3ca370b8f24ac",
+    "sha256": "a6f3ca370b8f24ace1cc26e383ee91964a9f517d4e06daf70d3182419aeb3b09"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/test/images/UFC-women-kicks_21_jpg.rf.b2d1e59cb7385a998645db4daf62ff45.jpg",
+    "group": "image:ufc-women-kicks_21_jpg",
+    "box": [
+      0.39921875,
+      0.42421875,
+      0.5421875,
+      0.6859375
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "ac13b2ba0169cfbd",
+    "sha256": "ac13b2ba0169cfbd775312af0efa3a7bbe3881e4916c18f764e3dab248e13ddf"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/23_mp4-0025_jpg.rf.567dad24c6fc189c484917a54f359d19.jpg",
+    "group": "video:23",
+    "box": [
+      0.5,
+      0.69453125,
+      0.26953125,
+      0.2828125
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "78079b5cf8661b60",
+    "sha256": "78079b5cf8661b60ec103ec99a6d89ca0b68fbf09ae8118fe91ab422a6dcacfe"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/kick-26_jpg.rf.240e893ee98a7a33ba27e6bbaf23b348.jpg",
+    "group": "image:kick-26_jpg",
+    "box": [
+      0.39765625,
+      0.3616884963857627,
+      0.44375,
+      0.5103941619786114
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "c258746b7f5b2b40",
+    "sha256": "c258746b7f5b2b401d3734a5dd9fd7c3ad90a5c5e36957c44b9d02b63e9bd6da"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/8_mp4-0027_jpg.rf.1cd25a7911193556abad63b4426926d3.jpg",
+    "group": "video:8",
+    "box": [
+      0.414991367940371,
+      0.7099256992759571,
+      0.829982735880742,
+      0.43950542011454025
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "eb868c6fb06ee7d7",
+    "sha256": "eb868c6fb06ee7d7304d6a9d979142a10db67f3eadedaf46320d491b07482702"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/70_mp4-0063_jpg.rf.2b90dad07953d0ad6747ded07f89ccf0.jpg",
+    "group": "video:70",
+    "box": [
+      0.421875,
+      0.52109375,
+      0.2265625,
+      0.2484375
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "a24d11b808e4eacb",
+    "sha256": "a24d11b808e4eacbc9c7bb13707656845d0b123d5933b86b06c21d1d397f9190"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/20210403054602_A44I3362_jpeg_jpg.rf.0b16d55c74034a5f45967cc0fd509ea8.jpg",
+    "group": "photo-session:20210403",
+    "box": [
+      0.515625,
+      0.65859375,
+      0.5390625,
+      0.5765625
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "0f07fa70b9500963",
+    "sha256": "0f07fa70b9500963dad3a65fe3b3f7c2320f82c1d3502a4eb62adb3ab6e24068"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/8_mp4-0036_jpg.rf.439d628708831ee97752be1ed42d2467.jpg",
+    "group": "video:8",
+    "box": [
+      0.6670747947564959,
+      0.66171875,
+      0.6272737613780889,
+      0.3296875
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "f930b68da7ed2d22",
+    "sha256": "f930b68da7ed2d22a1449cebf43f96779f7c8640e4a237ec5c1e460060472614"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/Conor-McGreggor-Kicks_28_jpg.rf.202151903b0b2cdcf86689a6169975f8.jpg",
+    "group": "image:conor-mcgreggor-kicks_28_jpg",
+    "box": [
+      0.3296875,
+      0.34453125,
+      0.5125,
+      0.5546875
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "9611acdf856a56d4",
+    "sha256": "9611acdf856a56d46beb1af07d2af2af70b539e8b06e06616c0f188b14946a94"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/Screenshot-2023-07-17-162238_png_jpg.rf.5361d527994c76b3dffcb12d84989af6.jpg",
+    "group": "image:screenshot-2023-07-17-162238_png_jpg",
+    "box": [
+      0.528125,
+      0.68359375,
+      0.48125,
+      0.496875
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "4ddff431e15e6500",
+    "sha256": "4ddff431e15e6500752a3159e8226efca50006ffb62fa2cdff74e83d4f98cef1"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/Amir-Khan-defeats-Ev-Ting-at-ONE-EDGE-OF-GREATNESS-DUX-1699_jpg.rf.0cb6dded0ab7af597b3ec4b19bc46fdf.jpg",
+    "group": "image:amir-khan-defeats-ev-ting-at-one-edge-of-greatness-dux-1699_jpg",
+    "box": [
+      0.5717518952498676,
+      0.6215799340785872,
+      0.673912404041998,
+      0.3171747920909958
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "23185b6a60ea0fd2",
+    "sha256": "23185b6a60ea0fd256dbe753138b43332e040d500f60ab2b3012433513eb3956"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/70_mp4-0135_jpg.rf.c2e7c174f9a26e426e8caadc92ca6c7e.jpg",
+    "group": "video:70",
+    "box": [
+      0.48671875,
+      0.51328125,
+      0.33671875,
+      0.334375
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "9182eb340676eae0",
+    "sha256": "9182eb340676eae0eb60e54b423f182a57a99f723d64dad1e52667491fc8aeea"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/21_mp4-0055_jpg.rf.2c8a2142895c6805737c9fd771bfcacf.jpg",
+    "group": "video:21",
+    "box": [
+      0.24818316640080074,
+      0.6889646920353165,
+      0.19251042288703193,
+      0.3787260786919081
+    ],
+    "label": 2,
+    "split": "train",
+    "id": "df20fdc61314bf77",
+    "sha256": "df20fdc61314bf7716ddf505d7bd87eba9f0db28652f3ab26b2b85fe2ec9be56"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/29_mp4-0045_jpg.rf.9ede2cd061ad4eacf7551cc5d84cdcf9.jpg",
+    "group": "video:29",
+    "box": [
+      0.6166888050895837,
+      0.5121070310361879,
+      0.1327436840799308,
+      0.19918290944452863
+    ],
+    "label": 1,
+    "split": "test",
+    "id": "17be6624b4612722",
+    "sha256": "17be6624b461272277177628476d56b7833ba052372f3e1834441dedf70fe96d"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/28_mp4-0080_jpg.rf.cc591a1a544e19d65af3ebd81f5f2a66.jpg",
+    "group": "video:28",
+    "box": [
+      0.2875,
+      0.375,
+      0.19765625,
+      0.13203125
+    ],
+    "label": 1,
+    "split": "test",
+    "id": "b69af983707e5635",
+    "sha256": "b69af983707e56353cdefec9a9c01831b142293a29cbbefce4ef3d5ee99bc98f"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/29_mp4-0011_jpg.rf.8a2ca00aa38b857b6e78fb2fe6fb0fd8.jpg",
+    "group": "video:29",
+    "box": [
+      0.7765702324294788,
+      0.541309381335207,
+      0.22529485999173637,
+      0.2153442406302261
+    ],
+    "label": 1,
+    "split": "test",
+    "id": "7c1033eebcb9dca8",
+    "sha256": "7c1033eebcb9dca8c1742c7bf8cf10852eb742b3d76499346a4bfa35cb1c8324"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/28_mp4-0181_jpg.rf.20d8cf18cb8c22f58e0cbcd071d3282b.jpg",
+    "group": "video:28",
+    "box": [
+      0.393737553998866,
+      0.34065555605504294,
+      0.26110616950744614,
+      0.14204423870145302
+    ],
+    "label": 1,
+    "split": "test",
+    "id": "a7a8524b3d79f3e9",
+    "sha256": "a7a8524b3d79f3e97691203e04defb52c48bc76c010a9c792b42b83607736fe2"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/29_mp4-0016_jpg.rf.58f6eb7f13fc0d28b7c20a7d6c778e62.jpg",
+    "group": "video:29",
+    "box": [
+      0.5859375,
+      0.53046875,
+      0.15625,
+      0.17109375
+    ],
+    "label": 1,
+    "split": "test",
+    "id": "9463ef1d7eb20b54",
+    "sha256": "9463ef1d7eb20b54ee18c17ebc2f789b39cc900d20503c85a7a27c3ae0227581"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/28_mp4-0011_jpg.rf.721b9e35abb721fea7a624ac9035da9f.jpg",
+    "group": "video:28",
+    "box": [
+      0.50625,
+      0.353125,
+      0.20859375,
+      0.1328125
+    ],
+    "label": 1,
+    "split": "test",
+    "id": "c5212bea9300947f",
+    "sha256": "c5212bea9300947f754aa5e892e0ef22f6e41586e976c223643618c6a1312a28"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/29_mp4-0031_jpg.rf.3e6cbd09cc354cfd7365802b8f1ea473.jpg",
+    "group": "video:29",
+    "box": [
+      0.73359375,
+      0.51640625,
+      0.1453125,
+      0.1515625
+    ],
+    "label": 1,
+    "split": "test",
+    "id": "8dde8aed9b8b394c",
+    "sha256": "8dde8aed9b8b394c5d98cc998b437441dba9bdff3651a91db1d9b4771c67f877"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/20230715011254_BB3883_jpeg_jpg.rf.06cff9b9e52d36caba566ad7f71c95dc.jpg",
+    "group": "photo-session:20230715",
+    "box": [
+      0.4296875,
+      0.20328109874689487,
+      0.13125,
+      0.23826359016268786
+    ],
+    "label": 1,
+    "split": "test",
+    "id": "17f2697265b5086b",
+    "sha256": "17f2697265b5086b057610da373068b2cc9c6d2435776d2d8c580f71588c3cdd"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/28_mp4-0162_jpg.rf.036736006334047951500794121b7fcf.jpg",
+    "group": "video:28",
+    "box": [
+      0.31748137402754617,
+      0.35606183271004344,
+      0.21186471662612102,
+      0.16182948002863498
+    ],
+    "label": 1,
+    "split": "test",
+    "id": "62321672a739cb62",
+    "sha256": "62321672a739cb6200e20e0b3d89f1b756e105cf29076e3d5cdd7b05444aa72a"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/26_mp4-0057_jpg.rf.3e158f1aa3ad99e455103aa9d94bf0ce.jpg",
+    "group": "video:26",
+    "box": [
+      0.2687995521847675,
+      0.37890625,
+      0.16337799763774727,
+      0.159375
+    ],
+    "label": 1,
+    "split": "test",
+    "id": "0e670d0e3d57da99",
+    "sha256": "0e670d0e3d57da99905cb1ce905cfe50acd896da29a6f3f9ca657b1b92a16c95"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/25_mp4-0108_jpg.rf.07c89acdecd6e3c5b4a1860884fd6931.jpg",
+    "group": "video:25",
+    "box": [
+      0.69296875,
+      0.48203125,
+      0.18203125,
+      0.509375
+    ],
+    "label": 1,
+    "split": "test",
+    "id": "1385e0cc9c8969f3",
+    "sha256": "1385e0cc9c8969f364e096dc384dd4231956fb975af5e4c69b29ee4b5ec8ea27"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/test/images/28_mp4-0044_jpg.rf.84c8dfeb8a6215e154088788dc4d3943.jpg",
+    "group": "video:28",
+    "box": [
+      0.30078125,
+      0.3515625,
+      0.13671875,
+      0.13671875
+    ],
+    "label": 1,
+    "split": "test",
+    "id": "fc7128b2f939dc81",
+    "sha256": "fc7128b2f939dc810ed748ce776ae7bba093002b7df11a549878d60a7a7235b3"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/26_mp4-0009_jpg.rf.6b3296af9f0d44653aee328dbaf68fbd.jpg",
+    "group": "video:26",
+    "box": [
+      0.43443738991135455,
+      0.40794132766965596,
+      0.19811411094166687,
+      0.18862720452587248
+    ],
+    "label": 1,
+    "split": "test",
+    "id": "66fe67e05be17232",
+    "sha256": "66fe67e05be172321940ab24d80b59e1b900938e0fa71d0360bddabc2773e573"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/28_mp4-0148_jpg.rf.2381035ff7d2a4803da22437b89d211b.jpg",
+    "group": "video:28",
+    "box": [
+      0.4015204182506225,
+      0.3821436220559974,
+      0.26992736975432585,
+      0.2046351453691802
+    ],
+    "label": 1,
+    "split": "test",
+    "id": "6373118fe369127d",
+    "sha256": "6373118fe369127d5f2e8641f11d39237c337d64a7ccac180d931063e1058de3"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/test/images/25_mp4-0041_jpg.rf.8a3e94fb0c1cfb05029b43d9e1a0e7b4.jpg",
+    "group": "video:25",
+    "box": [
+      0.52578125,
+      0.303125,
+      0.17578125,
+      0.3296875
+    ],
+    "label": 1,
+    "split": "test",
+    "id": "93a395a781d53b08",
+    "sha256": "93a395a781d53b08adc51ee3727bd035f84d88a73daedbe9cf5f3b2429d2d61a"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/12_mp4-0007_jpg.rf.bff7feb5167b4d373774b1670f630e4a.jpg",
+    "group": "video:12",
+    "box": [
+      0.31818508102446164,
+      0.3953125,
+      0.20239287727617325,
+      0.1359375
+    ],
+    "label": 1,
+    "split": "test",
+    "id": "651d4500f68a54f6",
+    "sha256": "651d4500f68a54f677b2a3bee663eb4a81d58228e8e04209cd41d75a70f8167a"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/28_mp4-0021_jpg.rf.4272ff2c0fe91dc07fcf133b73e32218.jpg",
+    "group": "video:28",
+    "box": [
+      0.48125,
+      0.2984375,
+      0.33125,
+      0.165625
+    ],
+    "label": 1,
+    "split": "test",
+    "id": "6a819faa4edab247",
+    "sha256": "6a819faa4edab2478b33d70df6b2d44456e5a1a836adb7c7d3558e1eb10e7006"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/28_mp4-0101_jpg.rf.01e0b9137ca46d16b0ce148d72194858.jpg",
+    "group": "video:28",
+    "box": [
+      0.13566259062700184,
+      0.2938056386855446,
+      0.16409995735199914,
+      0.1393908586887263
+    ],
+    "label": 1,
+    "split": "test",
+    "id": "4abfaac67642be5d",
+    "sha256": "4abfaac67642be5db8449037363a63611fb144b75b551b3661d5b5b95ffca32e"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/25_mp4-0040_jpg.rf.068d9b9a5fa0eb1fd568045cf0192bd9.jpg",
+    "group": "video:25",
+    "box": [
+      0.7176193386214929,
+      0.21640625,
+      0.15418488582729192,
+      0.3140625
+    ],
+    "label": 1,
+    "split": "test",
+    "id": "fbdc3cf96b1491e2",
+    "sha256": "fbdc3cf96b1491e2e57cef524e73753dbfa338c96504ac15c3688c5034d216bb"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/26_mp4-0023_jpg.rf.24c323ffd93b63e20aea5aa8acb0f569.jpg",
+    "group": "video:26",
+    "box": [
+      0.21118545962649607,
+      0.4192823068870048,
+      0.27902284500534213,
+      0.20626922247985355
+    ],
+    "label": 1,
+    "split": "test",
+    "id": "25c6169181ba013d",
+    "sha256": "25c6169181ba013dd69037a261eba676093e707794cff7a6513b81ec2d643821"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/27_mp4-0100_jpg.rf.63e453c6c68c7266cbffabea5de68c98.jpg",
+    "group": "video:27",
+    "box": [
+      0.78046875,
+      0.51171875,
+      0.14765625,
+      0.16328125
+    ],
+    "label": 1,
+    "split": "validation",
+    "id": "4b2629ad891eb244",
+    "sha256": "4b2629ad891eb2443fd72d7cbdb25650a2f6b70ce29f80e7d946e5c4285cafc6"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/27_mp4-0099_jpg.rf.bf3d63952ef451b33f38d81d531b424d.jpg",
+    "group": "video:27",
+    "box": [
+      0.7449514046230874,
+      0.5249696580999045,
+      0.13397735389503396,
+      0.15777723201781732
+    ],
+    "label": 1,
+    "split": "validation",
+    "id": "ae3a83751bdcfda0",
+    "sha256": "ae3a83751bdcfda0069f111efca6e8ea59b7521c2aa436c47cf12acb2232e781"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/27_mp4-0058_jpg.rf.0e8c6a818b0e26c34acd52ddb0acc533.jpg",
+    "group": "video:27",
+    "box": [
+      0.70728380924947,
+      0.5556213453290493,
+      0.2467500892845374,
+      0.17329309601642037
+    ],
+    "label": 1,
+    "split": "validation",
+    "id": "14ccea206c07d1c4",
+    "sha256": "14ccea206c07d1c41490ee1f01c020aa5d60bc01e711279c67f8ffe786e03c8a"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/27_mp4-0059_jpg.rf.6d83a8327a8d6a243bc95034eb768bd3.jpg",
+    "group": "video:27",
+    "box": [
+      0.6436360589211378,
+      0.5063990679105951,
+      0.16571123119538153,
+      0.16593517735518085
+    ],
+    "label": 1,
+    "split": "validation",
+    "id": "df2920b1008e9adf",
+    "sha256": "df2920b1008e9adfeab5fb17336a9e7dbecc766c8058a4b05b5f02288746f3a9"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/27_mp4-0141_jpg.rf.fcbd37eee69fb1050e8bcca05171a9f3.jpg",
+    "group": "video:27",
+    "box": [
+      0.71015625,
+      0.503125,
+      0.178125,
+      0.17890625
+    ],
+    "label": 1,
+    "split": "validation",
+    "id": "7f66198189ef52fd",
+    "sha256": "7f66198189ef52fdcdd5a66090b29cb04c962ba2b0745ba7e3200339b8063c13"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/27_mp4-0041_jpg.rf.1d4881b804ab5541b70a2f2e8e486bac.jpg",
+    "group": "video:27",
+    "box": [
+      0.7185044657119788,
+      0.48046875,
+      0.17823671561506949,
+      0.1390625
+    ],
+    "label": 1,
+    "split": "validation",
+    "id": "084ae1f783c9b9d2",
+    "sha256": "084ae1f783c9b9d2581333fabc7ea656c9859b0015a01f1fe186977c1ddb9244"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/27_mp4-0024_jpg.rf.eeca9414a561a0a7c60dad1e5b67833d.jpg",
+    "group": "video:27",
+    "box": [
+      0.66328125,
+      0.50546875,
+      0.2046875,
+      0.15703125
+    ],
+    "label": 1,
+    "split": "validation",
+    "id": "dbfc3f0de8109f60",
+    "sha256": "dbfc3f0de8109f602c9715229c5181d0d6fca3dcb7a4781fa1d0be2797914541"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/27_mp4-0038_jpg.rf.7604586f18c4ef208fa87be177c5359f.jpg",
+    "group": "video:27",
+    "box": [
+      0.5281865489901689,
+      0.5265625,
+      0.15717721662612086,
+      0.159375
+    ],
+    "label": 1,
+    "split": "validation",
+    "id": "7a62719f6fb8f926",
+    "sha256": "7a62719f6fb8f926f4330e221b9fbe6ca0571fcf1c0cec5297e94e54996ab374"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/18_mp4-0090_jpg.rf.0d81048a27df4002b15028544989ccb3.jpg",
+    "group": "video:18",
+    "box": [
+      0.4046875,
+      0.325,
+      0.134375,
+      0.3109375
+    ],
+    "label": 1,
+    "split": "validation",
+    "id": "acc564ecdadd6e1d",
+    "sha256": "acc564ecdadd6e1d1a3ede2e34be1c95e788e1c69a0be792b17a7463208e814f"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/18_mp4-0102_jpg.rf.51ec78118ced6c67800f4f0fbdf37ce0.jpg",
+    "group": "video:18",
+    "box": [
+      0.6018492775994353,
+      0.2862792301177929,
+      0.15183087580913118,
+      0.37597393912238164
+    ],
+    "label": 1,
+    "split": "validation",
+    "id": "ad18661eb3eea01d",
+    "sha256": "ad18661eb3eea01d8d8ba7de4283baf24fd9267a66c649a917d7d9fdfd198840"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/4_mp4-0002_jpg.rf.462e3080ce0f9ff5cf21268c0615576c.jpg",
+    "group": "video:4",
+    "box": [
+      0.21640625,
+      0.4296875,
+      0.2671875,
+      0.3375
+    ],
+    "label": 1,
+    "split": "validation",
+    "id": "8df75a9a6fd83dc3",
+    "sha256": "8df75a9a6fd83dc3786255688d6661e454bc6262d1ad00491769604a01a79d3a"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/Screenshot-2023-07-20-165720_png_jpg.rf.0aad8e447663ec357ff72b0023bbf88f.jpg",
+    "group": "image:screenshot-2023-07-20-165720_png_jpg",
+    "box": [
+      0.7148833836430905,
+      0.16235721936096753,
+      0.14368379692145866,
+      0.32471443872193506
+    ],
+    "label": 1,
+    "split": "validation",
+    "id": "84d1edbd9ffeee2f",
+    "sha256": "84d1edbd9ffeee2f39370bef12572c047ed2157508806d7cf9957528f546c55a"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/4_mp4-0027_jpg.rf.41ee3786de8ccb555f9dec0f0a96f244.jpg",
+    "group": "video:4",
+    "box": [
+      0.16796875,
+      0.4214857433561353,
+      0.18125,
+      0.3552340346912716
+    ],
+    "label": 1,
+    "split": "validation",
+    "id": "fec64f6f32b8fda4",
+    "sha256": "fec64f6f32b8fda44e7f74627255e7eb84e052ce0e1987aad00583d915a46d1e"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/43_png_jpg.rf.3853bf4d2771be01eb06710ddea9b932.jpg",
+    "group": "image:43_png_jpg",
+    "box": [
+      0.7080839699791175,
+      0.19715988056973172,
+      0.13875157759274243,
+      0.25933973201781735
+    ],
+    "label": 1,
+    "split": "validation",
+    "id": "438fa02679ca2c68",
+    "sha256": "438fa02679ca2c68c2992f97a1629885372aa3da40c29a487aff36cef9ec98fd"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/18_mp4-0104_jpg.rf.3de0895483a89c37abfb44202da4e3e3.jpg",
+    "group": "video:18",
+    "box": [
+      0.891053572569583,
+      0.3686654415646042,
+      0.13790657560680586,
+      0.3553887037328781
+    ],
+    "label": 1,
+    "split": "validation",
+    "id": "b5b48f6b3d5dd6ed",
+    "sha256": "b5b48f6b3d5dd6edd4193c2693115e2ba17e3aaa1e1c1efcf0176ab107866dd3"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/1idris_jpeg_jpg.rf.102c394eb20b194a2d7307b08afc867a.jpg",
+    "group": "image:1idris_jpeg_jpg",
+    "box": [
+      0.4421875,
+      0.7516565884770537,
+      0.65,
+      0.49259579220334154
+    ],
+    "label": 2,
+    "split": "validation",
+    "id": "72f345bc44e73a38",
+    "sha256": "72f345bc44e73a388ab2c53c2dd723bb9fe2212e944055d6c89dcde56619a1e0"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/valid/images/UFC-women-kicks_19_jpg.rf.1bfbff4bb87ea4577d7fc2f388ca277b.jpg",
+    "group": "image:ufc-women-kicks_19_jpg",
+    "box": [
+      0.403125,
+      0.484375,
+      0.65,
+      0.840625
+    ],
+    "label": 2,
+    "split": "validation",
+    "id": "be864f519e4ecca6",
+    "sha256": "be864f519e4ecca6f45003ecd1d07127a8fd2667fa2698f139865344785339f8"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/19_jpg.rf.00502ae518cfe812176c2684074127e7.jpg",
+    "group": "image:19_jpg",
+    "box": [
+      0.5322728650257293,
+      0.27890625,
+      0.3147600163362503,
+      0.365625
+    ],
+    "label": 2,
+    "split": "validation",
+    "id": "6312013bb017643d",
+    "sha256": "6312013bb017643d5e486cf5ea2592bb6d0f446dac1561b2691db4b047abaf9a"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/9_mp4-0013_jpg.rf.2aae664860061a1aa597d702074723b8.jpg",
+    "group": "video:9",
+    "box": [
+      0.5212799420750874,
+      0.553125,
+      0.22029541335136288,
+      0.1328125
+    ],
+    "label": 2,
+    "split": "validation",
+    "id": "908aa895a6c9a0e0",
+    "sha256": "908aa895a6c9a0e0768495c1f2cde3f1f173ae229feb37a7159dfdc1c6b1e9ab"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/18_mp4-0157_jpg.rf.423363c4fe087b09311c6f8e94d34561.jpg",
+    "group": "video:18",
+    "box": [
+      0.4133551855080201,
+      0.8619628429412807,
+      0.17326088772715292,
+      0.2638557686676865
+    ],
+    "label": 2,
+    "split": "validation",
+    "id": "8fad37045d7293a6",
+    "sha256": "8fad37045d7293a60352ee2fff03186e7127121fb3a10ae41e0a5e65292d7836"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/Screenshot-2023-07-20-165720_png_jpg.rf.0aad8e447663ec357ff72b0023bbf88f.jpg",
+    "group": "image:screenshot-2023-07-20-165720_png_jpg",
+    "box": [
+      0.684173777922848,
+      0.8524712459461055,
+      0.4613778303564587,
+      0.2282763733734992
+    ],
+    "label": 2,
+    "split": "validation",
+    "id": "d1a2b6f401493bf5",
+    "sha256": "d1a2b6f401493bf5bdb7c023594c4145bace7ecaf68a88591e2f1218ca6a0b06"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/18_mp4-0149_jpg.rf.21c48920138bb24ccc984fd1dd97a5ce.jpg",
+    "group": "video:18",
+    "box": [
+      0.4296992577868755,
+      0.6095237347230883,
+      0.1380156783803475,
+      0.35932155068427196
+    ],
+    "label": 2,
+    "split": "validation",
+    "id": "42b473e47b69bcdd",
+    "sha256": "42b473e47b69bcdd4aa439eabf1b6715ce2fd838f4b97f2e5a4f13a18dbcc3cb"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/kick-1-3_jpeg_jpg.rf.289f3ac48a08c34de88f6c631b091fa0.jpg",
+    "group": "image:kick-1-3_jpeg_jpg",
+    "box": [
+      0.5281923729664622,
+      0.6244507285964577,
+      0.9404024521080251,
+      0.356184937460176
+    ],
+    "label": 2,
+    "split": "validation",
+    "id": "8593e36b6d83710d",
+    "sha256": "8593e36b6d83710ddffddb8ad380245d29ac6df7e54c329aa1008f9b020b48a9"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/UFC-women-kicks_7_jpg.rf.2156c2ca6dd6e80527939414bb33e1b8.jpg",
+    "group": "image:ufc-women-kicks_7_jpg",
+    "box": [
+      0.34453125,
+      0.5328125,
+      0.4578125,
+      0.34296875
+    ],
+    "label": 2,
+    "split": "validation",
+    "id": "9b5bb1f199c35bb2",
+    "sha256": "9b5bb1f199c35bb2bd9c4d4f015070f91bb1b723d837e92f416c591e1e900597"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/9_mp4-0018_jpg.rf.54285dc37468ec86b736e8b011398be8.jpg",
+    "group": "video:9",
+    "box": [
+      0.4078125,
+      0.715625,
+      0.1375,
+      0.31328125
+    ],
+    "label": 2,
+    "split": "validation",
+    "id": "1a7c285dbb60f5ba",
+    "sha256": "1a7c285dbb60f5baf92480445e6841c3c1a0dbfa513cab579845ad7bedc24a35"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/Screen-Shot-2023-07-17-at-3-32-44-PM_jpg.rf.1e214302d74a6f433b3f5e0ee193ffcd.jpg",
+    "group": "image:screen-shot-2023-07-17-at-3-32-44-pm_jpg",
+    "box": [
+      0.4868060394254957,
+      0.6733336712683211,
+      0.7465350280871779,
+      0.6507872707669954
+    ],
+    "label": 2,
+    "split": "validation",
+    "id": "52b1a4c0d0470666",
+    "sha256": "52b1a4c0d047066612410a1e097a4695e667469c769f29ae7d51a8d29cf44a87"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/Conor-McGreggor-Kicks_22_jpg.rf.2d002664a9c1c43a0bbebe172710647a.jpg",
+    "group": "image:conor-mcgreggor-kicks_22_jpg",
+    "box": [
+      0.6089417178946867,
+      0.7865679346548594,
+      0.4351408053787251,
+      0.3419024967502938
+    ],
+    "label": 2,
+    "split": "validation",
+    "id": "fe31b6446c30d870",
+    "sha256": "fe31b6446c30d87037e268a44176e81937d54c770dbca8653d5627ea4f938c62"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/Conor-McGreggor-Kicks_10_jpg.rf.203c3956f602e0cd56cf5949cfe54ca8.jpg",
+    "group": "image:conor-mcgreggor-kicks_10_jpg",
+    "box": [
+      0.5833008734484038,
+      0.8509924117822198,
+      0.5843408267027257,
+      0.2690066135776178
+    ],
+    "label": 2,
+    "split": "validation",
+    "id": "8b9bb7f7ab6a9e2a",
+    "sha256": "8b9bb7f7ab6a9e2a1c49769b314ecadd01ca970cfb964de6fa2ee08459b8564d"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/train/images/63404_871158155261_325789893_n_jpg.rf.19a424a5a264e11f00a81c84c4b21278.jpg",
+    "group": "image:63404_871158155261_325789893_n_jpg",
+    "box": [
+      0.6113628065176732,
+      0.5559753484523073,
+      0.49067051253652816,
+      0.4746657402374426
+    ],
+    "label": 2,
+    "split": "validation",
+    "id": "b3baafc9e7f7fba2",
+    "sha256": "b3baafc9e7f7fba276946cd1a61eae85a000bb7ba7d9e7af7d3522caece143ec"
+  },
+  {
+    "source": "CombatSports Dataset - Greyscale 10%/test/images/UFC-women-kicks_9_jpg.rf.c879090ff8fab29f50a5afe7266c1e57.jpg",
+    "group": "image:ufc-women-kicks_9_jpg",
+    "box": [
+      0.5078125,
+      0.5359375,
+      0.44609375,
+      0.84375
+    ],
+    "label": 2,
+    "split": "validation",
+    "id": "93c580feaae124af",
+    "sha256": "93c580feaae124af7c34c56cae04d2a9d885f014d6e22f203e2634cd41c6f646"
+  }
+]

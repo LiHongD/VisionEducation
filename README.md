@@ -83,6 +83,22 @@ result.show(conf=0.50)
 
 浏览器验收涵盖实际推理、修改置信度后的零检测、Python 语法报错、终止无限循环和再次运行。模型与运行资源的版本、来源和 SHA-256 见 [第三方声明](THIRD_PARTY_NOTICES.md) 及 `public/pose-lab-assets/manifest.json`。
 
+## 图像分类训练与模型评测
+
+第四课新增完整的训练、模型文件、预测、教师评测和班级排名实验。数据取自 Evan Quinn 的 [Combat Sports Dataset](https://zenodo.org/records/15349809)，作者声明 Public Domain，保留直拳、高位防守、踢腿三类。训练 180 张、验证 45 张、服务端保留测试 60 张，每类分别 60/15/20 张。按已知来源视频、原图、未识别连续帧和照片批次分组，同源增强图不跨集合。下载包只含训练和验证图；仍有小样本、背景和未知拍摄来源偏差，不是武术规范或跨人泛化基准。
+
+固定 MobileNetV2 为图像特征提取器（1280 维输出，固定压缩为 256 维），学生真实训练线性 Softmax 或单隐藏层 ReLU 分类器，优化器为 Adam。可以调整学习率、轮数、批大小、隐藏层、每类训练数量、L2、种子和早停。给定图片特征提前计算以减少等待；上传新图时实际运行同一特征模型。
+
+`actionlab-image-classifier/v1` JSON 保存分类器权重、训练集归一化参数、超参数、特征提取器版本和本机训练记录。固定 MobileNet 由本站提供，JSON 不是独立的完整 CNN。模型自动保存在本机 IndexedDB，可下载备份、重新载入预测。图片不上传。
+
+学生凭课堂码加入后，模型可正式提交。规范化文件保存到私有 R2 `BUCKET`，D1 `DB` 保存归属、摘要、参数和评测指标。服务器在固定 60 张测试图的特征上重新计算准确率、宏平均 F1 和混淆矩阵，不采信客户端精度。每人最多 10 个不同模型，重复权重不重复计数；取最佳测试准确率，同分并列。排名仅对本班学生和所属教师开放，文件仅本人或所属教师可下载。教师可查看全部模型、下载、重新评测；结束收件后禁止新上传。
+
+源码：`public/model-lab/`（训练、模型、预测、排名），`public/model-training-embed.js`（第四课入口、教师模型界面），`lib/model-api.ts`（评测与权限）。`public/model-lab-assets/` 包含训练/验证图片、特征、ZIP、MobileNet 和许可；`lib/classifier-benchmark.json` 是服务端测试特征。处理记录在 `docs/classifier-dataset-provenance.json`。
+
+数据库新增迁移为 `drizzle/0001_black_killraven.sql`，Sites 发布时应用；本地预览须先对本地 DB 执行迁移。`.openai/hosting.json` 保留 DB 并启用 BUCKET。数据和模型已随项目提供；重建可运行 `scripts/prepare-classifier-data.py`（需 Pillow、NumPy、ONNX、ONNX Runtime，首次原始包下载约 391 MB）。不要在学生使用期间改变测试集。
+
+`scripts/verify-model-training.mjs` 验收真实训练、文件保存/载入、MobileNet 新图预测、R2 上传、教师下载重测及排名；只对本地预览创建测试课堂，不对线上课堂运行写入验收。
+
 ## 许可
 
 项目按 [GNU AGPL-3.0](LICENSE) 提供，与所分发的 Ultralytics 模型许可保持一致。第三方运行时保留各自许可证，详见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。用户提供的角色模型与教学图片保留原权利人的权利。

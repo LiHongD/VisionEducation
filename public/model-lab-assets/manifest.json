@@ -1,0 +1,42 @@
+{
+  "datasetId": "combat3-v1",
+  "featureSpec": "mobilenetv2-472-hash256-l2-v1",
+  "featureDimension": 256,
+  "backboneSha256": "39db0fa09cfc7df03f49e3d52c35e4a83b9a1064b3a7091356c2d1f66d99f525",
+  "classes": [
+    {
+      "id": "cross",
+      "name": "直拳"
+    },
+    {
+      "id": "high-guard",
+      "name": "高位防守"
+    },
+    {
+      "id": "kick",
+      "name": "踢腿"
+    }
+  ],
+  "name": "武术与格斗动作三分类 · 课堂小样本集",
+  "counts": {
+    "train": 180,
+    "validation": 45,
+    "test": 60
+  },
+  "perClass": {
+    "train": 60,
+    "validation": 15,
+    "test": 20
+  },
+  "source": {
+    "title": "Combat Sports Dataset",
+    "author": "Evan Quinn",
+    "url": "https://zenodo.org/records/15349809",
+    "license": "Public Domain (as declared by dataset author)"
+  },
+  "splitPolicy": "按来源视频/原图分组；同源增强图不跨集合。测试集仅在服务端评测。",
+  "limitations": "含格斗训练与竞技场景，并非中国武术标准动作库；小样本、相邻来源帧和背景偏差仍可能影响结果。",
+  "backboneUrl": "/model-lab-assets/mobilenetv2-features.onnx",
+  "dataUrl": "/model-lab-assets/samples.json",
+  "downloadUrl": "/model-lab-assets/classroom-dataset.zip"
+}

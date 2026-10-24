@@ -1,7 +1,8 @@
+import {modelApi} from './model-api.ts';
 // All authorization happens here. Role switches in the UI do not grant access.
 type Identity = { userId: string; email: string; displayName: string } | null;
 type DB = { prepare(sql: string): any; batch(statements: any[]): Promise<any[]> };
-type Context = { db: DB; user: Identity; teacherEmails: string; allowGuests: boolean };
+type Context = { db: DB; bucket?:any; user: Identity; teacherEmails: string; allowGuests: boolean };
 class ApiError extends Error { status: number; constructor(status: number, message: string) { super(message); this.status=status; } }
 const fail = (status: number, message: string): never => { throw new ApiError(status, message); };
 const json = (value: unknown, status=200) => Response.json(value, {status, headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});
@@ -49,6 +50,7 @@ export async function classroomApi(req:Request,ctx:Context):Promise<Response>{
       const origin=req.headers.get('origin');
       if(!origin||origin!==url.origin)fail(403,'请从本站提交。');
     }
+    if(path==='models'||path.startsWith('models/'))return await modelApi(req,ctx,{member,owned,teacher,fail});
     if(path==='session'&&method==='GET')return json({user:ctx.user?{displayName:ctx.user.displayName}:null,isTeacher:isTeacher(ctx),allowGuests:ctx.allowGuests});
     if(path==='classes'&&method==='GET'){
       const u=teacher(ctx);const rows=await ctx.db.prepare('SELECT c.*, (SELECT COUNT(*) FROM members m WHERE m.class_id=c.id) AS member_count, (SELECT COUNT(*) FROM submissions s WHERE s.class_id=c.id) AS submission_count FROM classrooms c WHERE owner_id = ? ORDER BY created_at DESC LIMIT 50').bind(u.userId).all();return json({classes:rows.results});
