@@ -1,5 +1,10 @@
 'use strict';
-function modelTrainingLab(){return `<section class="model-training-section panel" id="model-training-lab" aria-labelledby="model-training-title"><div class="model-training-heading"><div><span class="eyebrow">LEARN FROM IMAGES / 从样本中学习</span><h2 id="model-training-title">让模型，从图像中学会辨招。</h2><p>三类动作，一份小数据集。自主选择参数，训练、保存和预测，再将模型提交给教师，用统一测试集比较精度排名。</p></div><span class="model-training-badge">图像分类训练实验</span></div><iframe id="model-studio-frame" title="三类武术动作图像分类：训练、保存、预测与班级排名" src="/model-lab/index.html?embed=1&draft=${encodeURIComponent(draftStorageKey)}" height="1300"></iframe></section>`}
+function modelTrainingLab(){return `<section class="model-training-section panel" id="model-training-lab" aria-labelledby="model-training-title"><div class="model-training-heading"><div><span class="eyebrow">LEARN FROM IMAGES / 从样本中学习</span><h2 id="model-training-title">让模型，从图像中学会辨招。</h2><p>三类动作，一份小数据集。自主选择参数，训练、保存和预测，再将模型提交给教师，用统一测试集比较精度排名。</p></div><div class="model-training-links"><span class="model-training-badge">图像分类训练实验</span><div><button class="primary" onclick="openModelRanking('submit')">提交模型 ↗</button><button onclick="openModelRanking('board')">实时排名 ↗</button></div></div></div><iframe id="model-studio-frame" title="三类武术动作图像分类：训练、保存、预测与班级排名" src="/model-lab/index.html?embed=1&draft=${encodeURIComponent(draftStorageKey)}" height="1300"></iframe></section>`}
+function openModelRanking(target='submit'){
+  const frame=document.getElementById('model-studio-frame');if(!frame)return;
+  const open=()=>{const lab=frame.contentWindow?.ImageClassifierLab;if(!lab){toast('训练实验正在加载，请稍后重试。');return}lab.setTab('ranking');frame.scrollIntoView({behavior:'smooth',block:'start'});};
+  if(frame.contentWindow?.ImageClassifierLab)open();else frame.addEventListener('load',open,{once:true});
+}
 const classifierLegacyRuleLab=ruleLab;
 ruleLab=function(){const html=classifierLegacyRuleLab();return html.replace('<div class="angle-legacy-heading">',modelTrainingLab()+'<div class="angle-legacy-heading">')};
 addEventListener('message',event=>{const frame=document.getElementById('model-studio-frame');if(!frame||event.source!==frame.contentWindow||event.origin!==location.origin||event.data?.type!=='actionlab-model-studio-size')return;const height=event.data.height;if(typeof height==='number'&&Number.isFinite(height)&&height>=200&&height<=20000)frame.style.height=Math.ceil(height)+'px'});
@@ -13,4 +18,5 @@ for(const button of document.querySelectorAll('[data-model-review]'))button.oncl
 for(const button of document.querySelectorAll('[data-model-retest]'))button.onclick=async()=>{button.disabled=true;try{await api('models/'+button.dataset.modelRetest+'/retest',{method:'POST'});toast('模型已重新完成服务器评测。');await refreshModelTeacher()}catch(e){toast(e.message)}finally{button.disabled=false}};
 }catch(e){if(host.isConnected)host.innerHTML='<p class="error-notice">'+esc(e.message)+'</p>'}finally{modelTeacherLoading=false}}
 async function downloadTeacherModel(id){try{const response=await fetch('/api/classroom/models/'+encodeURIComponent(id)+'?teacher=1',{credentials:'same-origin'});if(!response.ok){const data=await response.json();throw Error(data.error||'下载失败')}download('动作分类模型-'+id+'.json',await response.text(),'application/json')}catch(e){toast(e.message)}}
+setInterval(()=>{if(!document.hidden&&portal==='teacher'&&document.getElementById('modelTeacherBoard'))refreshModelTeacher()},5000);
 if(page===4)render();if(portal==='teacher'&&document.getElementById('teacherWorkspace'))refreshTeacher();
