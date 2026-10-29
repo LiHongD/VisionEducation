@@ -4,6 +4,18 @@
 
 [在线课堂](https://action-lab-classroom.upbeatape2048.chatgpt.site/classroom) · [描骨辨势 / Python 实验](https://action-lab-classroom.upbeatape2048.chatgpt.site/classroom#lesson-2)
 
+## 阅读顺序
+
+| 文档 | 内容 |
+| --- | --- |
+| [本地部署说明](docs/LOCAL_DEPLOYMENT.md) | 从 GitHub 下载、安装依赖、初始化数据库、启动、备份和常见问题 |
+| [课堂使用指南](CLASSROOM-GUIDE.md) | 教师建班、学生实践与提交、模型训练与排名 |
+| [项目结构与二次开发](docs/PROJECT_STRUCTURE.md) | 技术架构、主要源码、数据流和维护入口 |
+| [教学安排](教学安排.md) | 六课教学活动与课堂组织 |
+| [第三方声明](THIRD_PARTY_NOTICES.md) | 模型、运行环境、数据集和素材的来源与许可 |
+
+源码及主要教学资源随仓库提供，包括 YOLO26n-pose、浏览器 Python 运行环境、3D 人物、图像分类模型与课堂训练图片。无需先申请域名即可在自己的电脑运行。班级、学生答卷、点评与已提交的模型文件属于运行数据，不随源码分发。
+
 ## 教学功能
 
 - 分课时互动课堂、动作观察、人工描点与证据判断。
@@ -18,6 +30,8 @@
 需要 Node.js **22.13 或更高版本**。包含 SQLite 测试的完整测试集建议使用 Node.js 24 或更高版本。首次安装需要网络。
 
 ```sh
+git clone https://github.com/LiHongD/VisionEducation.git
+cd VisionEducation
 npm run install:ci
 npm run dev
 ```
@@ -44,7 +58,10 @@ ALLOW_GUEST_STUDENTS=true
 ```sh
 npm run build
 npx wrangler d1 execute DB --local --config=dist/server/wrangler.json --persist-to=.wrangler/state --file=drizzle/0000_tiresome_nova.sql
+npx wrangler d1 execute DB --local --config=dist/server/wrangler.json --persist-to=.wrangler/state --file=drizzle/0001_black_killraven.sql
 ```
+
+上述两条 SQL 用于首次初始化空的本地数据库，按顺序执行一次；升级已有数据库时只执行尚未应用的迁移。完整步骤和各运行方式的区别见[本地部署说明](docs/LOCAL_DEPLOYMENT.md)。
 
 本地开发支持 `/signin-with-chatgpt?return_to=/classroom` 的模拟身份，模拟邮箱是 `seedy@sites.test`。需要本地测试教师界面时，将该邮箱加入本地 `TEACHER_EMAILS`。生产环境使用托管身份服务与真实教师邮箱白名单。复制部署时应在新环境中单独配置身份、D1 与环境变量；现有 `.openai/hosting.json` 标识原有 Sites 项目。
 
