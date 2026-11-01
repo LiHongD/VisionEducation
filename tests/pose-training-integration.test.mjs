@@ -2,15 +2,17 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,existsSync} from 'node:fs';
 import vm from 'node:vm';
+import {webcrypto} from 'node:crypto';
 const root=new URL('../public/pose-training/',import.meta.url);
 const read=name=>readFileSync(new URL(name,root),'utf8');
 
 test('pose training separates local annotations, model weights and notes by classroom member',()=>{
-  const scope=draft=>{const context={window:{},location:{search:'?draft='+encodeURIComponent(draft)},URLSearchParams};vm.runInNewContext(read('scope.js'),context);return context.window.PoseStorage};
+  const scope=draft=>{const context={window:{},location:{search:'?draft='+encodeURIComponent(draft)},URLSearchParams,crypto:{getRandomValues:values=>webcrypto.getRandomValues(values)}};vm.runInNewContext(read('scope.js'),context);return context.window.PoseStorage};
   const a=scope('actionlab-draft-student-a'),b=scope('actionlab-draft-student-b');
   for(const name of ['custom-v1','model-meta-v1','studentName','studentNotes'])assert.notEqual(a.localKey(name),b.localKey(name));
   assert.notEqual(a.modelURL,b.modelURL);assert.equal(a.modelURL,scope('actionlab-draft-student-a').modelURL);
   const escaped=scope('中文/<script>&?');assert.match(escaped.modelURL,/%/);assert(!escaped.modelURL.includes('<script>'));
+  assert.match(a.newSampleId(),/^student-[a-f0-9]{16}$/);assert.notEqual(a.newSampleId(),a.newSampleId());
 });
 
 test('only the same-origin parent can pause the embedded training on lesson navigation',()=>{
