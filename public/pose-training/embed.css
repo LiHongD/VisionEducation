@@ -1,0 +1,18 @@
+:root{--bg:#f5f4ef;--paper:#fffefa;--ink:#243c35;--muted:#7b867c;--line:#e2e5dc;--green:#214f42;--mint:#6aa78d;--pale:#eaf0e5;--orange:#ae8a48}
+body.is-embedded .sidebar{position:static;inset:auto;width:auto;padding:13px 24px 9px;background:#edf1e8;color:var(--ink);display:flex;flex-direction:row;align-items:center;flex-wrap:wrap;gap:0 18px;border-bottom:1px solid var(--line)}
+body.is-embedded .sidebar .brand,body.is-embedded .sidebar-label,body.is-embedded .sidebar-bottom{display:none}
+body.is-embedded .sidebar nav{width:100%;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}
+body.is-embedded .nav-item{color:#647866;padding:11px 12px;gap:9px;margin:0}
+body.is-embedded .nav-item>span,body.is-embedded .nav-item small{color:#7c8d77}
+body.is-embedded .nav-item.active{background:#214f42;color:#fffefa}
+body.is-embedded .nav-item.active>span,body.is-embedded .nav-item.active small{color:#b6d9c5}
+body.is-embedded .sidebar .simple{width:auto;margin-top:8px;font-size:11px;padding:5px 8px;display:flex}
+body.is-embedded .sidebar .simple div{font-size:11px}
+body.is-embedded .main-shell{margin-left:0}
+body.is-embedded .topbar{height:auto;min-height:50px;padding:10px 24px;justify-content:flex-end;background:var(--paper)}
+body.is-embedded .topbar>div:first-child{display:none}
+body.is-embedded main{padding:25px 24px 28px;max-width:1500px}
+body.is-embedded h1{font-size:29px}body.is-embedded .heading-note{display:none}
+body.is-embedded .page-heading{margin-bottom:22px}body.is-embedded footer{display:none}
+body.is-embedded,html:has(body.is-embedded){min-height:0;height:auto}
+@media(max-width:600px){body.is-embedded .sidebar{padding:11px}body.is-embedded .sidebar nav{grid-template-columns:repeat(2,minmax(0,1fr))}body.is-embedded .nav-item small{display:block;font-size:10px}body.is-embedded .nav-item div{font-size:12px}body.is-embedded main{padding:20px 14px}body.is-embedded h1{font-size:25px}body.is-embedded .topbar{padding:10px 14px}body.is-embedded .stat-row{grid-template-columns:repeat(2,minmax(0,1fr))}}

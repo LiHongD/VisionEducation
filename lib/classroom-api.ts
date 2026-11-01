@@ -1,4 +1,5 @@
 import {modelApi} from './model-api.ts';
+import {ruleApi} from './rule-api.ts';
 // All authorization happens here. Role switches in the UI do not grant access.
 type Identity = { userId: string; email: string; displayName: string } | null;
 type DB = { prepare(sql: string): any; batch(statements: any[]): Promise<any[]> };
@@ -37,7 +38,7 @@ function evidence(input:any,lesson:number){
     result.micro15={version:1,points:m.points.map((p:any,i:number)=>({id:[5,7,9,11,13,15][i],x:p.x,y:p.y})),rules:m.rules.map((r:any)=>({mode:r.mode,sample:r.sample,prediction:r.sample===3?null:r.sample===1||(r.sample===2&&r.mode==='r1'),truth:r.sample===3?null:r.sample===1})),directions:['forward','reverse'],sequence:true,quiz:[0,1,2]};
   }else if(lesson===2){const j=arr('joints',17),s=arr('snapshots',3);if(new Set(j.filter((n:number)=>Number.isInteger(n)&&n>=0&&n<17)).size<6||!s.length)fail(400,'请查看六个关节并保存快照。');for(const snap of s){if(!Array.isArray(snap.keypoints)||snap.keypoints.length!==17)fail(400,'快照需要17个关键点。');for(const p of snap.keypoints)if(!Number.isFinite(p.x)||!Number.isFinite(p.y)||p.x<0||p.x>1||p.y<0||p.y>1)fail(400,'关键点坐标应在0–1之间。');}}
   if(lesson===3){if(arr('labels',4).length!==4)fail(400,'请完成四个样本标注。');arr('annotations',3);}
-  if(lesson===4){const r=arr('runs',10);if(new Set(r.map((x:any)=>x.threshold)).size<2||r.some((x:any)=>!Number.isFinite(x.threshold)||x.threshold<.1||x.threshold>.9))fail(400,'请完成两组不同阈值的验证。');}
+  if(lesson===4){if(input.ruleAssessment){result.ruleAssessment=input.ruleAssessment;}else{const r=arr('runs',10);if(new Set(r.map((x:any)=>x.threshold)).size<2||r.some((x:any)=>!Number.isFinite(x.threshold)||x.threshold<.1||x.threshold>.9))fail(400,'请先提交一份马步/弓步角度规则。');}}
   if(lesson===5){result.sequenceOK=input.sequenceOK;const d=arr('directions',2);if(input.sequenceOK!==true||!['forward','reverse'].every(v=>d.includes(v)))fail(400,'请完成排序并观察正放、倒放。');}
   if(lesson===6){result.test=input.test;const q=arr('quiz',3);if(!input.test||!Number.isFinite(input.test.threshold)||![1,0,2].every((v,i)=>q[i]===v))fail(400,'请完成独立测试与迁移问题。');}
   const encoded=JSON.stringify(result);if(encoded.length>65000)fail(413,'实践记录过大。');return encoded;
@@ -51,6 +52,7 @@ export async function classroomApi(req:Request,ctx:Context):Promise<Response>{
       if(!origin||origin!==url.origin)fail(403,'请从本站提交。');
     }
     if(path==='models'||path.startsWith('models/'))return await modelApi(req,ctx,{member,owned,teacher,fail});
+    if(path==='rules'||path.startsWith('rules/'))return await ruleApi(req,ctx,{member,owned,fail});
     if(path==='session'&&method==='GET')return json({user:ctx.user?{displayName:ctx.user.displayName}:null,isTeacher:isTeacher(ctx),allowGuests:ctx.allowGuests});
     if(path==='classes'&&method==='GET'){
       const u=teacher(ctx);const rows=await ctx.db.prepare('SELECT c.*, (SELECT COUNT(*) FROM members m WHERE m.class_id=c.id) AS member_count, (SELECT COUNT(*) FROM submissions s WHERE s.class_id=c.id) AS submission_count FROM classrooms c WHERE owner_id = ? ORDER BY created_at DESC LIMIT 50').bind(u.userId).all();return json({classes:rows.results});
@@ -82,7 +84,15 @@ export async function classroomApi(req:Request,ctx:Context):Promise<Response>{
     if(path==='submit'&&method==='POST'){
       const m=await member(ctx,req);if(!m.is_open)fail(409,'教师已结束收件，暂时无法提交。');
       const b=await body(req),lesson=Number(b.lesson);if(!Number.isInteger(lesson)||lesson<1||lesson>6)fail(400,'无效课时。');
-      const answer=str(b.answer,5000,20),proof=evidence(b.evidence,lesson);
+      const answer=str(b.answer,5000,20);let proofInput=b.evidence;
+      if(lesson===4&&Array.isArray(b.evidence?.runs))proofInput={runs:b.evidence.runs};
+      else if(lesson===4){
+        const id=str(b.evidence?.ruleEntryId,80,1);
+        const rule=await ctx.db.prepare('SELECT id,benchmark_id,correct,total,accuracy,created_at FROM rule_entries WHERE id=? AND member_id=? AND class_id=?').bind(id,m.id,m.class_id).first();
+        if(!rule)fail(400,'请先提交属于本组的马步/弓步角度规则，再提交本课反思。');
+        proofInput={ruleAssessment:rule};
+      }
+      const proof=evidence(proofInput,lesson);
       await ctx.db.prepare('INSERT INTO submissions(id,class_id,member_id,lesson,answer,evidence,submitted_at) VALUES(?,?,?,?,?,?,?) ON CONFLICT(member_id,lesson) DO UPDATE SET answer=excluded.answer,evidence=excluded.evidence,submitted_at=excluded.submitted_at,revision=submissions.revision+1,reviewed_revision=0,feedback=\'\',featured=0').bind(uuid(),m.class_id,m.id,lesson,answer,proof,now()).run();
       const result=await ctx.db.prepare('SELECT id,lesson,revision,submitted_at FROM submissions WHERE member_id=? AND lesson=?').bind(m.id,lesson).first();return json({submission:result});
     }

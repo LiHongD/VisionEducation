@@ -1,5 +1,12 @@
 # Third-party components
 
+## Horse / bow stance rule benchmark
+
+- 13 independently reviewed real-photo poses (7 horse stance, 6 bow stance), collected 2026-11-01 from 8 teaching/research sites. Image URLs, author/license notes, SHA-256 and manual label reasons are in `data/stance-benchmark/sources.json`; exclusions are preserved for audit.
+- Most original images have no explicit open license. Original photos, downloaded pages/PDFs and photographic contact sheets remain in ignored local research folders and are not distributed in public website assets, GitHub, or the portable package. The app distributes derived COCO17 numerical coordinates, generated skeletal diagrams and provenance only.
+- UCL thesis original content is CC BY-NC 4.0 with third-party exceptions; Sport Singapore retains copyright in its guide. No blanket permission for the original photos is asserted. See `docs/ANGLE_RULE_ASSESSMENT_DESIGN.md` and the complete provenance manifest.
+- Extraction reuses the unchanged YOLO26n-pose model listed below. Derived data is a small classroom validation set, not a sports-form grading standard or a claim of real-world generalization.
+
 ## Combat Sports classroom subset and MobileNetV2
 
 - Dataset: Evan Quinn, *Combat Sports Dataset*, 2025-05-06, DOI 10.5281/zenodo.15349809, https://zenodo.org/records/15349809. Original archive `CombatSports Dataset - Greyscale 10%.zip`, md5 `34ea747443ed4dbd572e188f8b34178d`.
@@ -35,3 +42,6 @@
 - Sites build plugin: see `build/sites-vite-plugin.LICENSE`.
 - Other npm dependencies: licenses in the respective installed packages, versions pinned in `package-lock.json`.
 - The reference character model (`textured_mesh.glb` and derived assets) was supplied by the project owner. The unified classroom image is copied from the site's existing `public/micro15-assets/neutral.png`. No student submissions, private class databases or credentials are included in this source repository.
+# 描骨辨势：从零训练姿态模型
+
+`public/pose-training/` 移植自本工作区的 PoseLab 教学系统。包含 TensorFlow.js 4.22.0、fflate 0.8.2，以及从 COCO val2017 选出的72张 CC BY 2.0 图片裁剪和 COCO 人工关键点标注。详细许可、每张图片原始来源与裁剪信息见该目录的 `THIRD_PARTY_NOTICES.md`、`assets/dataset.json` 和 `assets/LICENSE-TensorFlow.txt`。训练从随机初始化开始，不包含预训练姿态模型权重。

@@ -57,3 +57,7 @@ next-env.d.ts
 /.codex/
 /outputs/
 /work/
+/.offline-data/
+/data/stance-benchmark/source-images/
+/data/stance-benchmark/review/
+/data/stance-benchmark/research/

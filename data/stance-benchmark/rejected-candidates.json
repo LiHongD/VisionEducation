@@ -1,0 +1,78 @@
+{
+  "reviewedAt": "2026-11-01",
+  "note": "逐张使用图像查看核对，以下候选不纳入正式验证集；清单留作数据筛选审计。",
+  "candidates": [
+    {
+      "id": "wayland-1",
+      "reason": "教材线描，不是真人照片。"
+    },
+    {
+      "id": "wayland-2",
+      "reason": "教材线描，不是真人照片。"
+    },
+    {
+      "id": "wayland-3",
+      "reason": "教材线描，且可能半马步，不纳入。"
+    },
+    {
+      "id": "wayland-4",
+      "reason": "教材线描，不是真人照片。"
+    },
+    {
+      "id": "longhui-1",
+      "reason": "教材线描，不是真人照片；与Wayland基础教材图近似。"
+    },
+    {
+      "id": "longhui-2",
+      "reason": "教材线描，不是真人照片；与Wayland基础教材图近似。"
+    },
+    {
+      "id": "yun-1",
+      "reason": "正面弓步后腿膝踝遮挡严重。"
+    },
+    {
+      "id": "yun-2",
+      "reason": "传统弓步后腿明显屈曲，难作为本课前弓后绷的标准样例；不纳入。"
+    },
+    {
+      "id": "royce-2",
+      "reason": "侧面马步两腿重叠，后侧膝踝不可清晰定位。"
+    },
+    {
+      "id": "shaolinusa-2",
+      "reason": "马步图裁断小腿脚踝，多人背景遮挡。"
+    },
+    {
+      "id": "malingbow-1",
+      "reason": "与malingbow-2同一人物底图，不同标注；只保留一个。"
+    },
+    {
+      "id": "malingbow-3",
+      "reason": "与malingbow-2同一人物底图，不同标注；只保留一个。"
+    },
+    {
+      "id": "malingbow-4",
+      "reason": "与malinghorse-1同一底图且加紫色遮罩，重复增强不计独立样本。"
+    },
+    {
+      "id": "malinghorse-2",
+      "reason": "与malinghorse-1同一底图，不同标注；只保留一个。"
+    },
+    {
+      "id": "malinghorse-3",
+      "reason": "三张照片拼接，原作者/独立来源混杂；不纳入。"
+    },
+    {
+      "id": "bodymind-1",
+      "reason": "标题称低步，但图中实际为仆步/侧低弓步，不是本课马步。"
+    },
+    {
+      "id": "bodymind-2",
+      "reason": "同为仆步/侧低弓步，不是马步。"
+    },
+    {
+      "id": "yanlei-1",
+      "reason": "标准马步但站在桩柱上，与本课平地任务不完全一致；保留备选，不入正式集合。"
+    }
+  ]
+}

@@ -13,7 +13,7 @@ const parts={
   '/*__RULE_ENGINE__*/':read('visual-rules-engine.js'),
   '/*__EXAMPLES__*/':read('demo-keypoints.json'),
   '/*__WORKER__*/':JSON.stringify(read('pose-worker.js')),
-  '/*__APP__*/':read('hosted-runtime.js')+'\n'+read('studio.js')+'\n'+read('frame-bridge.js'),
+  '/*__APP__*/':read('hosted-runtime.js')+'\n'+read('studio.js')+'\n'+read('submission.js')+'\n'+read('frame-bridge.js'),
 };
 for(const [marker,text] of Object.entries(parts)){
   if(!html.includes(marker))throw new Error('Missing template marker: '+marker);
@@ -21,5 +21,6 @@ for(const [marker,text] of Object.entries(parts)){
 }
 html=html.replace('<title>动作识别课堂', '<title>量势成规 · 动作识别课堂');
 mkdirSync(path.join(root,'public/angle-studio'),{recursive:true});
+writeFileSync(path.join(root,'public/angle-rules-engine.js'),read('visual-rules-engine.js'));
 writeFileSync(path.join(root,'public/angle-studio/index.html'),html);
 console.log('Built the embedded angle studio using existing model/runtime assets.');

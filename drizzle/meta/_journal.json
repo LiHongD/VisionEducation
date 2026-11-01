@@ -15,6 +15,13 @@
       "when": 1792867903065,
       "tag": "0001_black_killraven",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1793544967089,
+      "tag": "0002_angle_rules",
+      "breakpoints": true
     }
   ]
 }

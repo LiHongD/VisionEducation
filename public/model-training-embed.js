@@ -6,7 +6,7 @@ function openModelRanking(target='submit'){
   if(frame.contentWindow?.ImageClassifierLab)open();else frame.addEventListener('load',open,{once:true});
 }
 const classifierLegacyRuleLab=ruleLab;
-ruleLab=function(){const html=classifierLegacyRuleLab();return html.replace('<div class="angle-legacy-heading">',modelTrainingLab()+'<div class="angle-legacy-heading">')};
+ruleLab=function(){return classifierLegacyRuleLab()+modelTrainingLab()};
 addEventListener('message',event=>{const frame=document.getElementById('model-studio-frame');if(!frame||event.source!==frame.contentWindow||event.origin!==location.origin||event.data?.type!=='actionlab-model-studio-size')return;const height=event.data.height;if(typeof height==='number'&&Number.isFinite(height)&&height>=200&&height<=20000)frame.style.height=Math.ceil(height)+'px'});
 const modelLegacyTeacherWorkspace=teacherWorkspaceHTML,modelLegacyRefreshTeacher=refreshTeacher;
 teacherWorkspaceHTML=function(data){return modelLegacyTeacherWorkspace(data)+`<section class="panel panel-pad model-teacher-section" id="model-teacher-section"><div class="panel-title"><div><span class="eyebrow">CLASS MODEL BENCHMARK / 模型评测</span><h2>收下模型，也看见学习的选择。</h2></div><button onclick="refreshModelTeacher()">刷新模型与排名</button></div><p class="lab-copy">模型上传后由服务器自动评测，按本班每位同学的最佳测试准确率排名，同分并列。可查看全部提交、下载模型或重新评测。</p><div id="modelTeacherBoard">正在读取模型评测…</div><details><summary>全部模型收件记录</summary><div id="modelTeacherInbox" class="model-table"></div></details></section>`};

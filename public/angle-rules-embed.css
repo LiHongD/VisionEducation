@@ -6,7 +6,4 @@
 .angle-lab-open:hover{background:#eaf0e8}
 #angle-studio-frame{display:block;width:100%;border:0;background:#f8faf6;height:1200px}
 .angle-lab-note{padding:13px 25px;font-size:11px;line-height:1.8;margin:0;border-top:1px solid var(--line)}
-.angle-legacy-heading{margin:0 0 20px}
-.angle-legacy-heading h2{font-size:24px;margin:5px 0}
-.angle-legacy-heading p{font-size:12px;margin:0}
-@media(max-width:650px){.angle-lab-heading{padding:18px;align-items:flex-start;flex-wrap:wrap;gap:12px}.angle-lab-heading h2{font-size:23px}.angle-lab-note{padding:12px 18px}.angle-legacy-heading h2{font-size:22px}}
+@media(max-width:650px){.angle-lab-heading{padding:18px;align-items:flex-start;flex-wrap:wrap;gap:12px}.angle-lab-heading h2{font-size:23px}.angle-lab-note{padding:12px 18px}}

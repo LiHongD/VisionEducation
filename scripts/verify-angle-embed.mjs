@@ -17,7 +17,7 @@ await frame.locator('#rule-diagram [data-pick="15"]').waitFor();
 assert.equal(await page.locator('#breadcrumb').innerText(),'量势成规');
 assert.equal(await page.locator('#content').evaluate(el=>el.querySelector('.schedule').nextElementSibling.id),'angle-rule-lab');
 checks.push('complete studio is the first experiment in lesson 4');
-assert.equal(await page.locator('#threshold').count(),1);checks.push('original threshold comparison experiment stays available');
+assert.equal(await page.locator('#threshold').count(),0);checks.push('removed knee-raise threshold experiment is absent');
 assert.equal(requests.some(u=>u.includes('.wasm')||u.includes('.onnx')),false);checks.push('model and WASM load only when detection is requested');
 const initial=await frame.evaluate(()=>ActionStudio.getReferencePose());
 await frame.locator('#rule-diagram [data-pick="15"] .point-dot').scrollIntoViewIfNeeded();

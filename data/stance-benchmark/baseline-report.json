@@ -1,0 +1,2936 @@
+{
+  "benchmarkId": "stance-web-coco17-v1",
+  "benchmarkDigest": "b7fb29d47ac36b3655aefbe6ba2ce90016f25a5cf2c0584ca52992032ddb00dd",
+  "total": 13,
+  "correct": 9,
+  "accuracy": 0.6923076923076923,
+  "coverage": 0.8461538461538461,
+  "recognized": 11,
+  "recognizedAccuracy": 0.8181818181818182,
+  "macroF1": 0.7482517482517482,
+  "balancedAccuracy": 0.7023809523809523,
+  "counts": {
+    "horse": 4,
+    "bow": 7,
+    "conflict": 0,
+    "unmatched": 2,
+    "insufficient": 0
+  },
+  "classes": [
+    {
+      "id": "horse",
+      "name": "马步"
+    },
+    {
+      "id": "bow",
+      "name": "弓步"
+    }
+  ],
+  "outcomes": [
+    "horse",
+    "bow",
+    "conflict",
+    "unmatched",
+    "insufficient"
+  ],
+  "confusion": [
+    [
+      4,
+      2,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      5,
+      0,
+      1,
+      0
+    ]
+  ],
+  "perClass": [
+    {
+      "id": "horse",
+      "name": "马步",
+      "support": 7,
+      "correct": 4,
+      "predicted": 4,
+      "precision": 1,
+      "recall": 0.5714285714285714,
+      "f1": 0.7272727272727273
+    },
+    {
+      "id": "bow",
+      "name": "弓步",
+      "support": 6,
+      "correct": 5,
+      "predicted": 7,
+      "precision": 0.7142857142857143,
+      "recall": 0.8333333333333334,
+      "f1": 0.7692307692307692
+    }
+  ],
+  "samples": [
+    {
+      "id": "yun-3",
+      "truth": "horse",
+      "prediction": "bow",
+      "correct": false,
+      "sourceId": "Master Yun Studio-f6997aa0",
+      "sourcePage": "https://www.masteryun.com/blog/introduction-to-kung-fu",
+      "points": [
+        {
+          "x": 0.4728545185185185,
+          "y": 0.2891538148148148,
+          "score": 0.99708,
+          "valid": true
+        },
+        {
+          "x": 0.48508219444444445,
+          "y": 0.2800355925925926,
+          "score": 0.99897,
+          "valid": true
+        },
+        {
+          "x": 0.4680726574074074,
+          "y": 0.2788787407407407,
+          "score": 0.96296,
+          "valid": true
+        },
+        {
+          "x": 0.5106428611111111,
+          "y": 0.2860721574074074,
+          "score": 0.98273,
+          "valid": true
+        },
+        {
+          "x": 0.46363311111111116,
+          "y": 0.283519462962963,
+          "score": 0.06746,
+          "valid": false
+        },
+        {
+          "x": 0.5316071944444444,
+          "y": 0.32675223148148147,
+          "score": 0.99421,
+          "valid": true
+        },
+        {
+          "x": 0.4554244537037037,
+          "y": 0.3386823611111111,
+          "score": 0.99713,
+          "valid": true
+        },
+        {
+          "x": 0.5582571944444444,
+          "y": 0.2709867962962963,
+          "score": 0.99074,
+          "valid": true
+        },
+        {
+          "x": 0.42244939814814814,
+          "y": 0.34677496296296295,
+          "score": 0.99203,
+          "valid": true
+        },
+        {
+          "x": 0.5188536666666667,
+          "y": 0.22398474074074073,
+          "score": 0.98275,
+          "valid": true
+        },
+        {
+          "x": 0.38869004629629633,
+          "y": 0.34574199074074075,
+          "score": 0.99266,
+          "valid": true
+        },
+        {
+          "x": 0.5225559259259259,
+          "y": 0.47882957407407406,
+          "score": 0.99808,
+          "valid": true
+        },
+        {
+          "x": 0.4601985462962963,
+          "y": 0.47452392592592596,
+          "score": 0.99861,
+          "valid": true
+        },
+        {
+          "x": 0.5608396574074074,
+          "y": 0.5427825462962963,
+          "score": 0.99287,
+          "valid": true
+        },
+        {
+          "x": 0.37987041666666665,
+          "y": 0.5174239166666667,
+          "score": 0.99474,
+          "valid": true
+        },
+        {
+          "x": 0.5849111574074074,
+          "y": 0.6218827685185185,
+          "score": 0.95266,
+          "valid": true
+        },
+        {
+          "x": 0.40730614814814814,
+          "y": 0.5929711296296296,
+          "score": 0.96655,
+          "valid": true
+        }
+      ],
+      "leftKnee": 166.0201516913606,
+      "rightKnee": 98.14586349975433,
+      "actions": [
+        {
+          "id": "horse",
+          "name": "马步式",
+          "state": "fail",
+          "groups": [
+            {
+              "id": "horse-g1",
+              "state": "fail",
+              "conditions": [
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "< 155°",
+                  "angle": 166.0201516913606,
+                  "state": "fail",
+                  "reason": ""
+                },
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "< 155°",
+                  "angle": 98.14586349975433,
+                  "state": "pass",
+                  "reason": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bow",
+          "name": "弓步式",
+          "state": "pass",
+          "groups": [
+            {
+              "id": "bow-g1",
+              "state": "fail",
+              "conditions": [
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "< 155°",
+                  "angle": 166.0201516913606,
+                  "state": "fail",
+                  "reason": ""
+                },
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "> 165°",
+                  "angle": 98.14586349975433,
+                  "state": "fail",
+                  "reason": ""
+                }
+              ]
+            },
+            {
+              "id": "bow-g2",
+              "state": "pass",
+              "conditions": [
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "< 155°",
+                  "angle": 98.14586349975433,
+                  "state": "pass",
+                  "reason": ""
+                },
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "> 165°",
+                  "angle": 166.0201516913606,
+                  "state": "pass",
+                  "reason": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "royce-1",
+      "truth": "horse",
+      "prediction": "bow",
+      "correct": false,
+      "sourceId": "Royce Ang Wushu-fd8f4a46",
+      "sourcePage": "https://www.royceangwushu.com/post/covid-19-wushu-checklist-for-your-basic-stances",
+      "points": [
+        {
+          "x": 0.5474837760416666,
+          "y": 0.21765053385416666,
+          "score": 0.99692,
+          "valid": true
+        },
+        {
+          "x": 0.5551875607638889,
+          "y": 0.20494182291666668,
+          "score": 0.9785,
+          "valid": true
+        },
+        {
+          "x": 0.5324517708333334,
+          "y": 0.20651118923611111,
+          "score": 0.99881,
+          "valid": true
+        },
+        {
+          "x": 0.56247515625,
+          "y": 0.2082026953125,
+          "score": 0.21163,
+          "valid": false
+        },
+        {
+          "x": 0.5025174609375,
+          "y": 0.211968515625,
+          "score": 0.99117,
+          "valid": true
+        },
+        {
+          "x": 0.577883146701389,
+          "y": 0.26541881510416665,
+          "score": 0.99919,
+          "valid": true
+        },
+        {
+          "x": 0.48617544270833335,
+          "y": 0.2745716579861111,
+          "score": 0.99806,
+          "valid": true
+        },
+        {
+          "x": 0.6296586979166666,
+          "y": 0.31417694010416664,
+          "score": 0.99643,
+          "valid": true
+        },
+        {
+          "x": 0.5247276779513889,
+          "y": 0.31784796875,
+          "score": 0.99658,
+          "valid": true
+        },
+        {
+          "x": 0.6756212239583334,
+          "y": 0.3107171527777778,
+          "score": 0.98701,
+          "valid": true
+        },
+        {
+          "x": 0.5960262760416666,
+          "y": 0.32227167968750003,
+          "score": 0.99343,
+          "valid": true
+        },
+        {
+          "x": 0.5511946657986111,
+          "y": 0.3959531293402778,
+          "score": 0.99907,
+          "valid": true
+        },
+        {
+          "x": 0.47793436197916667,
+          "y": 0.4057134157986111,
+          "score": 0.99932,
+          "valid": true
+        },
+        {
+          "x": 0.6423714626736111,
+          "y": 0.4180732248263889,
+          "score": 0.98091,
+          "valid": true
+        },
+        {
+          "x": 0.41521058159722224,
+          "y": 0.47448501736111104,
+          "score": 0.99399,
+          "valid": true
+        },
+        {
+          "x": 0.6399871831597221,
+          "y": 0.4820663454861111,
+          "score": 0.98434,
+          "valid": true
+        },
+        {
+          "x": 0.35704960937499997,
+          "y": 0.5542576779513889,
+          "score": 0.96777,
+          "valid": true
+        }
+      ],
+      "leftKnee": 101.50310397170539,
+      "rightKnee": 173.72852139235002,
+      "actions": [
+        {
+          "id": "horse",
+          "name": "马步式",
+          "state": "fail",
+          "groups": [
+            {
+              "id": "horse-g1",
+              "state": "fail",
+              "conditions": [
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "< 155°",
+                  "angle": 101.50310397170539,
+                  "state": "pass",
+                  "reason": ""
+                },
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "< 155°",
+                  "angle": 173.72852139235002,
+                  "state": "fail",
+                  "reason": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bow",
+          "name": "弓步式",
+          "state": "pass",
+          "groups": [
+            {
+              "id": "bow-g1",
+              "state": "pass",
+              "conditions": [
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "< 155°",
+                  "angle": 101.50310397170539,
+                  "state": "pass",
+                  "reason": ""
+                },
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "> 165°",
+                  "angle": 173.72852139235002,
+                  "state": "pass",
+                  "reason": ""
+                }
+              ]
+            },
+            {
+              "id": "bow-g2",
+              "state": "fail",
+              "conditions": [
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "< 155°",
+                  "angle": 173.72852139235002,
+                  "state": "fail",
+                  "reason": ""
+                },
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "> 165°",
+                  "angle": 101.50310397170539,
+                  "state": "fail",
+                  "reason": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "royce-3",
+      "truth": "bow",
+      "prediction": "unmatched",
+      "correct": false,
+      "sourceId": "Royce Ang Wushu-fd8f4a46",
+      "sourcePage": "https://www.royceangwushu.com/post/covid-19-wushu-checklist-for-your-basic-stances",
+      "points": [
+        {
+          "x": 0.34720506510416665,
+          "y": 0.1418096310763889,
+          "score": 0.95397,
+          "valid": true
+        },
+        {
+          "x": 0.35509655381944444,
+          "y": 0.13196673177083335,
+          "score": 0.97396,
+          "valid": true
+        },
+        {
+          "x": 0.3527723307291667,
+          "y": 0.1310600737847222,
+          "score": 0.07802,
+          "valid": false
+        },
+        {
+          "x": 0.3897580164930556,
+          "y": 0.14157221354166669,
+          "score": 0.99036,
+          "valid": true
+        },
+        {
+          "x": 0.37484877170138886,
+          "y": 0.13706319444444445,
+          "score": 0.00253,
+          "valid": false
+        },
+        {
+          "x": 0.4374855034722222,
+          "y": 0.21972043402777777,
+          "score": 0.99781,
+          "valid": true
+        },
+        {
+          "x": 0.3953689800347222,
+          "y": 0.2081349392361111,
+          "score": 0.98383,
+          "valid": true
+        },
+        {
+          "x": 0.5274464626736112,
+          "y": 0.29398393663194444,
+          "score": 0.99659,
+          "valid": true
+        },
+        {
+          "x": 0.43281116319444446,
+          "y": 0.3001822482638889,
+          "score": 0.519,
+          "valid": true
+        },
+        {
+          "x": 0.4713805685763888,
+          "y": 0.3805685026041667,
+          "score": 0.99522,
+          "valid": true
+        },
+        {
+          "x": 0.37460269965277776,
+          "y": 0.3651677126736111,
+          "score": 0.60211,
+          "valid": true
+        },
+        {
+          "x": 0.45221271701388893,
+          "y": 0.41246809895833336,
+          "score": 0.99913,
+          "valid": true
+        },
+        {
+          "x": 0.3909241449652778,
+          "y": 0.39403538628472223,
+          "score": 0.99636,
+          "valid": true
+        },
+        {
+          "x": 0.5546329991319445,
+          "y": 0.5162858984375,
+          "score": 0.99825,
+          "valid": true
+        },
+        {
+          "x": 0.26861400607638886,
+          "y": 0.43225803385416667,
+          "score": 0.99679,
+          "valid": true
+        },
+        {
+          "x": 0.7288509375000001,
+          "y": 0.615155842013889,
+          "score": 0.96853,
+          "valid": true
+        },
+        {
+          "x": 0.2733557682291667,
+          "y": 0.5785434244791667,
+          "score": 0.98222,
+          "valid": true
+        }
+      ],
+      "leftKnee": 164.18698118878734,
+      "rightKnee": 105.49777403285988,
+      "actions": [
+        {
+          "id": "horse",
+          "name": "马步式",
+          "state": "fail",
+          "groups": [
+            {
+              "id": "horse-g1",
+              "state": "fail",
+              "conditions": [
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "< 155°",
+                  "angle": 164.18698118878734,
+                  "state": "fail",
+                  "reason": ""
+                },
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "< 155°",
+                  "angle": 105.49777403285988,
+                  "state": "pass",
+                  "reason": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bow",
+          "name": "弓步式",
+          "state": "fail",
+          "groups": [
+            {
+              "id": "bow-g1",
+              "state": "fail",
+              "conditions": [
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "< 155°",
+                  "angle": 164.18698118878734,
+                  "state": "fail",
+                  "reason": ""
+                },
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "> 165°",
+                  "angle": 105.49777403285988,
+                  "state": "fail",
+                  "reason": ""
+                }
+              ]
+            },
+            {
+              "id": "bow-g2",
+              "state": "fail",
+              "conditions": [
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "< 155°",
+                  "angle": 105.49777403285988,
+                  "state": "pass",
+                  "reason": ""
+                },
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "> 165°",
+                  "angle": 164.18698118878734,
+                  "state": "fail",
+                  "reason": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sarah-bow",
+      "truth": "bow",
+      "prediction": "bow",
+      "correct": true,
+      "sourceId": "Sarah Chang-1f0a08e7",
+      "sourcePage": "https://starringsarahchang.com/wushu/",
+      "points": [
+        {
+          "x": 0.5600745703125,
+          "y": 0.0986293359375,
+          "score": 0.98529,
+          "valid": true
+        },
+        {
+          "x": 0.56094021484375,
+          "y": 0.086345126953125,
+          "score": 0.26049,
+          "valid": false
+        },
+        {
+          "x": 0.548931787109375,
+          "y": 0.0811903515625,
+          "score": 0.99486,
+          "valid": true
+        },
+        {
+          "x": 0.540698525390625,
+          "y": 0.095159365234375,
+          "score": 0.002,
+          "valid": false
+        },
+        {
+          "x": 0.498053212890625,
+          "y": 0.084439658203125,
+          "score": 0.99303,
+          "valid": true
+        },
+        {
+          "x": 0.5196755859375,
+          "y": 0.1955740234375,
+          "score": 0.9831,
+          "valid": true
+        },
+        {
+          "x": 0.443017529296875,
+          "y": 0.186343427734375,
+          "score": 0.99734,
+          "valid": true
+        },
+        {
+          "x": 0.517395166015625,
+          "y": 0.2743162890625,
+          "score": 0.85827,
+          "valid": true
+        },
+        {
+          "x": 0.363552431640625,
+          "y": 0.294422099609375,
+          "score": 0.99772,
+          "valid": true
+        },
+        {
+          "x": 0.532924033203125,
+          "y": 0.248641064453125,
+          "score": 0.85614,
+          "valid": true
+        },
+        {
+          "x": 0.4399098828125,
+          "y": 0.3589718359375,
+          "score": 0.99877,
+          "valid": true
+        },
+        {
+          "x": 0.494460390625,
+          "y": 0.40601029296875,
+          "score": 0.99894,
+          "valid": true
+        },
+        {
+          "x": 0.40157513671875,
+          "y": 0.41278625,
+          "score": 0.99954,
+          "valid": true
+        },
+        {
+          "x": 0.6365433203125,
+          "y": 0.4082789453125,
+          "score": 0.99084,
+          "valid": true
+        },
+        {
+          "x": 0.25283365234375,
+          "y": 0.518921328125,
+          "score": 0.96727,
+          "valid": true
+        },
+        {
+          "x": 0.641499140625,
+          "y": 0.61016541015625,
+          "score": 0.99191,
+          "valid": true
+        },
+        {
+          "x": 0.112892412109375,
+          "y": 0.594190263671875,
+          "score": 0.79497,
+          "valid": true
+        }
+      ],
+      "leftKnee": 92.32095894556477,
+      "rightKnee": 172.76416794850203,
+      "actions": [
+        {
+          "id": "horse",
+          "name": "马步式",
+          "state": "fail",
+          "groups": [
+            {
+              "id": "horse-g1",
+              "state": "fail",
+              "conditions": [
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "< 155°",
+                  "angle": 92.32095894556477,
+                  "state": "pass",
+                  "reason": ""
+                },
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "< 155°",
+                  "angle": 172.76416794850203,
+                  "state": "fail",
+                  "reason": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bow",
+          "name": "弓步式",
+          "state": "pass",
+          "groups": [
+            {
+              "id": "bow-g1",
+              "state": "pass",
+              "conditions": [
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "< 155°",
+                  "angle": 92.32095894556477,
+                  "state": "pass",
+                  "reason": ""
+                },
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "> 165°",
+                  "angle": 172.76416794850203,
+                  "state": "pass",
+                  "reason": ""
+                }
+              ]
+            },
+            {
+              "id": "bow-g2",
+              "state": "fail",
+              "conditions": [
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "< 155°",
+                  "angle": 172.76416794850203,
+                  "state": "fail",
+                  "reason": ""
+                },
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "> 165°",
+                  "angle": 92.32095894556477,
+                  "state": "fail",
+                  "reason": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sarah-horse",
+      "truth": "horse",
+      "prediction": "horse",
+      "correct": true,
+      "sourceId": "Sarah Chang-1f0a08e7",
+      "sourcePage": "https://starringsarahchang.com/wushu/",
+      "points": [
+        {
+          "x": 0.346125673828125,
+          "y": 0.123759150390625,
+          "score": 0.9982,
+          "valid": true
+        },
+        {
+          "x": 0.36472177734375,
+          "y": 0.104921416015625,
+          "score": 0.99751,
+          "valid": true
+        },
+        {
+          "x": 0.328336787109375,
+          "y": 0.1052372265625,
+          "score": 0.99835,
+          "valid": true
+        },
+        {
+          "x": 0.388940380859375,
+          "y": 0.106686376953125,
+          "score": 0.8967,
+          "valid": true
+        },
+        {
+          "x": 0.30226185546875,
+          "y": 0.106952763671875,
+          "score": 0.96284,
+          "valid": true
+        },
+        {
+          "x": 0.423482890625,
+          "y": 0.19264123046875,
+          "score": 0.99817,
+          "valid": true
+        },
+        {
+          "x": 0.26457380859375,
+          "y": 0.194278935546875,
+          "score": 0.99371,
+          "valid": true
+        },
+        {
+          "x": 0.444675537109375,
+          "y": 0.292564775390625,
+          "score": 0.99023,
+          "valid": true
+        },
+        {
+          "x": 0.234824033203125,
+          "y": 0.2930685546875,
+          "score": 0.97561,
+          "valid": true
+        },
+        {
+          "x": 0.43738755859375,
+          "y": 0.3751231640625,
+          "score": 0.98601,
+          "valid": true
+        },
+        {
+          "x": 0.236787412109375,
+          "y": 0.377031328125,
+          "score": 0.98603,
+          "valid": true
+        },
+        {
+          "x": 0.40340294921875,
+          "y": 0.430117705078125,
+          "score": 0.99929,
+          "valid": true
+        },
+        {
+          "x": 0.2832208203125,
+          "y": 0.4291637890625,
+          "score": 0.99859,
+          "valid": true
+        },
+        {
+          "x": 0.527779912109375,
+          "y": 0.4901749609375,
+          "score": 0.99333,
+          "valid": true
+        },
+        {
+          "x": 0.164989658203125,
+          "y": 0.501381923828125,
+          "score": 0.98332,
+          "valid": true
+        },
+        {
+          "x": 0.54003353515625,
+          "y": 0.637810849609375,
+          "score": 0.9821,
+          "valid": true
+        },
+        {
+          "x": 0.143380546875,
+          "y": 0.63908615234375,
+          "score": 0.9184,
+          "valid": true
+        }
+      ],
+      "leftKnee": 120.51887492947314,
+      "rightKnee": 130.33583969830977,
+      "actions": [
+        {
+          "id": "horse",
+          "name": "马步式",
+          "state": "pass",
+          "groups": [
+            {
+              "id": "horse-g1",
+              "state": "pass",
+              "conditions": [
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "< 155°",
+                  "angle": 120.51887492947314,
+                  "state": "pass",
+                  "reason": ""
+                },
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "< 155°",
+                  "angle": 130.33583969830977,
+                  "state": "pass",
+                  "reason": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bow",
+          "name": "弓步式",
+          "state": "fail",
+          "groups": [
+            {
+              "id": "bow-g1",
+              "state": "fail",
+              "conditions": [
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "< 155°",
+                  "angle": 120.51887492947314,
+                  "state": "pass",
+                  "reason": ""
+                },
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "> 165°",
+                  "angle": 130.33583969830977,
+                  "state": "fail",
+                  "reason": ""
+                }
+              ]
+            },
+            {
+              "id": "bow-g2",
+              "state": "fail",
+              "conditions": [
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "< 155°",
+                  "angle": 130.33583969830977,
+                  "state": "pass",
+                  "reason": ""
+                },
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "> 165°",
+                  "angle": 120.51887492947314,
+                  "state": "fail",
+                  "reason": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "malingbow-2",
+      "truth": "bow",
+      "prediction": "bow",
+      "correct": true,
+      "sourceId": "Maling Shaolin Kung Fu Academy-f3ea95b6",
+      "sourcePage": "https://shaolin-kungfu.com/bow-stance-gong-bu/",
+      "points": [
+        {
+          "x": 0.2315073046875,
+          "y": 0.258145810546875,
+          "score": 0.99193,
+          "valid": true
+        },
+        {
+          "x": 0.24920306640625,
+          "y": 0.241176318359375,
+          "score": 0.99571,
+          "valid": true
+        },
+        {
+          "x": 0.233215283203125,
+          "y": 0.238300986328125,
+          "score": 0.55307,
+          "valid": true
+        },
+        {
+          "x": 0.301607373046875,
+          "y": 0.25369234375,
+          "score": 0.99421,
+          "valid": true
+        },
+        {
+          "x": 0.24904765625,
+          "y": 0.2446835546875,
+          "score": 0.0066,
+          "valid": false
+        },
+        {
+          "x": 0.365975810546875,
+          "y": 0.354696083984375,
+          "score": 0.99616,
+          "valid": true
+        },
+        {
+          "x": 0.28377568359375,
+          "y": 0.358977861328125,
+          "score": 0.98915,
+          "valid": true
+        },
+        {
+          "x": 0.50124416015625,
+          "y": 0.455317685546875,
+          "score": 0.9972,
+          "valid": true
+        },
+        {
+          "x": 0.344297412109375,
+          "y": 0.49406662109375,
+          "score": 0.80995,
+          "valid": true
+        },
+        {
+          "x": 0.4007633203125,
+          "y": 0.55336341796875,
+          "score": 0.99682,
+          "valid": true
+        },
+        {
+          "x": 0.285948447265625,
+          "y": 0.539746376953125,
+          "score": 0.80984,
+          "valid": true
+        },
+        {
+          "x": 0.4064809765625,
+          "y": 0.666418505859375,
+          "score": 0.99872,
+          "valid": true
+        },
+        {
+          "x": 0.30148666015625,
+          "y": 0.654398916015625,
+          "score": 0.99743,
+          "valid": true
+        },
+        {
+          "x": 0.587641806640625,
+          "y": 0.7926392578125,
+          "score": 0.99174,
+          "valid": true
+        },
+        {
+          "x": 0.15446095703125,
+          "y": 0.73648486328125,
+          "score": 0.99475,
+          "valid": true
+        },
+        {
+          "x": 0.72021669921875,
+          "y": 0.89862642578125,
+          "score": 0.67888,
+          "valid": true
+        },
+        {
+          "x": 0.151166181640625,
+          "y": 0.929500576171875,
+          "score": 0.75467,
+          "valid": true
+        }
+      ],
+      "leftKnee": 176.22557162972313,
+      "rightKnee": 120.15301101911801,
+      "actions": [
+        {
+          "id": "horse",
+          "name": "马步式",
+          "state": "fail",
+          "groups": [
+            {
+              "id": "horse-g1",
+              "state": "fail",
+              "conditions": [
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "< 155°",
+                  "angle": 176.22557162972313,
+                  "state": "fail",
+                  "reason": ""
+                },
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "< 155°",
+                  "angle": 120.15301101911801,
+                  "state": "pass",
+                  "reason": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bow",
+          "name": "弓步式",
+          "state": "pass",
+          "groups": [
+            {
+              "id": "bow-g1",
+              "state": "fail",
+              "conditions": [
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "< 155°",
+                  "angle": 176.22557162972313,
+                  "state": "fail",
+                  "reason": ""
+                },
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "> 165°",
+                  "angle": 120.15301101911801,
+                  "state": "fail",
+                  "reason": ""
+                }
+              ]
+            },
+            {
+              "id": "bow-g2",
+              "state": "pass",
+              "conditions": [
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "< 155°",
+                  "angle": 120.15301101911801,
+                  "state": "pass",
+                  "reason": ""
+                },
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "> 165°",
+                  "angle": 176.22557162972313,
+                  "state": "pass",
+                  "reason": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "malinghorse-1",
+      "truth": "horse",
+      "prediction": "horse",
+      "correct": true,
+      "sourceId": "Maling Shaolin Kung Fu Academy-8b9df271",
+      "sourcePage": "https://shaolin-kungfu.com/zh-CN/%E9%A9%AC%E6%AD%A5/",
+      "points": [
+        {
+          "x": 0.5446025390625,
+          "y": 0.13337046875,
+          "score": 0.99706,
+          "valid": true
+        },
+        {
+          "x": 0.565457109375,
+          "y": 0.11355357421875,
+          "score": 0.9977,
+          "valid": true
+        },
+        {
+          "x": 0.524113466796875,
+          "y": 0.113383193359375,
+          "score": 0.99709,
+          "valid": true
+        },
+        {
+          "x": 0.5939062109375,
+          "y": 0.12660267578125,
+          "score": 0.94916,
+          "valid": true
+        },
+        {
+          "x": 0.494704677734375,
+          "y": 0.127639267578125,
+          "score": 0.9454,
+          "valid": true
+        },
+        {
+          "x": 0.643441630859375,
+          "y": 0.249034091796875,
+          "score": 0.99836,
+          "valid": true
+        },
+        {
+          "x": 0.452647919921875,
+          "y": 0.256913115234375,
+          "score": 0.99876,
+          "valid": true
+        },
+        {
+          "x": 0.70394630859375,
+          "y": 0.363268251953125,
+          "score": 0.98864,
+          "valid": true
+        },
+        {
+          "x": 0.388802099609375,
+          "y": 0.361113974609375,
+          "score": 0.99586,
+          "valid": true
+        },
+        {
+          "x": 0.6724676171875,
+          "y": 0.42665873046875,
+          "score": 0.99058,
+          "valid": true
+        },
+        {
+          "x": 0.42404708984375,
+          "y": 0.42410044921875,
+          "score": 0.99784,
+          "valid": true
+        },
+        {
+          "x": 0.62574443359375,
+          "y": 0.5067536328125,
+          "score": 0.99908,
+          "valid": true
+        },
+        {
+          "x": 0.4805484765625,
+          "y": 0.50362095703125,
+          "score": 0.99965,
+          "valid": true
+        },
+        {
+          "x": 0.7716176953125,
+          "y": 0.59492197265625,
+          "score": 0.97437,
+          "valid": true
+        },
+        {
+          "x": 0.3128734375,
+          "y": 0.571679306640625,
+          "score": 0.99727,
+          "valid": true
+        },
+        {
+          "x": 0.790178154296875,
+          "y": 0.72210259765625,
+          "score": 0.87446,
+          "valid": true
+        },
+        {
+          "x": 0.261920810546875,
+          "y": 0.743972822265625,
+          "score": 0.96275,
+          "valid": true
+        }
+      ],
+      "leftKnee": 129.45250131848354,
+      "rightKnee": 128.56656539276128,
+      "actions": [
+        {
+          "id": "horse",
+          "name": "马步式",
+          "state": "pass",
+          "groups": [
+            {
+              "id": "horse-g1",
+              "state": "pass",
+              "conditions": [
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "< 155°",
+                  "angle": 129.45250131848354,
+                  "state": "pass",
+                  "reason": ""
+                },
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "< 155°",
+                  "angle": 128.56656539276128,
+                  "state": "pass",
+                  "reason": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bow",
+          "name": "弓步式",
+          "state": "fail",
+          "groups": [
+            {
+              "id": "bow-g1",
+              "state": "fail",
+              "conditions": [
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "< 155°",
+                  "angle": 129.45250131848354,
+                  "state": "pass",
+                  "reason": ""
+                },
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "> 165°",
+                  "angle": 128.56656539276128,
+                  "state": "fail",
+                  "reason": ""
+                }
+              ]
+            },
+            {
+              "id": "bow-g2",
+              "state": "fail",
+              "conditions": [
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "< 155°",
+                  "angle": 128.56656539276128,
+                  "state": "pass",
+                  "reason": ""
+                },
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "> 165°",
+                  "angle": 129.45250131848354,
+                  "state": "fail",
+                  "reason": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dragons-1",
+      "truth": "bow",
+      "prediction": "bow",
+      "correct": true,
+      "sourceId": "Face Dragons-da0cf47e",
+      "sourcePage": "https://facedragons.com/fitness/kung-fu-stances/",
+      "points": [
+        {
+          "x": 0.3364540625,
+          "y": 0.231672431640625,
+          "score": 0.96966,
+          "valid": true
+        },
+        {
+          "x": 0.33729345703125,
+          "y": 0.2271136328125,
+          "score": 0.52215,
+          "valid": true
+        },
+        {
+          "x": 0.3312261328125,
+          "y": 0.22736740234375,
+          "score": 0.97779,
+          "valid": true
+        },
+        {
+          "x": 0.33319115234375,
+          "y": 0.22934927734375,
+          "score": 0.03522,
+          "valid": false
+        },
+        {
+          "x": 0.31882484375,
+          "y": 0.22984361328125,
+          "score": 0.95102,
+          "valid": true
+        },
+        {
+          "x": 0.32246375,
+          "y": 0.24543857421875,
+          "score": 0.96952,
+          "valid": true
+        },
+        {
+          "x": 0.323549599609375,
+          "y": 0.253141357421875,
+          "score": 0.99159,
+          "valid": true
+        },
+        {
+          "x": 0.335093115234375,
+          "y": 0.228882119140625,
+          "score": 0.70608,
+          "valid": true
+        },
+        {
+          "x": 0.361483046875,
+          "y": 0.256928583984375,
+          "score": 0.98013,
+          "valid": true
+        },
+        {
+          "x": 0.34558701171875,
+          "y": 0.21582193359375,
+          "score": 0.62174,
+          "valid": true
+        },
+        {
+          "x": 0.378730439453125,
+          "y": 0.240675830078125,
+          "score": 0.974,
+          "valid": true
+        },
+        {
+          "x": 0.334103603515625,
+          "y": 0.31861171875,
+          "score": 0.99411,
+          "valid": true
+        },
+        {
+          "x": 0.318867900390625,
+          "y": 0.323868271484375,
+          "score": 0.99675,
+          "valid": true
+        },
+        {
+          "x": 0.377691884765625,
+          "y": 0.345025537109375,
+          "score": 0.98803,
+          "valid": true
+        },
+        {
+          "x": 0.28811068359375,
+          "y": 0.364497705078125,
+          "score": 0.99109,
+          "valid": true
+        },
+        {
+          "x": 0.3775397265625,
+          "y": 0.398431591796875,
+          "score": 0.98954,
+          "valid": true
+        },
+        {
+          "x": 0.244593623046875,
+          "y": 0.406442451171875,
+          "score": 0.97814,
+          "valid": true
+        }
+      ],
+      "leftKnee": 121.05196931368944,
+      "rightKnee": 171.07237999014734,
+      "actions": [
+        {
+          "id": "horse",
+          "name": "马步式",
+          "state": "fail",
+          "groups": [
+            {
+              "id": "horse-g1",
+              "state": "fail",
+              "conditions": [
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "< 155°",
+                  "angle": 121.05196931368944,
+                  "state": "pass",
+                  "reason": ""
+                },
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "< 155°",
+                  "angle": 171.07237999014734,
+                  "state": "fail",
+                  "reason": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bow",
+          "name": "弓步式",
+          "state": "pass",
+          "groups": [
+            {
+              "id": "bow-g1",
+              "state": "pass",
+              "conditions": [
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "< 155°",
+                  "angle": 121.05196931368944,
+                  "state": "pass",
+                  "reason": ""
+                },
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "> 165°",
+                  "angle": 171.07237999014734,
+                  "state": "pass",
+                  "reason": ""
+                }
+              ]
+            },
+            {
+              "id": "bow-g2",
+              "state": "fail",
+              "conditions": [
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "< 155°",
+                  "angle": 171.07237999014734,
+                  "state": "fail",
+                  "reason": ""
+                },
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "> 165°",
+                  "angle": 121.05196931368944,
+                  "state": "fail",
+                  "reason": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dragons-2",
+      "truth": "horse",
+      "prediction": "horse",
+      "correct": true,
+      "sourceId": "Face Dragons-da0cf47e",
+      "sourcePage": "https://facedragons.com/fitness/kung-fu-stances/",
+      "points": [
+        {
+          "x": 0.4792603515625,
+          "y": 0.24418115234375,
+          "score": 0.95595,
+          "valid": true
+        },
+        {
+          "x": 0.481025263671875,
+          "y": 0.238216640625,
+          "score": 0.54387,
+          "valid": true
+        },
+        {
+          "x": 0.4741669140625,
+          "y": 0.238562294921875,
+          "score": 0.94335,
+          "valid": true
+        },
+        {
+          "x": 0.478165341796875,
+          "y": 0.2379323046875,
+          "score": 0.06075,
+          "valid": false
+        },
+        {
+          "x": 0.4625605078125,
+          "y": 0.237952998046875,
+          "score": 0.90523,
+          "valid": true
+        },
+        {
+          "x": 0.473329541015625,
+          "y": 0.255073876953125,
+          "score": 0.98418,
+          "valid": true
+        },
+        {
+          "x": 0.453922607421875,
+          "y": 0.25656466796875,
+          "score": 0.98479,
+          "valid": true
+        },
+        {
+          "x": 0.436970185546875,
+          "y": 0.2317127734375,
+          "score": 0.96829,
+          "valid": true
+        },
+        {
+          "x": 0.48455939453125,
+          "y": 0.251985693359375,
+          "score": 0.94403,
+          "valid": true
+        },
+        {
+          "x": 0.395972255859375,
+          "y": 0.221333837890625,
+          "score": 0.94511,
+          "valid": true
+        },
+        {
+          "x": 0.526885986328125,
+          "y": 0.254913857421875,
+          "score": 0.92539,
+          "valid": true
+        },
+        {
+          "x": 0.48461818359375,
+          "y": 0.327798271484375,
+          "score": 0.99599,
+          "valid": true
+        },
+        {
+          "x": 0.45188484375,
+          "y": 0.326917412109375,
+          "score": 0.996,
+          "valid": true
+        },
+        {
+          "x": 0.51886568359375,
+          "y": 0.350966640625,
+          "score": 0.9895,
+          "valid": true
+        },
+        {
+          "x": 0.41260361328125,
+          "y": 0.3467555078125,
+          "score": 0.99163,
+          "valid": true
+        },
+        {
+          "x": 0.52655095703125,
+          "y": 0.40122794921875,
+          "score": 0.99423,
+          "valid": true
+        },
+        {
+          "x": 0.414587119140625,
+          "y": 0.399481484375,
+          "score": 0.99354,
+          "valid": true
+        }
+      ],
+      "leftKnee": 132.77183050842035,
+      "rightKnee": 114.64062220432899,
+      "actions": [
+        {
+          "id": "horse",
+          "name": "马步式",
+          "state": "pass",
+          "groups": [
+            {
+              "id": "horse-g1",
+              "state": "pass",
+              "conditions": [
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "< 155°",
+                  "angle": 132.77183050842035,
+                  "state": "pass",
+                  "reason": ""
+                },
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "< 155°",
+                  "angle": 114.64062220432899,
+                  "state": "pass",
+                  "reason": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bow",
+          "name": "弓步式",
+          "state": "fail",
+          "groups": [
+            {
+              "id": "bow-g1",
+              "state": "fail",
+              "conditions": [
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "< 155°",
+                  "angle": 132.77183050842035,
+                  "state": "pass",
+                  "reason": ""
+                },
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "> 165°",
+                  "angle": 114.64062220432899,
+                  "state": "fail",
+                  "reason": ""
+                }
+              ]
+            },
+            {
+              "id": "bow-g2",
+              "state": "fail",
+              "conditions": [
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "< 155°",
+                  "angle": 114.64062220432899,
+                  "state": "pass",
+                  "reason": ""
+                },
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "> 165°",
+                  "angle": 132.77183050842035,
+                  "state": "fail",
+                  "reason": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yanlei-2",
+      "truth": "horse",
+      "prediction": "unmatched",
+      "correct": false,
+      "sourceId": "Shifu Yan Lei-8895192e",
+      "sourcePage": "https://www.shifuyanlei.co.uk/blogs/news/are-you-doing-it-right-horse-stance",
+      "points": [
+        {
+          "x": 0.3045800166666667,
+          "y": 0.5913967166666667,
+          "score": 0.97754,
+          "valid": true
+        },
+        {
+          "x": 0.303339,
+          "y": 0.5821932333333334,
+          "score": 0.17852,
+          "valid": false
+        },
+        {
+          "x": 0.29869236666666665,
+          "y": 0.5816743833333333,
+          "score": 0.97838,
+          "valid": true
+        },
+        {
+          "x": 0.28883915000000004,
+          "y": 0.58369975,
+          "score": 0.00611,
+          "valid": false
+        },
+        {
+          "x": 0.26450643333333335,
+          "y": 0.5809532166666667,
+          "score": 0.98961,
+          "valid": true
+        },
+        {
+          "x": 0.28920343333333337,
+          "y": 0.6290128166666666,
+          "score": 0.99821,
+          "valid": true
+        },
+        {
+          "x": 0.19846531666666667,
+          "y": 0.62543945,
+          "score": 0.99811,
+          "valid": true
+        },
+        {
+          "x": 0.36637688333333335,
+          "y": 0.6451934833333333,
+          "score": 0.99577,
+          "valid": true
+        },
+        {
+          "x": 0.21797213333333332,
+          "y": 0.6735507000000001,
+          "score": 0.99704,
+          "valid": true
+        },
+        {
+          "x": 0.42840510000000004,
+          "y": 0.63643965,
+          "score": 0.99302,
+          "valid": true
+        },
+        {
+          "x": 0.31458921666666667,
+          "y": 0.6582211499999999,
+          "score": 0.99502,
+          "valid": true
+        },
+        {
+          "x": 0.2566014833333333,
+          "y": 0.7745902,
+          "score": 0.99874,
+          "valid": true
+        },
+        {
+          "x": 0.17783773333333333,
+          "y": 0.7782622833333334,
+          "score": 0.99849,
+          "valid": true
+        },
+        {
+          "x": 0.36469245,
+          "y": 0.8132118166666668,
+          "score": 0.99475,
+          "valid": true
+        },
+        {
+          "x": 0.11963706666666667,
+          "y": 0.8492527999999999,
+          "score": 0.9919,
+          "valid": true
+        },
+        {
+          "x": 0.38060388333333334,
+          "y": 0.9088743166666666,
+          "score": 0.98361,
+          "valid": true
+        },
+        {
+          "x": 0.09564175,
+          "y": 0.9264076166666666,
+          "score": 0.90921,
+          "valid": true
+        }
+      ],
+      "leftKnee": 119.10563319176929,
+      "rightKnee": 157.9296331776146,
+      "actions": [
+        {
+          "id": "horse",
+          "name": "马步式",
+          "state": "fail",
+          "groups": [
+            {
+              "id": "horse-g1",
+              "state": "fail",
+              "conditions": [
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "< 155°",
+                  "angle": 119.10563319176929,
+                  "state": "pass",
+                  "reason": ""
+                },
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "< 155°",
+                  "angle": 157.9296331776146,
+                  "state": "fail",
+                  "reason": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bow",
+          "name": "弓步式",
+          "state": "fail",
+          "groups": [
+            {
+              "id": "bow-g1",
+              "state": "fail",
+              "conditions": [
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "< 155°",
+                  "angle": 119.10563319176929,
+                  "state": "pass",
+                  "reason": ""
+                },
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "> 165°",
+                  "angle": 157.9296331776146,
+                  "state": "fail",
+                  "reason": ""
+                }
+              ]
+            },
+            {
+              "id": "bow-g2",
+              "state": "fail",
+              "conditions": [
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "< 155°",
+                  "angle": 157.9296331776146,
+                  "state": "fail",
+                  "reason": ""
+                },
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "> 165°",
+                  "angle": 119.10563319176929,
+                  "state": "fail",
+                  "reason": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sportsg-mabu",
+      "truth": "horse",
+      "prediction": "horse",
+      "correct": true,
+      "sourceId": "Sport Singapore-fe4893c1",
+      "sourcePage": "https://isomer-user-content.by.gov.sg/46/226e4e70-8430-4dd8-ad75-bc37480a11db/Safe_Wushu_Guide.pdf#page=7",
+      "points": [
+        {
+          "x": 0.4534711440677966,
+          "y": 0.3220081779661017,
+          "score": 0.99883,
+          "valid": true
+        },
+        {
+          "x": 0.4755790677966102,
+          "y": 0.30407504237288135,
+          "score": 0.99965,
+          "valid": true
+        },
+        {
+          "x": 0.44515834745762717,
+          "y": 0.30218686440677966,
+          "score": 0.89163,
+          "valid": true
+        },
+        {
+          "x": 0.5315098305084746,
+          "y": 0.3138428389830508,
+          "score": 0.9976,
+          "valid": true
+        },
+        {
+          "x": 0.44266805084745764,
+          "y": 0.308895656779661,
+          "score": 0.01051,
+          "valid": false
+        },
+        {
+          "x": 0.5849353813559321,
+          "y": 0.4104254237288136,
+          "score": 0.99908,
+          "valid": true
+        },
+        {
+          "x": 0.4189426483050847,
+          "y": 0.42948421610169496,
+          "score": 0.99894,
+          "valid": true
+        },
+        {
+          "x": 0.7075802754237288,
+          "y": 0.4386509957627119,
+          "score": 0.99534,
+          "valid": true
+        },
+        {
+          "x": 0.3126660805084746,
+          "y": 0.5198116313559322,
+          "score": 0.99505,
+          "valid": true
+        },
+        {
+          "x": 0.8189302542372882,
+          "y": 0.3945186652542373,
+          "score": 0.95887,
+          "valid": true
+        },
+        {
+          "x": 0.1890645974576271,
+          "y": 0.5279858050847458,
+          "score": 0.98519,
+          "valid": true
+        },
+        {
+          "x": 0.5672111440677966,
+          "y": 0.663253156779661,
+          "score": 0.9975,
+          "valid": true
+        },
+        {
+          "x": 0.4430052754237288,
+          "y": 0.6676972881355933,
+          "score": 0.99831,
+          "valid": true
+        },
+        {
+          "x": 0.7323624576271186,
+          "y": 0.6620194491525424,
+          "score": 0.98379,
+          "valid": true
+        },
+        {
+          "x": 0.3512562076271187,
+          "y": 0.6766287711864407,
+          "score": 0.99498,
+          "valid": true
+        },
+        {
+          "x": 0.7621546822033898,
+          "y": 0.8658446398305085,
+          "score": 0.90757,
+          "valid": true
+        },
+        {
+          "x": 0.2929858474576271,
+          "y": 0.8805635381355932,
+          "score": 0.92917,
+          "valid": true
+        }
+      ],
+      "leftKnee": 97.88778228086873,
+      "rightKnee": 111.50629380531818,
+      "actions": [
+        {
+          "id": "horse",
+          "name": "马步式",
+          "state": "pass",
+          "groups": [
+            {
+              "id": "horse-g1",
+              "state": "pass",
+              "conditions": [
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "< 155°",
+                  "angle": 97.88778228086873,
+                  "state": "pass",
+                  "reason": ""
+                },
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "< 155°",
+                  "angle": 111.50629380531818,
+                  "state": "pass",
+                  "reason": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bow",
+          "name": "弓步式",
+          "state": "fail",
+          "groups": [
+            {
+              "id": "bow-g1",
+              "state": "fail",
+              "conditions": [
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "< 155°",
+                  "angle": 97.88778228086873,
+                  "state": "pass",
+                  "reason": ""
+                },
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "> 165°",
+                  "angle": 111.50629380531818,
+                  "state": "fail",
+                  "reason": ""
+                }
+              ]
+            },
+            {
+              "id": "bow-g2",
+              "state": "fail",
+              "conditions": [
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "< 155°",
+                  "angle": 111.50629380531818,
+                  "state": "pass",
+                  "reason": ""
+                },
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "> 165°",
+                  "angle": 97.88778228086873,
+                  "state": "fail",
+                  "reason": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sportsg-gongbu",
+      "truth": "bow",
+      "prediction": "bow",
+      "correct": true,
+      "sourceId": "Sport Singapore-fe4893c1",
+      "sourcePage": "https://isomer-user-content.by.gov.sg/46/226e4e70-8430-4dd8-ad75-bc37480a11db/Safe_Wushu_Guide.pdf#page=7",
+      "points": [
+        {
+          "x": 0.4166022315789473,
+          "y": 0.2590330736842105,
+          "score": 0.99709,
+          "valid": true
+        },
+        {
+          "x": 0.4346419368421052,
+          "y": 0.24321378947368422,
+          "score": 0.99843,
+          "valid": true
+        },
+        {
+          "x": 0.40867433684210525,
+          "y": 0.24390334736842106,
+          "score": 0.90627,
+          "valid": true
+        },
+        {
+          "x": 0.48030467368421054,
+          "y": 0.2529264210526316,
+          "score": 0.99599,
+          "valid": true
+        },
+        {
+          "x": 0.4061799578947369,
+          "y": 0.25465273684210527,
+          "score": 0.02929,
+          "valid": false
+        },
+        {
+          "x": 0.5417004631578948,
+          "y": 0.34344370526315793,
+          "score": 0.99953,
+          "valid": true
+        },
+        {
+          "x": 0.4016001263157895,
+          "y": 0.3586334736842105,
+          "score": 0.99905,
+          "valid": true
+        },
+        {
+          "x": 0.6435557894736843,
+          "y": 0.35254412631578946,
+          "score": 0.99783,
+          "valid": true
+        },
+        {
+          "x": 0.3081821052631579,
+          "y": 0.4161432210526316,
+          "score": 0.99326,
+          "valid": true
+        },
+        {
+          "x": 0.715877052631579,
+          "y": 0.2688232,
+          "score": 0.97794,
+          "valid": true
+        },
+        {
+          "x": 0.20250795789473686,
+          "y": 0.38097964210526314,
+          "score": 0.97599,
+          "valid": true
+        },
+        {
+          "x": 0.5412074526315789,
+          "y": 0.6179246947368421,
+          "score": 0.9994,
+          "valid": true
+        },
+        {
+          "x": 0.42618393684210526,
+          "y": 0.6025849263157895,
+          "score": 0.99953,
+          "valid": true
+        },
+        {
+          "x": 0.6656873684210527,
+          "y": 0.7268017684210526,
+          "score": 0.97142,
+          "valid": true
+        },
+        {
+          "x": 0.2767638736842105,
+          "y": 0.6288014315789474,
+          "score": 0.99606,
+          "valid": true
+        },
+        {
+          "x": 0.7890604,
+          "y": 0.8291216,
+          "score": 0.68816,
+          "valid": true
+        },
+        {
+          "x": 0.24805827368421052,
+          "y": 0.8425001052631579,
+          "score": 0.93768,
+          "valid": true
+        }
+      ],
+      "leftKnee": 178.49597513858347,
+      "rightKnee": 107.60214187304969,
+      "actions": [
+        {
+          "id": "horse",
+          "name": "马步式",
+          "state": "fail",
+          "groups": [
+            {
+              "id": "horse-g1",
+              "state": "fail",
+              "conditions": [
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "< 155°",
+                  "angle": 178.49597513858347,
+                  "state": "fail",
+                  "reason": ""
+                },
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "< 155°",
+                  "angle": 107.60214187304969,
+                  "state": "pass",
+                  "reason": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bow",
+          "name": "弓步式",
+          "state": "pass",
+          "groups": [
+            {
+              "id": "bow-g1",
+              "state": "fail",
+              "conditions": [
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "< 155°",
+                  "angle": 178.49597513858347,
+                  "state": "fail",
+                  "reason": ""
+                },
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "> 165°",
+                  "angle": 107.60214187304969,
+                  "state": "fail",
+                  "reason": ""
+                }
+              ]
+            },
+            {
+              "id": "bow-g2",
+              "state": "pass",
+              "conditions": [
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "< 155°",
+                  "angle": 107.60214187304969,
+                  "state": "pass",
+                  "reason": ""
+                },
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "> 165°",
+                  "angle": 178.49597513858347,
+                  "state": "pass",
+                  "reason": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ucl-gongbu",
+      "truth": "bow",
+      "prediction": "bow",
+      "correct": true,
+      "sourceId": "UCL Discovery-12d5cfc8",
+      "sourcePage": "https://discovery.ucl.ac.uk/id/eprint/10136742/",
+      "points": [
+        {
+          "x": 0.6488883035714286,
+          "y": 0.14662086309523809,
+          "score": 0.97902,
+          "valid": true
+        },
+        {
+          "x": 0.6468392410714285,
+          "y": 0.13092474702380952,
+          "score": 0.14833,
+          "valid": false
+        },
+        {
+          "x": 0.6308082589285714,
+          "y": 0.12587852678571426,
+          "score": 0.99278,
+          "valid": true
+        },
+        {
+          "x": 0.6106124404761906,
+          "y": 0.14384886904761904,
+          "score": 0.00452,
+          "valid": false
+        },
+        {
+          "x": 0.5667659821428571,
+          "y": 0.13486108630952381,
+          "score": 0.99003,
+          "valid": true
+        },
+        {
+          "x": 0.5538750595238096,
+          "y": 0.26681824404761906,
+          "score": 0.96986,
+          "valid": true
+        },
+        {
+          "x": 0.5720797023809524,
+          "y": 0.24991662202380954,
+          "score": 0.99777,
+          "valid": true
+        },
+        {
+          "x": 0.5743651934523809,
+          "y": 0.4090470386904762,
+          "score": 0.9278,
+          "valid": true
+        },
+        {
+          "x": 0.7218847321428571,
+          "y": 0.2562463095238095,
+          "score": 0.99605,
+          "valid": true
+        },
+        {
+          "x": 0.6414835863095238,
+          "y": 0.4542805654761905,
+          "score": 0.97076,
+          "valid": true
+        },
+        {
+          "x": 0.8004644345238096,
+          "y": 0.19410147321428572,
+          "score": 0.95499,
+          "valid": true
+        },
+        {
+          "x": 0.5769602827380952,
+          "y": 0.532852261904762,
+          "score": 0.99831,
+          "valid": true
+        },
+        {
+          "x": 0.5190595684523809,
+          "y": 0.5354413095238095,
+          "score": 0.99852,
+          "valid": true
+        },
+        {
+          "x": 0.7634375148809524,
+          "y": 0.5527207886904761,
+          "score": 0.99631,
+          "valid": true
+        },
+        {
+          "x": 0.4168654017857143,
+          "y": 0.5960377232142857,
+          "score": 0.99332,
+          "valid": true
+        },
+        {
+          "x": 0.7588154761904762,
+          "y": 0.7705740922619048,
+          "score": 0.99565,
+          "valid": true
+        },
+        {
+          "x": 0.19953525297619049,
+          "y": 0.7452653869047619,
+          "score": 0.98509,
+          "valid": true
+        }
+      ],
+      "leftKnee": 94.86630822387016,
+      "rightKnee": 176.1909138118591,
+      "actions": [
+        {
+          "id": "horse",
+          "name": "马步式",
+          "state": "fail",
+          "groups": [
+            {
+              "id": "horse-g1",
+              "state": "fail",
+              "conditions": [
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "< 155°",
+                  "angle": 94.86630822387016,
+                  "state": "pass",
+                  "reason": ""
+                },
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "< 155°",
+                  "angle": 176.1909138118591,
+                  "state": "fail",
+                  "reason": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bow",
+          "name": "弓步式",
+          "state": "pass",
+          "groups": [
+            {
+              "id": "bow-g1",
+              "state": "pass",
+              "conditions": [
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "< 155°",
+                  "angle": 94.86630822387016,
+                  "state": "pass",
+                  "reason": ""
+                },
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "> 165°",
+                  "angle": 176.1909138118591,
+                  "state": "pass",
+                  "reason": ""
+                }
+              ]
+            },
+            {
+              "id": "bow-g2",
+              "state": "fail",
+              "conditions": [
+                {
+                  "label": "右膝角",
+                  "points": [
+                    12,
+                    14,
+                    16
+                  ],
+                  "expression": "< 155°",
+                  "angle": 176.1909138118591,
+                  "state": "fail",
+                  "reason": ""
+                },
+                {
+                  "label": "左膝角",
+                  "points": [
+                    11,
+                    13,
+                    15
+                  ],
+                  "expression": "> 165°",
+                  "angle": 94.86630822387016,
+                  "state": "fail",
+                  "reason": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

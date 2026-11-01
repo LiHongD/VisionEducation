@@ -26,3 +26,9 @@ export const modelEntries = sqliteTable('model_entries', {
   correct:integer('correct').notNull(),total:integer('total').notNull(),accuracy:real('accuracy').notNull(),
   metrics:text('metrics').notNull(),hyperparameters:text('hyperparameters').notNull(),createdAt:text('created_at').notNull(),
 },t=>[uniqueIndex('models_member_digest').on(t.memberId,t.benchmarkId,t.modelDigest),index('models_class_benchmark').on(t.classId,t.benchmarkId)]);
+
+export const ruleEntries=sqliteTable('rule_entries',{
+  id:text('id').primaryKey(),classId:text('class_id').notNull().references(()=>classrooms.id),
+  memberId:text('member_id').notNull().references(()=>members.id),benchmarkId:text('benchmark_id').notNull(),benchmarkDigest:text('benchmark_digest').notNull(),
+  rules:text('rules').notNull(),mapping:text('mapping').notNull(),metrics:text('metrics').notNull(),correct:integer('correct').notNull(),total:integer('total').notNull(),accuracy:real('accuracy').notNull(),createdAt:text('created_at').notNull(),
+},t=>[index('rules_class_created').on(t.classId,t.createdAt),index('rules_member_created').on(t.memberId,t.createdAt)]);
