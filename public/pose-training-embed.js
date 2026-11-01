@@ -7,12 +7,12 @@ function syncPoseTrainingLab(){
   if(poseTrainingHost&&poseTrainingDraft!==draftStorageKey){poseTrainingHost.remove();poseTrainingHost=null;}
   if(!poseTrainingHost&&onLesson){
     poseTrainingDraft=draftStorageKey;
-    const url='/pose-training/index.html?embed=1&draft='+encodeURIComponent(poseTrainingDraft);
+    const url='/pose-training/index.html?v=heatmap-2&embed=1&draft='+encodeURIComponent(poseTrainingDraft);
     poseTrainingHost=document.createElement('section');
     poseTrainingHost.id='pose-training-lab';
     poseTrainingHost.className='pose-training-lab panel';
     poseTrainingHost.setAttribute('aria-labelledby','pose-training-title');
-    poseTrainingHost.innerHTML=`<div class="pose-training-heading"><div><span class="eyebrow">FROM LABELS TO LEARNING / 拓展实验</span><h2 id="pose-training-title">这一次，亲手训练一个找点的模型。</h2><p>先从随机权重出发，让自己的模型学习“图片 → 17 个关键点”；再在下方用 Python 调用现成模型，比较训练与使用的区别。</p></div><a class="pose-training-open" href="${url}" target="_blank" rel="noopener">独立打开 ↗</a></div><div class="pose-training-intro"><div class="pose-training-path"><span><b>01</b>认识真实数据</span><i>→</i><span><b>02</b>亲手标注</span><i>→</i><span><b>03</b>从零训练</span><i>→</i><span><b>04</b>新图预测</span></div><div class="pose-training-facts"><span>72 张真实图片 · COCO 17 点</span><span>训练 / 验证 / 测试 = 48 / 12 / 12</span><span>随机初始化 CNN · 浏览器本机计算</span></div><div class="pose-training-start-row"><button class="primary" data-pose-start>进入从零训练实验 ↓</button><span>建议另用一节 45 分钟实践课，也可先用 8 张、5 轮体验。</span></div></div><div data-pose-frame-slot></div><p class="pose-training-note" data-pose-status role="status">图片、标注和模型在当前学生的本机浏览器中处理与保存；可导出模型、关键点和实验报告。小样本模型用于理解学习过程。</p>`;
+    poseTrainingHost.innerHTML=`<div class="pose-training-heading"><div><span class="eyebrow">FROM LABELS TO LEARNING / 拓展实验</span><h2 id="pose-training-title">这一次，亲手训练一个找点的模型。</h2><p>先从随机权重出发，让自己的模型学习“图片 → 17 个关键点”；再在下方用 Python 调用现成模型，比较训练与使用的区别。</p></div><a class="pose-training-open" href="${url}" target="_blank" rel="noopener">独立打开 ↗</a></div><div class="pose-training-intro"><div class="pose-training-path"><span><b>01</b>认识真实数据</span><i>→</i><span><b>02</b>亲手标注</span><i>→</i><span><b>03</b>从零训练</span><i>→</i><span><b>04</b>新图预测</span></div><div class="pose-training-facts"><span>1104 张 COCO 全身图片 · COCO 17 点</span><span>训练 / 验证 / 测试 = 1024 / 40 / 40</span><span>随机初始化热力图 CNN · 浏览器本机计算</span></div><div class="pose-training-start-row"><button class="primary" data-pose-start>进入从零训练实验 ↓</button><span>建议另用一节 45 分钟实践课，也可先用 8 张、5 轮体验。</span></div></div><div data-pose-frame-slot></div><p class="pose-training-note" data-pose-status role="status">图片、标注和模型在当前学生的本机浏览器中处理与保存；可导出模型、关键点和实验报告。先比较平均骨架基线，再检验实际定位效果；上传新图请先框选完整人物。</p>`;
     document.getElementById('content').insertAdjacentElement('afterend',poseTrainingHost);
     poseTrainingHost.querySelector('[data-pose-start]').onclick=()=>{
       const frame=document.createElement('iframe');
